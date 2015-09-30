@@ -7,7 +7,7 @@ Version: 0.1
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
-	include_once('lib/CRG_FormController.class.php');
+	include_once('CRG_FormController.class.php');
 	$CRG_FormController = new CRG_FormController;
 
 ?>
