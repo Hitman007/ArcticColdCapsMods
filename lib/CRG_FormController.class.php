@@ -105,18 +105,14 @@ class CRG_FormController{
 
 <div>
     <label>How many weeks apart are your chemo infusions scheduled for?:</label>
-    <input placeholder='Driving Time' name='MMERGE17' type='text'>
+    <input placeholder='Enter the weeks between infusions' name='weeks-between' type='text'>
 </div>
+
 <div>
-   <label>
-        <input required = 'required' value = 'Every Week' name='crg-x' type='radio'><span>Every Week </span>
-    </label>
+    <label>How Many Months is Your Chemo Regimen Scheduled For?:</label>
+    <input placeholder='Enter the length of your treatment' name='length-of-treatment' type='text'>
 </div>
-<div>
-   <label>
-        <input required = 'required' value = 'Every Week (Three weeks on, One Week Off)' name='crg-x' type='radio'><span>Every Week (Three weeks on, One Week Off) </span>
-    </label>
-</div>
+
 <div>
     <input type='submit' value='submit'>
 </div>
