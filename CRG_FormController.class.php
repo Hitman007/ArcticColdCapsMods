@@ -17,7 +17,8 @@ class CRG_FormController{
   $(function() {
     $( '#date-of-birth' ).datepicker({
       changeMonth: true,
-      changeYear: true
+      changeYear: true,
+      yearRange: "1901:2010"
     });
   });
 </script>
