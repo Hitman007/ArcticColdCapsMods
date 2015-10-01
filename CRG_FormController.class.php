@@ -3,10 +3,10 @@
 class CRG_FormController{
 	
 	public function __construct() {
-		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcode' ) );
+		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
 	}
 
-	function ReturnShortcode() {
+	function ReturnShortcodeHTML() {
 
 		$shortCodeOutput  = <<<SCO_HEREDOC
 <!--Stylesheet-->        
