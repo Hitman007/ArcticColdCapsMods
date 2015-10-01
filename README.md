@@ -1,1 +1,1 @@
-Email me at jim@customrayguns.com
+ jim@customrayguns.com
