@@ -3,7 +3,12 @@
 class CRG_FormController{
 	
 	public function __construct() {
+		//create the CPT 'info-form'
+		include_once('InfoFormCPT.php');
 		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
+		//create CPT
+
+		//Add/Update CPT on form submission
 	}
 
 	function ReturnShortcodeHTML() {
