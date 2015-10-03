@@ -61,7 +61,7 @@ h4
 <p>Please complete the form below and a Arctic Cold Caps representative will call to get you started. Call us if you have any questions or concerns.</p>
 
 <!--Column-->
-<form method = 'post' class='form-horizontal' name = "CRG-InfoForm">
+<form method = 'post' class='form-horizontal' name = "CRG-InfoForm" />
 <div class='col-sm-4'>
 <h4>Personal Information</h4>
 <div class='form-group'>
@@ -211,7 +211,7 @@ h4
 
 <div class='form-group'>
     <div class='col-sm-12' align='right'>
-            <button type='button' class='btn btn-primary'><span class='glyphicon glyphicon-ok'></span> Submit</button></div>
+            <input type='submit' class='btn btn-primary'><span class='glyphicon glyphicon-ok'></span> Submit</div>
 </div>
 
 </div><!--Column-->
