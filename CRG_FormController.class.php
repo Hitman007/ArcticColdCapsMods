@@ -5,7 +5,7 @@ class CRG_FormController{
 	public function __construct() {
 		
 		//die say hello
-		die('hello');
+		die('hello world');
 		 
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.php');
