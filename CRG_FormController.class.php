@@ -5,10 +5,14 @@ class CRG_FormController{
 	public function __construct() {
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.php');
+		
+		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
-		//create CPT
 
 		//Add/Update CPT on form submission
+		if (isset($_POST['crg-info-form-email'])){
+			die('form submitting');
+		}
 	}
 
 	function ReturnShortcodeHTML() {
@@ -57,7 +61,7 @@ h4
 <p>Please complete the form below and a Arctic Cold Caps representative will call to get you started. Call us if you have any questions or concerns.</p>
 
 <!--Column-->
-<form method = 'post' class='form-horizontal'>
+<form method = 'post' class='form-horizontal' name = "CRG-InfoForm">
 <div class='col-sm-4'>
 <h4>Personal Information</h4>
 <div class='form-group'>
@@ -65,7 +69,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-envelope'></i></span>
-            <input required='required' placeholder='Your email address' name='EMAIL' type='email' class='form-control'>
+            <input required='required' placeholder='Your email address' name='crg-info-form-email' type='email' class='form-control'>
             </div>
     </div>
 </div>
