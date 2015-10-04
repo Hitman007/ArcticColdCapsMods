@@ -3,7 +3,6 @@
 $listOfPostFieldNames = array();
 
 foreach (array_keys($_POST) as $fieldName){
-	if ($_POST["$fieldName"] === ""){break;}
 	$content = $content . $fieldName . " - ";
 	$content = $content . $_POST["$fieldName"];
 	$content = $content . "\r\n";
