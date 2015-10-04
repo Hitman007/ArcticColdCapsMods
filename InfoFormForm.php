@@ -223,7 +223,7 @@ h4
 				<option value="FEC">FEC</option>
 				<option value="TC">TC</option>
 				<option value="TCH">TCH</option>
-				<option value="Other">Other</option>
+				<option value="Other" selected >Other</option>
 			</select>
 		</div>
 	</div>
