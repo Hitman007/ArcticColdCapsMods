@@ -17,7 +17,7 @@ $title = "balls";
 $my_post = array(
 				'post_title'    => $title,
 				'post_content'  => 'This is a daily CL item.',
-				'post_type'   => 'InfoForms',
+				'post_type'   => 'InfoForm',
 			);
 			// Insert the post into the database
 			wp_insert_post( $my_post );
