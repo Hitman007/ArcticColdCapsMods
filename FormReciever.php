@@ -1,5 +1,5 @@
 <?php
-foreach ($_POST as $name => $val){
- echo $key . "<br />";
+foreach (array_keys($_POST) as $field){
+ echo $field . "<br />";
 }
 ?>
