@@ -213,27 +213,18 @@ h4
         </div>
     </div>
 </div>
-
 <div class='form-group'>
-    <label class='col-sm-1'>Regimen:</label>
-    <div class='col-sm-2' align='center' style='margin-left:-10px;'>
-            <input  value='AC' name='MMERGE8' type='radio'><span> AC</span>
-    </div>
-    <div class='col-sm-2' align='center'>
-            <input  value='ACT' name='MMERGE8' type='radio'><span> ACT</span>
-    </div>
-    <div class='col-sm-2' align='center'>
-            <input  value='FEC' name='MMERGE8' type='radio'><span> FEC</span>
-    </div>
-    <div class='col-sm-2' align='center'>
-            <input  value='TC' name='MMERGE8' type='radio'><span> TC</span>
-    </div>
-    <div class='col-sm-2' align='center'>
-            <input  value='TCH' name='MMERGE8' type='radio'><span> TCH</span>
-    </div>
-    <div class='col-sm-2' align='center'>
-            <input  value='Other' name='MMERGE8' type='radio'><span> Other</span>
-    </div>
+	<div class='col-sm-2' align='center' style='margin-left:-10px;'>
+	<label class='col-sm-1'>Regimen:</label>
+		<select name = "regimen">
+			<option value="AC">AC</option>
+			<option value="ACT">ACT</option>
+			<option value="FEC">FEC</option>
+			<option value="TC">TC</option>
+			<option value="TCH">TCH</option>
+			<option value="Other">Other</option>
+		</select>
+	</div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Chemotheraphy (Other):</label>
