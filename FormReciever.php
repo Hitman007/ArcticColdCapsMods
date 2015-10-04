@@ -3,7 +3,9 @@
 $listOfPostFieldNames = array();
 
 foreach (array_keys($_POST) as $fieldName){
-	$content = $content . $fieldName . "\r\n";
+	$content = $content . $fieldName . " - ";
+	$content = $content . $_POST["$fieldName"];
+	$content = $content . "\r\n";
 }
 
 $title = $_POST['crg-info-form-last-name'] . ", " . $_POST['crg-info-form-first-name'];
