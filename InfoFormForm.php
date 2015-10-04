@@ -54,7 +54,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-envelope'></i></span>
-            <input placeholder='Your email address' name='crg-info-form-email' type='email' class='form-control'>
+            <input placeholder='Your email address' name='Email' type='email' class='form-control'>
             </div>
     </div>
 </div>
@@ -63,7 +63,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input  placeholder='Your first name' name='crg-info-form-first-name' type='text' class='form-control'>
+            <input  placeholder='Your first name' name='First_Name' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -72,7 +72,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input  placeholder='Your last name' name='crg-info-form-last-name' type='text' class='form-control'>
+            <input  placeholder='Your last name' name='Last_Name' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -81,19 +81,19 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
-            <input  placeholder='Your mobile' name='MMERGE3' type='text' class='form-control'>
+            <input  placeholder='Your mobile' name='Mobile' type='text' class='form-control'>
             </div>
     </div>
 </div>
 <div class='form-group'>
 <label class='col-sm-5 control-label'>Date of Birth:</label> <div class='col-sm-7'>
-            <input id = 'date-of-birth' type='text' name = 'MMERGE4' type = 'text' placeholder='Date of Birth'  class='form-control'>
+            <input id = 'date-of-birth' type='text' name = 'DOB' type = 'text' placeholder='Date of Birth'  class='form-control'>
     </div>
 </div>
 <div class='form-group'>
  <label class='col-sm-5 control-label'>Mailing Address:</label>
     <div class='col-sm-7'>
-            <input  placeholder='Address' name='MMERGE5' type='text' class='form-control'>
+            <input  placeholder='Address' name='Address' type='text' class='form-control'>
     </div>
 </div>
 <div class='form-group'>    
@@ -101,14 +101,14 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-map-marker'></i></span>
-            <input  placeholder='Your mailing city' name='MMERGE6' type='text' class='form-control'>
+            <input  placeholder='Your mailing city' name='City' type='text' class='form-control'>
             </div>
     </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-5 control-label'>State:</label>
     <div class='col-sm-7'>
-<select name = "crg-info-form-state">
+<select name = ""crg-info-form-state"State">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -166,7 +166,7 @@ h4
 <div class='form-group'>
     <label class='col-sm-5 control-label'>Zip:</label>
     <div class='col-sm-7'>
-            <input  placeholder='Your mailing zip' name='MMERGE16' type='text' class='form-control'>
+            <input  placeholder='Your mailing zip' name='Zip' type='text' class='form-control'>
     </div>
 </div>
 </div><!--Column-->
@@ -176,7 +176,7 @@ h4
     <label class='col-sm-7'>Current Diagnosis:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "current-diagnosis" placeholder = "Please enter your current diagnosis" ></textarea>
+	<textarea name = "Current_Diagnosis" placeholder = "Please enter your current diagnosis" ></textarea>
         </div>
     </div>
 </div>
@@ -184,7 +184,7 @@ h4
     <label class='col-sm-7'>Previous Diagnosis:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "prev-diagnosis" placeholder = "Please enter your previous diagnosis" ></textarea>
+	<textarea name = "Prev_Diagnosis" placeholder = "Please enter your previous diagnosis" ></textarea>
         </div>
     </div>
 </div>
@@ -192,7 +192,7 @@ h4
     <label class='col-sm-7'>Other medical conditions:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "other-conditions" placeholder = "Please enter any other conditions" ></textarea>
+	<textarea name = "Other_Conditions" placeholder = "Please enter any other conditions" ></textarea>
         </div>
     </div>
 </div>
@@ -200,7 +200,7 @@ h4
     <label class='col-sm-7'>Shampoo used and frequency:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "shampoo" placeholder = "Please enter Shampoo used and frequency" ></textarea>
+	<textarea name = "Shampoo" placeholder = "Please enter Shampoo used and frequency" ></textarea>
         </div>
     </div>
 </div>
@@ -208,7 +208,7 @@ h4
     <label class='col-sm-7'>When was hair last treated:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "shampoo" placeholder = "i.e. highlights" ></textarea>
+	<textarea name = "Last_Treatment" placeholder = "i.e. highlights" ></textarea>
         </div>
     </div>
 </div>
