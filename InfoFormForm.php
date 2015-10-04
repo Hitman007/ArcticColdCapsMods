@@ -46,7 +46,7 @@ h4
 <p>Please complete the form below and a Arctic Cold Caps representative will call to get you started. Call us if you have any questions or concerns.</p>
 
 <!--Column-->
-<form method = 'post' class='form-horizontal' name = "CRG-InfoForm" action = "/services/" />
+<form method = 'post' class='form-horizontal' name = "CRG-InfoForm" />
 <input type = "hidden" name = "crg-info-form" value = "TRUE" />
 <div class='col-sm-4'>
 <h4>Personal Information</h4>
