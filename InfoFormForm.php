@@ -63,7 +63,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input  placeholder='Your first name' name='FNAME' type='text' class='form-control'>
+            <input  placeholder='Your first name' name='crg-info-form-first-name' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -72,7 +72,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input  placeholder='Your last name' name='LNAME' type='text' class='form-control'>
+            <input  placeholder='Your last name' name='crg-info-form-last-name' type='text' class='form-control'>
             </div>
     </div>
 </div>
