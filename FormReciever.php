@@ -13,7 +13,7 @@ foreach($listOfPostFieldNames as $fieldName){
  //do stuff here
  
 }
-$title = "balls";
+$title = $_POST['crg-info-form-last-name'] . ", " . $_POST['crg-info-form-first-name'];
 $my_post = array(
 				'post_title'    => $title,
 				'post_content'  => 'This is a daily CL item.',
