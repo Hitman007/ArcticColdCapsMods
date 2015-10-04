@@ -1,5 +1,5 @@
 <?php
-foreach ($_POST as $key){
+foreach ($_POST as $name => $val){
  echo $key . "<br />";
 }
 ?>
