@@ -280,7 +280,8 @@ h4
 
 <div class='form-group'>
     <div class='col-sm-12' align='right'>
-            <input type='submit' class='btn btn-primary'><span class='glyphicon glyphicon-ok'></span> Submit</div>
+            <input type='submit' class='btn btn-primary'>
+    </div>
 </div>
 
 </div><!--Column-->
