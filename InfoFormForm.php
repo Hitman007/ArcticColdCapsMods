@@ -176,7 +176,7 @@ h4
     <label class='col-sm-7'>Current Diagnosis:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-	<textarea name = "current-diagnosis">Please enter your current diagnosis</textarea>
+	<textarea name = "current-diagnosis" placeholder = "Please enter your current diagnosis" ></textarea>
         </div>
     </div>
 </div>
