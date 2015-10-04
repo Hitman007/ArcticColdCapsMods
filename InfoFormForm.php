@@ -109,7 +109,7 @@ h4
 <div class='form-group'>
     <label class='col-sm-5 control-label'>State:</label>
     <div class='col-sm-7'>
-<select name = ""crg-info-form-state"State">
+<select name = "State">
 	<option value="AL">Alabama</option>
 	<option value="AK">Alaska</option>
 	<option value="AZ">Arizona</option>
@@ -233,45 +233,45 @@ h4
 <div class='form-group'>
     <label class='col-sm-7'>Chemotheraphy (Other):</label>
     <div class='col-sm-5'>
-            <input placeholder='Your chemotheraphy (other)' name='MMERGE9' type='text' class='form-control'></div>
+            <input placeholder='Your chemotheraphy (other)' name='Chemo_Other' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Name:</label>
     <div class='col-sm-5'>
-            <input  placeholder='Your oncologist name' name='MMERGE10' type='text' class='form-control'></div>
+            <input  placeholder='Your oncologist name' name='Oncologist' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Phone Number:</label>
     <div class='col-sm-5'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
-            <input  placeholder='Your oncologist phone number' name='MMERGE11' type='text' class='form-control'></div>
+            <input  placeholder='Your oncologist phone number' name='Oncologist_Phone' type='text' class='form-control'></div>
             </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncology Treatment Center:</label>
     <div class='col-sm-5'>
-            <input  placeholder='Your oncology treatment center' name='MMERGE12' type='text' class='form-control'></div>
+            <input  placeholder='Your oncology treatment center' name='Oncology Treatment Center' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>What is the driving time in minutes to Oncologist office?</label>
     <div class='col-sm-5'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-road'></i></span>
-            <input placeholder='Driving Time' name='MMERGE17' type='text' class='form-control'></div>
+            <input placeholder='Driving Time' name='Driving_Time' type='text' class='form-control'></div>
             </div>
 </div>
 
 <div class='form-group'>
     <label class='col-sm-7'>How many weeks apart are your chemo infusions scheduled for?</label>
     <div class='col-sm-5'>
-            <input placeholder='Enter the weeks between infusions' name='weeks-between' type='text' class='form-control'></div>
+            <input placeholder='Enter the weeks between infusions' name='Weeks_Between_Chemo' type='text' class='form-control'></div>
 </div>
 
 <div class='form-group'>
     <label class='col-sm-7'>How Many Months is Your Chemo Regimen Scheduled For?</label>
     <div class='col-sm-5'>
-            <input placeholder='Enter the length of your treatment' name='length-of-treatment' type='text' class='form-control'></div>
+            <input placeholder='Enter the length of your treatment' name='Length_Of_Treatment' type='text' class='form-control'></div>
 </div>
 
 <div class='form-group'>
