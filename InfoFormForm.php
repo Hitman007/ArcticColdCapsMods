@@ -173,11 +173,10 @@ h4
 <div class='col-sm-8'>
 <h4>Cancer Details</h4>
 <div class='form-group'>
-    <label class='col-sm-7'>Cancer Diagnosis:</label>
+    <label class='col-sm-7'>Current Diagnosis:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
-        <span class='input-group-addon'><i class='glyphicon glyphicon-ok'></i></span>
-        <input  placeholder='Your cancer diagnosis' name='MMERGE7' type='text' class='form-control'>
+	<textarea name = "current-diagnosis">Please enter your current diagnosis</textarea>
         </div>
     </div>
 </div>
