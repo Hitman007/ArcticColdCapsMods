@@ -14,7 +14,7 @@ class CRG_FormController{
 
 		//Add/Update CPT on form submission
 		if (isset($_POST['crg-info-form-email'])){
-			include_once('FormReciever.php');
+			add_action('init', array($this, 'receiveFormSubmission') );
 		}
 	}
 
@@ -22,6 +22,10 @@ class CRG_FormController{
 		include_once('InfoFormForm.php');
 		$output = getTheActualForm();
 		return $output;
+	}
+	
+	function receiveFormSubmission(){
+		include_once('FormReciever.php');
 	}
 }
 
