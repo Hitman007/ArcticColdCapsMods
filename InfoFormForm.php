@@ -47,6 +47,7 @@ h4
 
 <!--Column-->
 <form method = 'post' class='form-horizontal' name = "CRG-InfoForm" action = "/services/" />
+<input type = "hidden" name = "crg-info-form" value = "TRUE" />
 <div class='col-sm-4'>
 <h4>Personal Information</h4>
 <div class='form-group'>
