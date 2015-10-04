@@ -54,7 +54,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-envelope'></i></span>
-            <input required='required' placeholder='Your email address' name='crg-info-form-email' type='email' class='form-control'>
+            <input placeholder='Your email address' name='crg-info-form-email' type='email' class='form-control'>
             </div>
     </div>
 </div>
@@ -63,7 +63,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input required='required' placeholder='Your first name' name='FNAME' type='text' class='form-control'>
+            <input  placeholder='Your first name' name='FNAME' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -72,7 +72,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-user'></i></span>
-            <input required='required' placeholder='Your last name' name='LNAME' type='text' class='form-control'>
+            <input  placeholder='Your last name' name='LNAME' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -81,7 +81,7 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
-            <input required='required' placeholder='Your mobile' name='MMERGE3' type='text' class='form-control'>
+            <input  placeholder='Your mobile' name='MMERGE3' type='text' class='form-control'>
             </div>
     </div>
 </div>
@@ -93,7 +93,7 @@ h4
 <div class='form-group'>
  <label class='col-sm-5 control-label'>Mailing Address:</label>
     <div class='col-sm-7'>
-            <input required='required' placeholder='Address' name='MMERGE5' type='text' class='form-control'>
+            <input  placeholder='Address' name='MMERGE5' type='text' class='form-control'>
     </div>
 </div>
 <div class='form-group'>    
@@ -101,20 +101,20 @@ h4
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-map-marker'></i></span>
-            <input required='required' placeholder='Your mailing city' name='MMERGE6' type='text' class='form-control'>
+            <input  placeholder='Your mailing city' name='MMERGE6' type='text' class='form-control'>
             </div>
     </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-5 control-label'>State:</label>
     <div class='col-sm-7'>
-            <input required='required' placeholder='Your mailing state' name='MMERGE14' type='text' class='form-control'>
+            <input  placeholder='Your mailing state' name='MMERGE14' type='text' class='form-control'>
     </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-5 control-label'>Zip:</label>
     <div class='col-sm-7'>
-            <input required='required' placeholder='Your mailing zip' name='MMERGE16' type='text' class='form-control'>
+            <input  placeholder='Your mailing zip' name='MMERGE16' type='text' class='form-control'>
     </div>
 </div>
 </div><!--Column-->
@@ -125,29 +125,29 @@ h4
     <div class='col-sm-5'>
         <div class='input-group'>
         <span class='input-group-addon'><i class='glyphicon glyphicon-ok'></i></span>
-        <input required='required' placeholder='Your cancer diagnosis' name='MMERGE7' type='text' class='form-control'>
+        <input  placeholder='Your cancer diagnosis' name='MMERGE7' type='text' class='form-control'>
         </div>
     </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-1'>Regimen:</label>
     <div class='col-sm-2' align='center' style='margin-left:-10px;'>
-            <input required='required' value='AC' name='MMERGE8' type='radio'><span> AC</span>
+            <input  value='AC' name='MMERGE8' type='radio'><span> AC</span>
     </div>
     <div class='col-sm-2' align='center'>
-            <input required='required' value='ACT' name='MMERGE8' type='radio'><span> ACT</span>
+            <input  value='ACT' name='MMERGE8' type='radio'><span> ACT</span>
     </div>
     <div class='col-sm-2' align='center'>
-            <input required='required' value='FEC' name='MMERGE8' type='radio'><span> FEC</span>
+            <input  value='FEC' name='MMERGE8' type='radio'><span> FEC</span>
     </div>
     <div class='col-sm-2' align='center'>
-            <input required='required' value='TC' name='MMERGE8' type='radio'><span> TC</span>
+            <input  value='TC' name='MMERGE8' type='radio'><span> TC</span>
     </div>
     <div class='col-sm-2' align='center'>
-            <input required='required' value='TCH' name='MMERGE8' type='radio'><span> TCH</span>
+            <input  value='TCH' name='MMERGE8' type='radio'><span> TCH</span>
     </div>
     <div class='col-sm-2' align='center'>
-            <input required='required' value='Other' name='MMERGE8' type='radio'><span> Other</span>
+            <input  value='Other' name='MMERGE8' type='radio'><span> Other</span>
     </div>
 </div>
 <div class='form-group'>
@@ -158,20 +158,20 @@ h4
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Name:</label>
     <div class='col-sm-5'>
-            <input required='required' placeholder='Your oncologist name' name='MMERGE10' type='text' class='form-control'></div>
+            <input  placeholder='Your oncologist name' name='MMERGE10' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Phone Number:</label>
     <div class='col-sm-5'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
-            <input required='required' placeholder='Your oncologist phone number' name='MMERGE11' type='text' class='form-control'></div>
+            <input  placeholder='Your oncologist phone number' name='MMERGE11' type='text' class='form-control'></div>
             </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncology Treatment Center:</label>
     <div class='col-sm-5'>
-            <input required='required' placeholder='Your oncology treatment center' name='MMERGE12' type='text' class='form-control'></div>
+            <input  placeholder='Your oncology treatment center' name='MMERGE12' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>What is the driving time in minutes to Oncologist office?</label>
