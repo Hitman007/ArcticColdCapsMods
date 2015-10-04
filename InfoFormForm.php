@@ -181,6 +181,39 @@ h4
     </div>
 </div>
 <div class='form-group'>
+    <label class='col-sm-7'>Previous Diagnosis:</label>
+    <div class='col-sm-5'>
+        <div class='input-group'>
+	<textarea name = "prev-diagnosis" placeholder = "Please enter your previous diagnosis" ></textarea>
+        </div>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-7'>Other medical conditions:</label>
+    <div class='col-sm-5'>
+        <div class='input-group'>
+	<textarea name = "other-conditions" placeholder = "Please enter any other conditions" ></textarea>
+        </div>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-7'>Shampoo used and frequency:</label>
+    <div class='col-sm-5'>
+        <div class='input-group'>
+	<textarea name = "shampoo" placeholder = "Please enter Shampoo used and frequency" ></textarea>
+        </div>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-7'>When was hair last treated:</label>
+    <div class='col-sm-5'>
+        <div class='input-group'>
+	<textarea name = "shampoo" placeholder = "i.e. highlights" ></textarea>
+        </div>
+    </div>
+</div>
+
+<div class='form-group'>
     <label class='col-sm-1'>Regimen:</label>
     <div class='col-sm-2' align='center' style='margin-left:-10px;'>
             <input  value='AC' name='MMERGE8' type='radio'><span> AC</span>
