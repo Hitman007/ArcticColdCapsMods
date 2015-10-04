@@ -214,16 +214,18 @@ h4
     </div>
 </div>
 <div class='form-group'>
-	<div class='col-sm-2' align='center' style='margin-left:-10px;'>
-	<label class='col-sm-1'>Regimen:</label>
-		<select name = "regimen">
-			<option value="AC">AC</option>
-			<option value="ACT">ACT</option>
-			<option value="FEC">FEC</option>
-			<option value="TC">TC</option>
-			<option value="TCH">TCH</option>
-			<option value="Other">Other</option>
-		</select>
+	<label class='col-sm-7'>Regimen:</label>
+	<div class='col-sm-5'>
+		<div class='input-group'>
+			<select name = "regimen">
+				<option value="AC">AC</option>
+				<option value="ACT">ACT</option>
+				<option value="FEC">FEC</option>
+				<option value="TC">TC</option>
+				<option value="TCH">TCH</option>
+				<option value="Other">Other</option>
+			</select>
+		</div>
 	</div>
 </div>
 <div class='form-group'>
@@ -272,7 +274,7 @@ h4
 
 <div class='form-group'>
     <div class='col-sm-12' align='right'>
-            <input type='submit' class='btn btn-primary'>
+            <input type='submit' class='btn btn-primary' >
     </div>
 </div>
 
