@@ -13,7 +13,7 @@ class CRG_FormController{
 		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
 
 		//Add/Update CPT on form submission
-		if (isset($_POST['crg-info-form-email'])){
+		if (isset($_POST['crg-info-form'])){
 			add_action('init', array($this, 'receiveFormSubmission') );
 		}
 	}
