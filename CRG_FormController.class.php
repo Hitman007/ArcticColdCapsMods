@@ -7,7 +7,7 @@ class CRG_FormController{
 		 
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.php');
-		CreateInfoFormCPT();
+		$CPT = new InfoFormCPTs;
 		
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
