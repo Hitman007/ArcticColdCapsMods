@@ -170,7 +170,7 @@ h4
             <input  placeholder='Your mailing zip' name='Zip' type='text' class='form-control'>
     </div>
 </div>
-<textarea name = "notes" style = "width:100%; height:10em;"></textarea>
+<textarea name = "notes" style = "width:100%; height:10em;" placeholder = "Notes:"></textarea>
 </div><!--Column-->
 
 <div class='col-sm-8'>
