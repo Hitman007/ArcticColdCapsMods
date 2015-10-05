@@ -3,7 +3,7 @@
 class CRG_FormController{
 	
 	public function __construct() {
-		
+		die('asdf');
 		 
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.php');
