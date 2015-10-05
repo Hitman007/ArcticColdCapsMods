@@ -29,14 +29,31 @@ h4
   line-height: 1.33;
   border-radius: 6px;
 }
+
+.input-group .form-control {
+  z-index:1;	
+}
+.ui-datepicker {
+  width: 19em;
+}
 </style>
 
 <script>
   $(function() {
+	  
     $( '#date-of-birth' ).datepicker({
       changeMonth: true,
-      changeYear: true
+      changeYear: true,
+	  yearRange: "1900:2010"
     });
+	
+	$( '#infusion-start-date' ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+	  maxDate: "+5y",
+	  minDate: new Date()
+    });
+	
   });
 </script>
 
