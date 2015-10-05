@@ -1,6 +1,6 @@
 <?php
 
-class CRG_FormController{
+class FormController{
 	
 	public function __construct() {
 		 
