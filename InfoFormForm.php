@@ -88,7 +88,7 @@ h4
 </div>
 <div class='form-group'>
 <label class='col-sm-5 control-label'>Date of Birth:</label> <div class='col-sm-7'>
-            <input id = 'date-of-birth' type='text' name = 'DOB' type = 'text' placeholder='Date of Birth'  class='form-control'>
+            <input id = 'date-of-birth' type='text' name = 'date-of-birth' type = 'text' placeholder='Date of Birth'  class='form-control'>
     </div>
 </div>
 <div class='form-group'>
@@ -238,7 +238,7 @@ h4
 <div class='form-group'>
     <label class='col-sm-7'>Please specify when your first chemotherapy infusion is schedule for?  :</label>
     <div class='col-sm-5'>
-    date
+    	<input name = "infusion-start-date" id = "infusion-start-date" type = "text" class='form-control' />
     </div>
 </div>
 <div class='form-group'>
