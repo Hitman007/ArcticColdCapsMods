@@ -1,9 +1,9 @@
 <?php
 /*
-Plugin Name: CRG Wordpress Form
+Plugin Name: Custom Ray Guns Arctic Cold Caps Mods
 Plugin URI: http://customrayguns.com/
 Description: 
-Version: 0.1
+Version: 1.0
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
