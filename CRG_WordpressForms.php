@@ -15,5 +15,7 @@ add_action( 'woocommerce_add_to_cart', 'custom_add_to_cart', 10, 2 );
 function custom_add_to_cart( $cart_item_key, $product_id ) {
     // replace 123 with a valid product ID 
     if( 485 == $product_id ) {
+    	global $woocommerce;
+    	$woocommerce->cart->add_to_cart(670);
     }
 }
