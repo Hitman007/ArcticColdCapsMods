@@ -7,7 +7,7 @@ Version: 1.0
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
-	//include_once('FormController.class.php');
+	include_once('FormController.class.php');
 	$FormController = new FormController;
 
 //This adds shipping to the cart when the basic rental in added to the cart.
