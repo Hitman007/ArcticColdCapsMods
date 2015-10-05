@@ -236,6 +236,12 @@ h4
             <input placeholder='Your chemotheraphy (other)' name='Chemo_Other' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
+    <label class='col-sm-7'>Please specify when your first chemotherapy infusion is schedule for?  :</label>
+    <div class='col-sm-5'>
+    date
+    </div>
+</div>
+<div class='form-group'>
     <label class='col-sm-7'>Oncologist Name:</label>
     <div class='col-sm-5'>
             <input  placeholder='Your oncologist name' name='Oncologist' type='text' class='form-control'></div>
