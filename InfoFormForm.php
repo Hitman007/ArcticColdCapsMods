@@ -214,7 +214,7 @@ h4
 <div class='form-group'>
     <label class='col-sm-5 control-label'>Spouse / Relative Phone:</label>
     <div class='col-sm-7'>
-            <input  placeholder='Your mailing zip' name='Spouse-Relative-Phone' type='text' class='form-control'>
+            <input  placeholder= "Someone's Phone" name='Spouse-Relative-Phone' type='text' class='form-control'>
     </div>
 </div>
 <textarea name = "notes" style = "width:100%; height:10em;" placeholder = "Notes:"></textarea>
@@ -230,30 +230,7 @@ h4
         </div>
     </div>
 </div>
-<div class='form-group'>
-    <label class='col-sm-7'>Previous Diagnosis:</label>
-    <div class='col-sm-5'>
-        <div class='input-group'>
-	<textarea name = "Prev_Diagnosis" placeholder = "Please enter your previous diagnosis" ></textarea>
-        </div>
-    </div>
-</div>
-<div class='form-group'>
-    <label class='col-sm-7'>Other medical conditions:</label>
-    <div class='col-sm-5'>
-        <div class='input-group'>
-	<textarea name = "Other_Conditions" placeholder = "Please enter any other conditions" ></textarea>
-        </div>
-    </div>
-</div>
-<div class='form-group'>
-    <label class='col-sm-7'>When was hair last treated:</label>
-    <div class='col-sm-5'>
-        <div class='input-group'>
-	<textarea name = "Last_Treatment" placeholder = "i.e. highlights" ></textarea>
-        </div>
-    </div>
-</div>
+
 <div class='form-group'>
 	<label class='col-sm-7'>Regimen:</label>
 	<div class='col-sm-5'>
@@ -270,20 +247,27 @@ h4
 	</div>
 </div>
 <div class='form-group'>
-    <label class='col-sm-7'>Chemotheraphy (Other):</label>
-    <div class='col-sm-5'>
-            <input placeholder='Your chemotheraphy (other)' name='Chemo_Other' type='text' class='form-control'></div>
-</div>
-<div class='form-group'>
     <label class='col-sm-7'>When is your infusion scheduled to begin?  :</label>
     <div class='col-sm-5'>
-    	<input name = "infusion-start-date" id = "infusion-start-date" type = "text" class="form-control" placeholder = "Date" />
+    	<input name = "Infusion_Start_Date" id = "infusion-start-date" type = "text" class="form-control" placeholder = "Date" />
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-7'>How many weeks apart are your treatments?  :</label>
+    <div class='col-sm-5'>
+    	<input name = "Weeks_Apart" id = "infusion-weeks-apart" type = "text" class="form-control" placeholder = "A number" />
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-7'>How many rounds are you scheduled for?  :</label>
+    <div class='col-sm-5'>
+    	<input name = "Number_Of_Rounds" type = "text" class="form-control" placeholder = "A number" />
     </div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Name:</label>
     <div class='col-sm-5'>
-            <input  placeholder='Your oncologist name' name='Oncologist' type='text' class='form-control'></div>
+            <input  placeholder='Your oncologist name' name='Oncologist_Name' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <label class='col-sm-7'>Oncologist Phone Number:</label>
