@@ -107,12 +107,22 @@ h4
             <input  placeholder='Your Phone Number' name='Phone' type='text' class='form-control'>
             </div>
     </div>
-</div><div class='form-group'>
+</div>
+<div class='form-group'>
     <label class='col-sm-5 control-label'>Mobile:</label>
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
             <input  placeholder='Your mobile' name='Mobile' type='text' class='form-control'>
+            </div>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-5 control-label'>Fax:</label>
+    <div class='col-sm-7'>
+            <div class='input-group'>
+            <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
+            <input  placeholder='Your fax' name='Fax' type='text' class='form-control'>
             </div>
     </div>
 </div>
