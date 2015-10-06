@@ -205,6 +205,18 @@ h4
             <input  placeholder='Your mailing zip' name='Zip' type='text' class='form-control'>
     </div>
 </div>
+<div class='form-group'>
+    <label class='col-sm-5 control-label'>Spouse / Relative:</label>
+    <div class='col-sm-7'>
+            <input  placeholder="Someone's Name" name='Spuse-Relative' type='text' class='form-control'>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-5 control-label'>Spouse / Relative Phone:</label>
+    <div class='col-sm-7'>
+            <input  placeholder='Your mailing zip' name='Spouse-Relative-Phone' type='text' class='form-control'>
+    </div>
+</div>
 <textarea name = "notes" style = "width:100%; height:10em;" placeholder = "Notes:"></textarea>
 </div><!--Column-->
 
