@@ -217,14 +217,6 @@ h4
     </div>
 </div>
 <div class='form-group'>
-    <label class='col-sm-7'>Shampoo used and frequency:</label>
-    <div class='col-sm-5'>
-        <div class='input-group'>
-	<textarea name = "Shampoo" placeholder = "Please enter Shampoo used and frequency" ></textarea>
-        </div>
-    </div>
-</div>
-<div class='form-group'>
     <label class='col-sm-7'>When was hair last treated:</label>
     <div class='col-sm-5'>
         <div class='input-group'>
@@ -253,9 +245,9 @@ h4
             <input placeholder='Your chemotheraphy (other)' name='Chemo_Other' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
-    <label class='col-sm-7'>Please specify when your first chemotherapy infusion is schedule for?  :</label>
+    <label class='col-sm-7'>When is your infusion scheduled to begin?  :</label>
     <div class='col-sm-5'>
-    	<input name = "infusion-start-date" id = "infusion-start-date" type = "text" class='form-control' />
+    	<input name = "infusion-start-date" id = "infusion-start-date" type = "text" class="form-control" placeholder = "Date" />
     </div>
 </div>
 <div class='form-group'>
