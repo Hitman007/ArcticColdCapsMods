@@ -60,7 +60,7 @@ h4
 <!--Form-->
 <div class='container'>
 <h3>Arctic Cold Cap Therapy</h3>
-<p>Please complete the form below and a Arctic Cold Caps representative will call to get you started. Call us if you have any questions or concerns.</p>
+<p>Please complete the form below and a Arctic Cold Caps representative will call to get you started. Please fill out all the information you know. Call us if you have any questions or concerns.</p>
 
 <!--Column-->
 <form method = 'post' class='form-horizontal' name = "CRG-InfoForm" action = "/services/" />
