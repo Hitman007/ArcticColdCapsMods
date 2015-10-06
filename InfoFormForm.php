@@ -95,17 +95,25 @@ h4
     </div>
 </div>
 <div class='form-group'>
+<label class='col-sm-5 control-label'>Date of Birth:</label> <div class='col-sm-7'>
+            <input id = 'date-of-birth' type='text' name = 'date-of-birth' type = 'text' placeholder='Date of Birth'  class='form-control'>
+    </div>
+</div>
+<div class='form-group'>
+    <label class='col-sm-5 control-label'>Home Phone:</label>
+    <div class='col-sm-7'>
+            <div class='input-group'>
+            <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
+            <input  placeholder='Your Phone Number' name='Phone' type='text' class='form-control'>
+            </div>
+    </div>
+</div><div class='form-group'>
     <label class='col-sm-5 control-label'>Mobile:</label>
     <div class='col-sm-7'>
             <div class='input-group'>
             <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
             <input  placeholder='Your mobile' name='Mobile' type='text' class='form-control'>
             </div>
-    </div>
-</div>
-<div class='form-group'>
-<label class='col-sm-5 control-label'>Date of Birth:</label> <div class='col-sm-7'>
-            <input id = 'date-of-birth' type='text' name = 'date-of-birth' type = 'text' placeholder='Date of Birth'  class='form-control'>
     </div>
 </div>
 <div class='form-group'>
