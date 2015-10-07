@@ -1,5 +1,8 @@
 <?php
+
+//This function is run when the user submits the POST variable ['crg-infoform-email']
 function receiveFormSubmissionFromHTMLrequest(){
+
 $listOfPostFieldNames = array();
 
 foreach (array_keys($_POST) as $fieldName){
@@ -15,4 +18,6 @@ $my_post = array(	'post_title'    => $title,
 );
 // Insert the post into the database
 wp_insert_post( $my_post );
+
+
 }
