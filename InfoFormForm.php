@@ -362,7 +362,7 @@ h4
             <input  placeholder='Your oncology treatment center' name='Oncology_Treatment_Center' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
- <label class='col-sm-5 control-label'>Mailing Address:</label>
+ <label class='col-sm-5 control-label'>Treatment Center Mailing Address:</label>
     <div class='col-sm-7'>
             <input  placeholder='Address' name='Treatment_Address' type='text' class='form-control'>
     </div>
@@ -439,11 +439,6 @@ h4
     <div class='col-sm-7'>
             <input  placeholder='Zip' name='Treatment_Zip' type='text' class='form-control'>
     </div>
-</div>
-<div class='form-group'>
-    <label class='col-sm-7'>How many weeks apart are your chemo infusions scheduled for?</label>
-    <div class='col-sm-5'>
-            <input placeholder='Enter the weeks between infusions' name='Weeks_Between_Chemo' type='text' class='form-control'></div>
 </div>
 <div class='form-group'>
     <div class='col-sm-12' align='right'>
