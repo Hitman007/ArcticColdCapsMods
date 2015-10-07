@@ -12,13 +12,15 @@ class FormController{
 		include_once('InfoFormCPT.php');
 		$CPT = new InfoFormCPTs;
 		
-		//Form output:
-		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
-
 		//Add/Update CPT on form submission
 		if (isset($_POST['crg-info-form'])){
 			add_action('init', array($this, 'receiveFormSubmission') );
+			add_action('init', array($this, 'modifyFormSubmission') );
+			add_action('init', array($this, 'updateCPTrecord') );
 		}
+		
+		//Form output:
+		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 	}
 
 	function returnShortcodeHTML() {
@@ -29,6 +31,6 @@ class FormController{
 	
 	function receiveFormSubmission(){
 		include_once('receiveFormSubmissionFromHTMLrequest.php');
-		receiveFormSubmissionFromHTMLrequest();
+		$this->formSubmissionVariables = receiveFormSubmissionFromHTMLrequest();
 	}
 }
