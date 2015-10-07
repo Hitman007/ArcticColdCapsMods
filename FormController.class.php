@@ -15,8 +15,8 @@ class FormController{
 		//Add/Update CPT on form submission
 		if (isset($_POST['crg-info-form'])){
 			add_action('init', array($this, 'receiveFormSubmission') );
-			add_action('init', array($this, 'modifyFormSubmission') );
-			add_action('init', array($this, 'updateCPTrecord') );
+			//add_action('init', array($this, 'modifyFormSubmission') );
+			//add_action('init', array($this, 'updateCPTrecord') );
 		}
 		
 		//Form output:
