@@ -223,15 +223,6 @@ h4
 <div class='col-sm-8'>
 <h4>Cancer Details</h4>
 <div class='form-group'>
-    <label class='col-sm-7'>Current Diagnosis:</label>
-    <div class='col-sm-5'>
-        <div class='input-group'>
-	<textarea name = "Current_Diagnosis" placeholder = "Please enter your current diagnosis" ></textarea>
-        </div>
-    </div>
-</div>
-
-<div class='form-group'>
 	<label class='col-sm-7'>Regimen:</label>
 	<div class='col-sm-5'>
 		<div class='input-group'>
