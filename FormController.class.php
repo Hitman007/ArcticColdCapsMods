@@ -23,14 +23,17 @@ class FormController{
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 	}
 
-	function returnShortcodeHTML() {
+	public function returnShortcodeHTML() {
 		include_once('InfoFormForm.php');
 		$output = getTheActualForm();
 		return $output;
 	}
 	
-	function receiveFormSubmission(){
+	public function receiveFormSubmission(){
 		include_once('receiveFormSubmissionFromHTMLrequest.php');
 		$this->formSubmissionVariables = receiveFormSubmissionFromHTMLrequest();
 	}
+	
+	public function modifyFormSubmission(){}
+	public function updateCPTrecord(){}
 }
