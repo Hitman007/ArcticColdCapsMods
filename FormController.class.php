@@ -24,8 +24,7 @@ class FormController{
 	}
 	
 	function receiveFormSubmission(){
-		include_once('FormReciever.php');
+		include_once('receiveFormSubmissionFromHTMLrequest.php');
+		receiveFormSubmissionFromHTMLrequest();
 	}
 }
-
-?>
