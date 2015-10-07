@@ -2,6 +2,10 @@
 
 class FormController{
 	
+	public $formSubmissionVariables = array();
+	
+	public $userID_whereFormShouldGo;
+	
 	public function __construct() {
 
 		//create the CPT 'info-form'
