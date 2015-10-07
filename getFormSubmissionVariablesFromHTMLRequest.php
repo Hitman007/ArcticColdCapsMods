@@ -1,7 +1,7 @@
 <?php
 
 //This function is run when the user submits the POST variable ['crg-info-form']
-function receiveFormSubmissionFromHTMLrequest(){
+function getFormSubmissionVariablesFromHTMLRequest(){
 	$listOfPostFieldNames = array();
 
 	foreach (array_keys($_POST) as $fieldName){
