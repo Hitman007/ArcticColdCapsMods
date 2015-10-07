@@ -9,7 +9,7 @@ class FormController{
 		$CPT = new InfoFormCPTs;
 		
 		//Form output:
-		add_shortcode( 'CRG-Form', array( $this, 'ReturnShortcodeHTML' ) );
+		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 
 		//Add/Update CPT on form submission
 		if (isset($_POST['crg-info-form'])){
@@ -17,7 +17,7 @@ class FormController{
 		}
 	}
 
-	function ReturnShortcodeHTML() {
+	function returnShortcodeHTML() {
 		include_once('InfoFormForm.php');
 		$output = getTheActualForm();
 		return $output;
