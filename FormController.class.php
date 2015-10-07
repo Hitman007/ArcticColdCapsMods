@@ -3,7 +3,7 @@
 class FormController{
 	
 	public function __construct() {
-		 
+		 die('yo');
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.php');
 		$CPT = new InfoFormCPTs;
