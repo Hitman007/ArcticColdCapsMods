@@ -32,6 +32,9 @@ class FormController{
 	public function receiveFormSubmission(){
 		include_once('receiveFormSubmissionFromHTMLrequest.php');
 		$this->formSubmissionVariables = receiveFormSubmissionFromHTMLrequest();
+                $x = $this->formSubmissionVariables;
+                var_dump($x);die();
+
 	}
 	
 	public function modifyFormSubmission(){}
