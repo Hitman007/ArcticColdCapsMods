@@ -10,7 +10,7 @@ Author URI: http://customrayguns.com/
 
 namespace CustomRayGuns;
 
-	$RecordAuthorDecider = new RecordAuthorDecider;
+	//$RecordAuthorDecider = new RecordAuthorDecider;
 	include_once('FormController.class.php');
 	$FormController = new FormController;
 
