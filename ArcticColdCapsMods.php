@@ -7,6 +7,7 @@ Version: 1.0
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
+	$RecordAuthorDecider = new RecordAuthorDecider;
 	include_once('FormController.class.php');
 	$FormController = new FormController;
 
