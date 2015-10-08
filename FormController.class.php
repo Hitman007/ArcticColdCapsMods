@@ -6,7 +6,7 @@ class FormController{
 	
 	public $formSubmissionVariables = array();
 	
-	public $userID_whereFormShouldGo;
+	public $userID_FormAuthor;
 	
 	public function __construct() {
 
@@ -38,6 +38,9 @@ class FormController{
                 //var_dump ($x);die();
 	}
 	
-	public function modifyFormSubmission(){}
+	public function modifyFormSubmission(){
+		include_once('getFormAuthor.php');
+		$this->$userID_FormAuthor = getFormAuthor();
+	}
 	public function updateCPTrecord(){}
 }
