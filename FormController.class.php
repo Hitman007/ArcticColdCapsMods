@@ -11,7 +11,7 @@ class FormController{
 	public function __construct() {
 
 		//create the CPT 'info-form'
-		include_once('InfoFormCPT.php');
+		include_once('InfoFormCPT.class.php');
 		$CPT = new InfoFormCPTs;
 		
 		//Add/Update CPT on form submission
