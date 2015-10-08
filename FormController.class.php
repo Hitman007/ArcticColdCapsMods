@@ -35,7 +35,8 @@ class FormController{
 		include_once('getFormSubmissionVariablesFromHTMLRequest.php');
 		$this->formSubmissionVariables = getFormSubmissionVariablesFromHTMLRequest();
                 $x = $this->formSubmissionVariables;
-                var_dump ($x);die();
+                $y = $this->formSubmissionVariables;
+                var_dump ($y);die();
 	}
 	
 	public function modifyFormSubmission(){
