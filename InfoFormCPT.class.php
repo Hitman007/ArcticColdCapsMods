@@ -1,5 +1,7 @@
 <?php
 
+namespace CustomRayGuns;
+
 //This class creates the CPTs for the InfoForm type:
 
 class InfoFormCPTs{
