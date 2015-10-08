@@ -1,5 +1,7 @@
 <?php
 
+namespace CustomRayGuns;
+
 class FormController{
 	
 	public $formSubmissionVariables = array();
