@@ -26,7 +26,7 @@ class FormController{
 	}
 
 	public function returnShortcodeHTML() {
-		include_once('InfoFormForm.php');
+		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
 		return $output;
 	}
