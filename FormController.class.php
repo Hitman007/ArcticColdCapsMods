@@ -17,7 +17,7 @@ class FormController{
 		//Add/Update CPT on form submission
 		if (isset($_POST['crg-info-form'])){
 			add_action('init', array($this, 'receiveFormSubmission') );
-			//add_action('init', array($this, 'modifyFormSubmission') );
+			add_action('init', array($this, 'modifyFormSubmission') );
 			//add_action('init', array($this, 'updateCPTrecord') );
 		}
 		
@@ -42,6 +42,8 @@ class FormController{
 	public function modifyFormSubmission(){
 		include_once('getFormAuthor.php');
 		$this->$userID_FormAuthor = getFormAuthor();
+		$x = $this->$userID_FormAuthor;
+		die ($x);
 	}
 	public function updateCPTrecord(){}
 }
