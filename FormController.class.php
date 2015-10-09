@@ -36,7 +36,7 @@ class FormController{
 		$this->formSubmissionVariables = getFormSubmissionVariablesFromHTMLRequest();
                 $x = $this->formSubmissionVariables;
                 $y = $this->formSubmissionVariables;
-                var_dump ($y);die();
+                //var_dump ($y);die();
 	}
 	
 	public function modifyFormSubmission(){
