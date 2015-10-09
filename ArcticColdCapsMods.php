@@ -10,11 +10,11 @@ Author URI: http://customrayguns.com/
 
 namespace CustomRayGuns;
 
-	//$RecordAuthorDecider = new RecordAuthorDecider;
-	include_once('FormController.class.php');
-	$FormController = new FormController;
+//The main plugin:
+include_once('FormController.class.php');
+$FormController = new FormController;
 
-//This adds shipping to the cart when the basic rental in added to the cart.
+//This adds shipping to the cart when the basic rental in added to the cart:
 add_action( 'woocommerce_add_to_cart', 'custom_add_to_cart', 10, 2 );
 function custom_add_to_cart( $cart_item_key, $product_id ) {
     if( 485 == $product_id ) {
