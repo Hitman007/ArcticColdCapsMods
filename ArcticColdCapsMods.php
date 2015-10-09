@@ -9,7 +9,7 @@ Author URI: http://customrayguns.com/
 */
 
 namespace CustomRayGuns;
-die('yo');
+die('balls');
 //The main plugin:
 include_once('FormController.class.php');
 $FormController = new FormController;
