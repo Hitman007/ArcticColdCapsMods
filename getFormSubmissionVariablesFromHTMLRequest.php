@@ -1,5 +1,7 @@
 <?php
 
+namespace CustomRayGuns;
+
 //This function is run when the user submits the POST variable ['crg-info-form']
 function getFormSubmissionVariablesFromHTMLRequest(){
 	$listOfPostFieldNames = array();
