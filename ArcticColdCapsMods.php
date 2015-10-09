@@ -14,7 +14,6 @@ namespace CustomRayGuns;
 include_once('FormController.class.php');
 $FormController = new FormController;
 
-
 //This adds shipping to the cart when the basic rental in added to the cart:
 add_action( 'woocommerce_add_to_cart', 'custom_add_to_cart', 10, 2 );
 function custom_add_to_cart( $cart_item_key, $product_id ) {
