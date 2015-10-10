@@ -30,8 +30,9 @@ function loadFieldValuesIntoForm(){
 <script>
 jQuery( document ).ready(function($) {
     $("input[type='hidden']").each(function() {
-      var name = $(this).val();
-      alert(name);
+      var name = $(this).attr('name');
+      var val = $(this).val();
+      alert(name + " : " + val);
   });
 });
 </script>
