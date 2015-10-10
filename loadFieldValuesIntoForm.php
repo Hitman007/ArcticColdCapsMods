@@ -15,17 +15,14 @@ function loadFieldValuesIntoForm(){
   }
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
   $data = unserialize($data[0]);
-  /*
-  if ($data != "") {
+  if ($data) {
     echo "<input type='hidden' name='empty' value='empty'>";
   } else {
-    
     foreach ($data as $n => $v) {
       echo "<input type='hidden' name='".$n."' value='".$v."'>";
     }
   }
-  */
-  var_dump($data);
+  //var_dump($data);
   
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
