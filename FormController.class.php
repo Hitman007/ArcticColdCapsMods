@@ -44,7 +44,7 @@ class FormController{
 	}
 	public function updateCPTrecord(){
 		$data = array();
-		$data = $this->$formSubmissionVariables;
+		$data = $this->formSubmissionVariables;
 		$content = serialize($data);	
 		$title = $_POST['Last_Name'] . ", " . $_POST['First_Name'];
 		$my_post = array(	'post_title'    => $title,
