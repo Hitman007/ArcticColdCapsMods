@@ -19,7 +19,7 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 }
 
 
-//getFormSubmissionVariablesFromHTMLRequestTEST();
+getFormSubmissionVariablesFromHTMLRequestTEST();
 function getFormSubmissionVariablesFromHTMLRequestTEST(){
 	$listOfPostFieldNames = array();
 	
