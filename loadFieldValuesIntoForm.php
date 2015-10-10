@@ -10,5 +10,5 @@ function loadFieldValuesIntoForm(){
 direct_output;
 
   echo $output;
-  die('loadFieldValuesIntoForm line 13');
+  //die('loadFieldValuesIntoForm line 13');
 }
