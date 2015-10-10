@@ -8,5 +8,4 @@ function doUpdateUserMetaData($data){
   
   update_user_meta($user_id, 'CRG-FormInfo', $meta );
   
-  die();
 }
