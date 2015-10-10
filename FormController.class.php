@@ -33,12 +33,12 @@ class FormController{
 	public function redirectIfNotLoggedIn(){
 		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$linkToCheckAgainst = get_site_url() . "/info-sheet/";
-		
-		if ( is_user_logged_in() ){
-
-		} else {
-			$location = wp_registration_url();
-			wp_safe_redirect( $location);
+		if ($actual_link == $linkToCheckAgainst){
+			if ( is_user_logged_in() ){
+		       	 } else {
+				$location = wp_registration_url();
+				wp_safe_redirect( $location);
+			}
 		}
 	}
 	
