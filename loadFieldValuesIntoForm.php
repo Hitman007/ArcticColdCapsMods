@@ -14,7 +14,8 @@ function loadFieldValuesIntoForm(){
     $user_id = get_current_user_id();
   }
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
-  if (is_empty($data)) {
+  /*
+  if ($data != "") {
     echo "<input type='hidden' name='empty' value='empty'>";
   } else {
     $data = unserialize($data[0]);
@@ -22,7 +23,8 @@ function loadFieldValuesIntoForm(){
       echo "<input type='hidden' name='".$n."' value='".$v."'>";
     }
   }
-  //var_dump($data);
+  */
+  var_dump($data);
   
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
