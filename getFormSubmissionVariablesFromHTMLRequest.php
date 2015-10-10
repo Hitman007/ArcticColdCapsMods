@@ -17,16 +17,3 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 	}
 	return $listOfPostFieldNames;
 }
-
-
-
-function getFormSubmissionVariablesFromHTMLRequestTEST(){
-	$listOfPostFieldNames = array();
-	
-	foreach (array_keys($_POST) as $fieldName){
-		$listOfPostFieldNames[$fieldName] = $_POST[$fieldName];
-		echo $fieldName . "  - <br />";
-	}	
-	var_dump($listOfPostFieldNames);die('getFormSubmissionVariablesFromHTMLRequestTEST');
-	return $listOfPostFieldNames;
-}
