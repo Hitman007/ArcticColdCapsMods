@@ -18,8 +18,9 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
-  add_filter( 'registration_redirect', 'ckc_registration_redirect' );
+ 
 function ckc_registration_redirect() {
                $URL = get_site_url() . "/info-sheet/";
     return $URL;
 }
+ add_filter( 'registration_redirect', 'ckc_registration_redirect' );
