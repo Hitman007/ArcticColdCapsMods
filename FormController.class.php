@@ -26,8 +26,22 @@ class FormController{
 		
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
+		
+		add_action('init', array($this, 'redirectIfNotLoggedIn') );
 	}
 
+	public function redirectIfNotLoggedIn(){
+		$linkToCheckAgainst = get_site_url() . "/info-sheet/";
+		echo $actual_link . "<br />" . $linkToCheckAgains;
+		
+		if ( is_user_logged_in() ){
+			echo 'Welcome, registered user!';
+		} else {
+			echo 'Welcome, visitor!';
+		}
+		die();	
+	}
+	
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
 			die('error: USER SHOULD BE LOGGED IN');
