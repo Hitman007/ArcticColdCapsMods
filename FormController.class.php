@@ -29,7 +29,8 @@ class FormController{
 	}
 	public function loadColumFix(){
 			//This loads the script that adds a link to the admin area
-			include_once('addCustomColum.php');	
+			include_once('addCustomColum.php');
+			add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
 	}
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
