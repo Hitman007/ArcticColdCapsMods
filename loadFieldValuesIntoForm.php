@@ -26,6 +26,7 @@ function loadFieldValuesIntoForm(){
 jQuery( document ).ready(function() {
     jQuery("input[type='hidden']").each(function() {
       var name = $this.attr('name');
+      alert(name);
   });
 });
 </script>
