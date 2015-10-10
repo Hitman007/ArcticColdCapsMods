@@ -4,11 +4,9 @@
 function loadFieldValuesIntoForm(){
   //die('line 5 loadFieldValuesIntoForm.');
   $output = <<<direct_output
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script>
-  jQuery('document')ready(function(){
+<script>
         alert('jQuery Hello line 10');
-  });
+
   </script>
 direct_output;
 
