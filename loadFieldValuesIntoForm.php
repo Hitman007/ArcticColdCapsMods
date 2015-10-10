@@ -14,10 +14,11 @@ function loadFieldValuesIntoForm(){
     $user_id = get_current_user_id();
   }
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
-  $data = unserialize($data[0]);
-  if ($data) {
+  $unserial = unserialize($data[0]);
+  if ($unserial) {
     echo "<input type='hidden' name='empty' value='empty'>";
   } else {
+    $data = unserialize($data[0]);
     foreach ($data as $n => $v) {
       echo "<input type='hidden' name='".$n."' value='".$v."'>";
     }
