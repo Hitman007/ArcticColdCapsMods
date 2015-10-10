@@ -20,6 +20,6 @@ function getFormSubmissionVariablesFromHTMLRequestTEST(){
 		$listOfPostFieldNames[$fieldName] = $_POST[$fieldName];
 		echo $fieldName . "  - <br />";
 	}	
-	var_dump($listOfPostFieldNames);die();
+	var_dump($listOfPostFieldNames);die('getFormSubmissionVariablesFromHTMLRequestTEST');
 	return $listOfPostFieldNames;
 }
