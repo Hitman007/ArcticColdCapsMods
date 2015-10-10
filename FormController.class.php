@@ -12,8 +12,7 @@ class FormController{
 		
 		//This loads the script that adds a link to the admin area
 		include_once('addCustomColum.php');
-		add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
-		
+
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
 		$CPT = new InfoFormCPTs;
