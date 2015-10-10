@@ -1,7 +1,7 @@
 <?php
 
 function doUpdateUserMetaData($data){
-  //var_dump($data);
+  var_dump($data);
   
   $user_id =  $data["UserID"];
   
