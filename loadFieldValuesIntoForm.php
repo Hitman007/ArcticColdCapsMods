@@ -5,7 +5,9 @@ function loadFieldValuesIntoForm(){
   //die('line 5 loadFieldValuesIntoForm.');
   $output = <<<direct_output
   <script>
-    alert('jQuery Hello');
+    jQuery(document).ready(function(){alert('jQuery Hello');}
   </script>
 direct_output;
+
+  echo $output;  
 }
