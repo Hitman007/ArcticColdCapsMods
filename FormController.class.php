@@ -49,6 +49,6 @@ class FormController{
 		include_once('doUpdateUserMetaData.php');
 		$data = array();
 		$data = $this->formSubmissionVariables;
-		doUpdateUserMetaData.php($data);
+		doUpdateUserMetaData($data);
 	}
 }
