@@ -18,11 +18,8 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
-function auto_login_new_user( $user_id ) {
-        wp_set_current_user($user_id);
-        wp_set_auth_cookie($user_id);
-        $URL = get_site_url() . "/info-sheet/";
-        wp_redirect( $URL );
-        exit;
-    }
-  add_action( 'user_register', 'auto_login_new_user' );
+  add_filter( 'registration_redirect', 'ckc_registration_redirect' );
+function ckc_registration_redirect() {
+               $URL = get_site_url() . "/info-sheet/";
+    return $URL;
+}
