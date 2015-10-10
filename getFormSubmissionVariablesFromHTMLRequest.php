@@ -9,10 +9,11 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 	foreach (array_keys($_POST) as $fieldName){
 		$listOfPostFieldNames[$fieldName] = $_POST[$fieldName];
 	}
-	getFormSubmissionVariablesFromHTMLRequestTEST();
 	return $listOfPostFieldNames;
 }
 
+
+//getFormSubmissionVariablesFromHTMLRequestTEST();
 function getFormSubmissionVariablesFromHTMLRequestTEST(){
 	$listOfPostFieldNames = array();
 	
