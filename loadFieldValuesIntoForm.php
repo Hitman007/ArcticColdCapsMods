@@ -15,18 +15,18 @@ function loadFieldValuesIntoForm(){
   }
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
   $data = unserialize($data[0]);
-  var_dump($data);
-  /*
+  //var_dump($data);
+  
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 jQuery( document ).ready(function() {
-        alert('jQuery Hello line 11');
+      
+        alert('jQuery Hello line 11<?php echo $data; ?>');
 });
 </script>
 direct_output;
 
   echo $output;
-  */
   //die('loadFieldValuesIntoForm line 13');
 }
