@@ -27,7 +27,9 @@ class FormController{
 
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
-			die('user not logged in');
+			$location = "http://customrayguns.net/login/";
+			wp_safe_redirect( $location);
+			exit;
 		}
 		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
