@@ -13,7 +13,6 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 	if ($user_id == 0){
     		die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
 		 }else{
-		die($user_id);
 		$listOfPostFieldNames['UserID'] = $user_id;
 	}
 	getFormSubmissionVariablesFromHTMLRequestTEST();
