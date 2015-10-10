@@ -5,7 +5,7 @@ function loadFieldValuesIntoForm(){
   //die('line 5 loadFieldValuesIntoForm.');
   
   if(isset($_GET['user'])) {
-    if (is_admin()) {
+    if (current_user_can('administrator')) {
       $user_id = $_GET['user'];
     } else {
       die('Not admin.');
