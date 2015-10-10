@@ -28,9 +28,7 @@ class FormController{
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 	}
-	public function loadColumFix(){
 
-	}
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
 			die('error: USER SHOULD BE LOGGED IN');
