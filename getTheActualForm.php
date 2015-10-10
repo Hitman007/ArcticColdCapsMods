@@ -433,6 +433,7 @@ function getTheActualForm() {
                     </fieldset>
                 </div><!--Column-->
                 <div class="divider">&nbsp;</div>
+                <input type = "hidden" name = "UserID" />
                 <div class='form-group'>
                     <div class='button text-center'>
                         <input type='submit' value="Submit" class='btn submit'>
