@@ -1,5 +1,6 @@
 <?php
 
+//These functions add the INFO SHEET link to the admin backend
 function new_modify_user_table( $column ) {
     $column['userinfo'] = 'User Info';
     return $column;
@@ -18,4 +19,3 @@ function new_modify_user_table_row( $val, $column_name, $user_id ) {
     }
     return $return;
 }
-add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
