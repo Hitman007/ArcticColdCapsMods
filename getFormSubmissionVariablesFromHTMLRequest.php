@@ -15,7 +15,6 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 		 }else{
 		$listOfPostFieldNames['UserID'] = $user_id;
 	}
-	getFormSubmissionVariablesFromHTMLRequestTEST();
 	return $listOfPostFieldNames;
 }
 
