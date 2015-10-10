@@ -14,7 +14,7 @@ function loadFieldValuesIntoForm(){
     $user_id = get_current_user_id();
   }
   
-  $data = get_user_meta ($user_id, 'CRG-FormInfo');
+  $data = get_user_meta ($user_id);
   
   var_dump($data);
   /*
