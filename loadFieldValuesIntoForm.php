@@ -15,6 +15,9 @@ function loadFieldValuesIntoForm(){
   }
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
   $data = unserialize($data[0]);
+  foreach ($data as $n => $v) {
+    echo "\$data[$n] => $v.\n";
+  }
   //var_dump($data);
   
   $output = <<<direct_output
