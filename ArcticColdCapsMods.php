@@ -17,14 +17,3 @@ $FormController = new FormController;
 //Automatically adds standard shipping as a stand alone product to certain transactions.
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
-
-add_action ('init', 'jimsRegRedirect');
-
-function jimsRegRedirect(){
- add_filter( 'registration_redirect', 'my_redirect_home' );
-}
-
-function my_redirect_home( $registration_redirect ) {
- $URL = "http://google.com";
-	return  $URL;
-}
