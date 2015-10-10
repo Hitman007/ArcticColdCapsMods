@@ -15,12 +15,13 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 		 }else{
 		die($user_id);
 		$listOfPostFieldNames['UserID'] = $user_id;
-}
+	}
+	getFormSubmissionVariablesFromHTMLRequestTEST();
 	return $listOfPostFieldNames;
 }
 
 
-getFormSubmissionVariablesFromHTMLRequestTEST();
+
 function getFormSubmissionVariablesFromHTMLRequestTEST(){
 	$listOfPostFieldNames = array();
 	
