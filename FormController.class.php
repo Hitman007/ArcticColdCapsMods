@@ -32,6 +32,9 @@ class FormController{
 	}
 	
 	public function receiveFormSubmission(){
+		if (!( is_user_logged_in())){
+			die('user not logged in');
+		}
 		include_once('getFormSubmissionVariablesFromHTMLRequest.php');
 		$this->formSubmissionVariables = getFormSubmissionVariablesFromHTMLRequest();
 	}
