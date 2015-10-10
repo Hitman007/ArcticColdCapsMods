@@ -13,9 +13,8 @@ function loadFieldValuesIntoForm(){
   } else {
     $user_id = get_current_user_id();
   }
-  
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
-  
+  $data = unserialize($data);
   var_dump($data);
   /*
   $output = <<<direct_output
