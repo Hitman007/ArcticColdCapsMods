@@ -11,7 +11,8 @@ class FormController{
 	public function __construct() {
 		
 		//This loads the script that adds a link to the admin area
-		add_action('init', array($this, 'loadColumFix') );
+		include_once('addCustomColum.php');
+		add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
 		
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
@@ -28,9 +29,7 @@ class FormController{
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 	}
 	public function loadColumFix(){
-			//This loads the script that adds a link to the admin area
-			include_once('addCustomColum.php');
-			add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
+
 	}
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
