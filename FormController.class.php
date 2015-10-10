@@ -27,9 +27,7 @@ class FormController{
 
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
-			$location = "http://customrayguns.net/login/";
-			wp_safe_redirect( $location);
-			exit;
+			die('error: USER SHOULD BE LOGGED IN');
 		}
 		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
