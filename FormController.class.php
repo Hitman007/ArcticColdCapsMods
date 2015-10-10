@@ -9,7 +9,7 @@ class FormController{
 	public $userID_FormAuthor;
 	
 	public function __construct() {
-		include_once('addCustomColum.php');
+		add_action('init', array($this, 'loadColumFix') );
 		
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
@@ -25,7 +25,10 @@ class FormController{
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 	}
-
+	public function loadColumFix(){
+			include_once('addCustomColum.php');	
+		
+	}
 	public function returnShortcodeHTML() {
 		if (!( is_user_logged_in())){
 			die('error: USER SHOULD BE LOGGED IN');
