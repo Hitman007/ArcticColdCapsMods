@@ -12,8 +12,6 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 	$user_id = 0;
 	if(isset($_GET['user'])) {
 		$user_id = $_GET['user'];
-	} else {
-		$user_id = get_current_user_id();
 	}
 	if ($user_id == 0){
     		die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
