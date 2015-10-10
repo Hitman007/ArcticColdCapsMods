@@ -18,7 +18,12 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
+add_action ('init', 'jimsRegRedirect');
+
+function jimsRegRedirect(){
  add_filter( 'registration_redirect', 'my_redirect_home' );
+}
+
 function my_redirect_home( $registration_redirect ) {
  $URL = get_site_url() . "/info-sheet/";
 	return  $URL;
