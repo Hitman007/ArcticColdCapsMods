@@ -26,15 +26,15 @@ class FormController{
 	}
 
 	public function returnShortcodeHTML() {
+		if (!( is_user_logged_in())){
+			die('user not logged in');
+		}
 		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
 		return $output;
 	}
 	
 	public function receiveFormSubmission(){
-		if (!( is_user_logged_in())){
-			die('user not logged in');
-		}
 		include_once('getFormSubmissionVariablesFromHTMLRequest.php');
 		$this->formSubmissionVariables = getFormSubmissionVariablesFromHTMLRequest();
 	}
