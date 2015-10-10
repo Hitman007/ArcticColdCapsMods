@@ -22,7 +22,7 @@ function loadFieldValuesIntoForm(){
 <script>
 jQuery( document ).ready(function() {
       
-        alert('jQuery Hello line 11<?php echo $data["Email"]; ?>');
+        alert("jQuery Hello line 11<?php echo $data['Email']; ?>");
 });
 </script>
 direct_output;
