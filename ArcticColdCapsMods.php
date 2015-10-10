@@ -21,9 +21,8 @@ WooAutomaticallyAddShipping();
 function auto_login_new_user( $user_id ) {
         wp_set_current_user($user_id);
         wp_set_auth_cookie($user_id);
-            // You can change home_url() to the specific URL,such as 
-        //wp_redirect( 'http://www.wpcoke.com' );
-        wp_redirect( home_url() );
+        $URL = get_site_url() . "/info-sheet/";
+        wp_redirect( $URL );
         exit;
     }
   add_action( 'user_register', 'auto_login_new_user' );
