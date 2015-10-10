@@ -16,7 +16,7 @@ function loadFieldValuesIntoForm(){
   $data = get_user_meta ($user_id, 'CRG-FormInfo');
   $data = unserialize($data[0]);
   foreach ($data as $n => $v) {
-    echo "\$data[$n] => $v.\n";
+    echo "<input type='hidden' name='".$data[$n]."' value='".$v."'>";
   }
   //var_dump($data);
   
