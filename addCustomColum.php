@@ -1,3 +1,3 @@
 <?php
 
-//die('addCustomColum.php');
+die('addCustomColum.php');
