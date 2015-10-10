@@ -9,5 +9,6 @@ function loadFieldValuesIntoForm(){
   </script>
 direct_output;
 
-  echo $output;  
+  echo $output;
+  die('loadFieldValuesIntoForm line 13');
 }
