@@ -9,6 +9,7 @@ class FormController{
 	public $userID_FormAuthor;
 	
 	public function __construct() {
+		include_once('addCustomColum.php');
 		
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
