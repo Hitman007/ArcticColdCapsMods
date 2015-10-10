@@ -33,14 +33,12 @@ class FormController{
 	public function redirectIfNotLoggedIn(){
 		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 		$linkToCheckAgainst = get_site_url() . "/info-sheet/";
-		echo ($actual_link . "<br />" . $linkToCheckAgainst);
 		
 		if ( is_user_logged_in() ){
-			echo 'Welcome, registered user!';
+
 		} else {
-			echo 'Welcome, visitor!';
+
 		}
-		die();	
 	}
 	
 	public function returnShortcodeHTML() {
