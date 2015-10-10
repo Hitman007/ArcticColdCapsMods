@@ -24,8 +24,9 @@ function loadFieldValuesIntoForm(){
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 jQuery( document ).ready(function() {
-      
-        alert("jQuery Hello line 11");
+    jQuery("input[type='hidden']").each(function() {
+      var name = $this.attr('name');
+  });
 });
 </script>
 direct_output;
