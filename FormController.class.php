@@ -18,7 +18,7 @@ class FormController{
 		if (isset($_POST['crg-info-form'])){
 			add_action('init', array($this, 'receiveFormSubmission') );
 			add_action('init', array($this, 'modifyFormSubmission') );
-			add_action('init', array($this, 'updateCPTrecord') );
+			add_action('init', array($this, 'updateUserMetaData') );
 		}
 		
 		//Form output:
@@ -45,7 +45,7 @@ class FormController{
 		//$x = $this->$userID_FormAuthor;
 		//die ($x);
 	}
-	public function updateCPTrecord(){
+	public function updateUserMetaData(){
 		$data = array();
 		$data = $this->formSubmissionVariables;
 		$content = serialize($data);	
