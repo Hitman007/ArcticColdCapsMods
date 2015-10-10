@@ -9,7 +9,7 @@ class FormController{
 	public $userID_FormAuthor;
 	
 	public function __construct() {
-
+		die('uhhu');
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
 		$CPT = new InfoFormCPTs;
