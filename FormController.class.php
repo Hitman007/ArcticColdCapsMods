@@ -23,6 +23,8 @@ class FormController{
 		
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
+		
+		die('hello world');
 	}
 
 	public function returnShortcodeHTML() {
