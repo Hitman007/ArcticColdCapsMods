@@ -37,7 +37,8 @@ class FormController{
 		if ( is_user_logged_in() ){
 
 		} else {
-
+			$location = wp_registration_url();
+			wp_safe_redirect( $location);
 		}
 	}
 	
