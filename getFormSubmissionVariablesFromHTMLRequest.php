@@ -16,6 +16,9 @@ function getFormSubmissionVariablesFromHTMLRequest(){
  		if ($listOfPostFieldNames['UserID'] == "") {
  			$listOfPostFieldNames['UserID'] = $user_id;
  		}
+ 		if isset(($_GET['user'])){
+ 			$listOfPostFieldNames['UserID'] = $_GET['user'];
+ 		}
 	}
 	return $listOfPostFieldNames;
 }
