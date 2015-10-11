@@ -18,7 +18,7 @@ function getFormSubmissionVariablesFromHTMLRequest(){
     		$password = '1234';
     		$user_id = wp_create_user( $username, $password, $email );
     		
-    		echo $user_id;
+    		var_dump($user_id);
     		$listOfPostFieldNames['UserID'] = $user_id;
  	} else {
  		die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
