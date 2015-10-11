@@ -69,7 +69,7 @@ class FormController{
 		$data = $this->formSubmissionVariables;
 		$email = $_POST['crg_login_email'];
 		$user = get_user_by( 'email', $email );
-		//$content = serialize($data);
+		$content = serialize($data);
 		$title = $email;
 		
 		$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
