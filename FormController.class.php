@@ -62,11 +62,16 @@ class FormController{
 		$listOfPostFieldNames = array();
 		$listOfPostFieldNames = $this->formSubmissionVariables;
 		$email = $listOfPostFieldNames['crg_login_email'];
+		//checks to see if the submitted email is in the database
 		$user = get_user_by( 'email', $email );
-		if ($user === FALSE){die('no user');}
-		echo 'User is ' . $user->ID . ' ' . $user->last_name;
-		die('xxx');
+		if ($user === FALSE){
+			$password = "BigFuckingSecret";
+	        	$listOfPostFieldNames['UserID'] = wp_create_user( $email, $password, $email );
+		 }else{
+			$listOfPostFieldNames['UserID'] = $user->ID;
+		 }
 	}
+	
 	public function updateRecord(){
 		$data = array();
 		$data = $this->formSubmissionVariables;
