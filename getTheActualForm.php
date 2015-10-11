@@ -111,7 +111,7 @@ function getTheActualForm() {
                             <label class='control-label'>Contact Information:</label>
                             <div class='input-group'>
                                 <span class='input-group-addon'><i class='glyphicon glyphicon-envelope'></i></span>
-                                <input placeholder='Your email address' name='Email' type='email' class='form-control'>
+                                <input placeholder='Your email address' name='crg_login_email' type='email' class='form-control'>
                             </div>
                             <div class='input-group'>
                                 <span class='input-group-addon'><i class='glyphicon glyphicon-phone-alt'></i></span>
