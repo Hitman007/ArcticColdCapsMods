@@ -63,6 +63,7 @@ class FormController{
 		$listOfPostFieldNames = $this->formSubmissionVariables;
 		$email = $listOfPostFieldNames['crg_login_email'];
 		$user = get_user_by( 'email', $email );
+		if ($user === FALSE){die('no user');}
 		echo 'User is ' . $user->ID . ' ' . $user->last_name;
 		die('xxx');
 	}
