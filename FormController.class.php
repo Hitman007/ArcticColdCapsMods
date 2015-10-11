@@ -59,10 +59,12 @@ class FormController{
 	}
 	
 	public function modifyFormSubmission(){
-		//include_once('getFormAuthor.php');
-	  	//$this->$userID_FormAuthor = getFormAuthor();
-		//$x = $this->$userID_FormAuthor;
-		//die ($x);
+		$listOfPostFieldNames = array();
+		$listOfPostFieldNames = $this->formSubmissionVariables;
+		$email = $listOfPostFieldNames['crg_login_email'];
+		$user = get_user_by( 'email', $email );
+		echo 'User is ' . $user->ID . ' ' . $user->last_name;
+		die('xxx');
 	}
 	public function updateRecord(){
 		$data = array();
