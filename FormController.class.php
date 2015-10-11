@@ -27,7 +27,7 @@ class FormController{
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
 		
-		add_action('init', array($this, 'redirectIfNotLoggedIn') );
+		//add_action('init', array($this, 'redirectIfNotLoggedIn') );
 	}
 
 	public function redirectIfNotLoggedIn(){
