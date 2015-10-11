@@ -46,6 +46,7 @@ class FormController{
 		if (!( is_user_logged_in())){
 			die('error: USER SHOULD BE LOGGED IN');
 		}
+		die('wtf');
 		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
 		return $output;
