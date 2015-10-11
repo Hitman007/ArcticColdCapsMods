@@ -86,7 +86,7 @@ class FormController{
 			wp_update_post( $my_post );
 			
 			foreach($data as $k => $v) {
-				update_post_meta($form_id, $k, $v);
+				update_post_meta($form->ID, $k, $v);
 			}
 		}else {
 			$my_post = array('post_title'    => $title,
