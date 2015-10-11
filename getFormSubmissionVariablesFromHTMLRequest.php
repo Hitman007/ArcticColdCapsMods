@@ -26,14 +26,12 @@ function getFormSubmissionVariablesFromHTMLRequest(){
     		var_dump($user_id);
     		$listOfPostFieldNames['UserID'] = $user_id;
  	} else {
- 		die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
- 		/*
  		if ($listOfPostFieldNames['UserID'] == "") {
  			$listOfPostFieldNames['UserID'] = $user_id;
  		}
  		if (isset($_GET['user'])){
  			$listOfPostFieldNames['UserID'] = $_GET['user'];
- 		}*/
+ 		}
 	}
 	return $listOfPostFieldNames;
 }
