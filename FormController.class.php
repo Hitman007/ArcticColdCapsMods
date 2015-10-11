@@ -69,11 +69,11 @@ class FormController{
 		$data = $this->formSubmissionVariables;
 		$email = $_POST['crg_login_email'];
 		$user = get_user_by( 'crg_login_email', $email );
+		var_dump($user);
 		$content = serialize($data);
 		$title = $email
 		$my_post = array(	'post_title'    => $title,
 				'post_content'  => $content,
-				'post_author'   => $user->ID,
 				'post_type'   => 'InfoForm',
 		);
 		// Insert the post into the database
