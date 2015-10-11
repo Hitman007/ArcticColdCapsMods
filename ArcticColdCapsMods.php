@@ -18,7 +18,7 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
-add_filter('woocommerce_login_redirect', 'wcs_login_redirect');
+add_filter('woocommerce_login_redirect', 'wcs_login_redirect', 100);
 function wcs_login_redirect( $redirect ) {
      $redirect = 'http://google.com/';
      return $redirect;
