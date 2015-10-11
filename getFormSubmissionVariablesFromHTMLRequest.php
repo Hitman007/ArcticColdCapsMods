@@ -4,7 +4,6 @@ namespace CustomRayGuns;
 
 //This function is run when the user submits the POST variable ['crg-info-form']
 function getFormSubmissionVariablesFromHTMLRequest(){
-	include_once(ABSPATH . 'wp-admin/includes/admin.php');
 	
 	$listOfPostFieldNames = array();
 	
