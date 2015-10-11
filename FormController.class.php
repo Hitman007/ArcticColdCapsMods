@@ -71,8 +71,7 @@ class FormController{
 		$user = get_user_by( 'crg_login_email', $email );
 		var_dump($user);
 		$content = serialize($data);
-		$title = $email
-		$my_post = array(	'post_title'    => $title,
+		$my_post = array('post_title'    => $email,
 				'post_content'  => $content,
 				'post_type'   => 'InfoForm',
 		);
