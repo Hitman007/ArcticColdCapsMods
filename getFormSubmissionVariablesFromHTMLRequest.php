@@ -17,12 +17,14 @@ function getFormSubmissionVariablesFromHTMLRequest(){
     		$password = '1234';
     		wp_create_user( $username, $password, $email );
  	} else {
+ 		die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
+ 		/*
  		if ($listOfPostFieldNames['UserID'] == "") {
  			$listOfPostFieldNames['UserID'] = $user_id;
  		}
  		if (isset($_GET['user'])){
  			$listOfPostFieldNames['UserID'] = $_GET['user'];
- 		}
+ 		}*/
 	}
 	return $listOfPostFieldNames;
 }
