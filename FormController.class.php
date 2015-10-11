@@ -43,9 +43,11 @@ class FormController{
 	}
 	
 	public function returnShortcodeHTML() {
+		/*
 		if (!( is_user_logged_in())){
 			die('error: USER SHOULD BE LOGGED IN');
 		}
+		*/
 		include_once('getTheActualForm.php');
 		$output = getTheActualForm();
 		return $output;
