@@ -13,7 +13,7 @@ function getFormSubmissionVariablesFromHTMLRequest(){
 	$user_id = get_current_user_id();
 	if ($user_id == 0){
     		//die( 'You are currently not logged in. getFormSubmissionVariablesFromHTMLRequest.php 14');
-    		$email = $listOfPostFieldNames['Email'];
+    		$email = $listOfPostFieldNames['crg_login_email'];
     		$password = '1234';
     		$user_id = username_exists( $username );
 	    	if ( !$user_id && email_exists($email) == false ) {
