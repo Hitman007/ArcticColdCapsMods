@@ -24,8 +24,5 @@ function getFormSubmissionVariablesFromHTMLRequest(){
  			$listOfPostFieldNames['UserID'] = $_GET['user'];
  		}
 	}
-	$email = $listOfPostFieldNames['Email'];
-    	$user = get_user_by( 'email', $email );
-    	echo $user;
 	return $listOfPostFieldNames;
 }
