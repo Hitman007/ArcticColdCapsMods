@@ -16,6 +16,9 @@ function getFormSubmissionVariablesFromHTMLRequest(){
     		$email = $listOfPostFieldNames['Email'];
     		$password = '1234';
     		wp_create_user( $username, $password, $email );
+    		
+    		$user = get_user_by( 'email', $email );
+    		var_dump($user);
  	} else {
  		if ($listOfPostFieldNames['UserID'] == "") {
  			$listOfPostFieldNames['UserID'] = $user_id;
