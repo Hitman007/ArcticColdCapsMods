@@ -17,3 +17,9 @@ $FormController = new FormController;
 //Automatically adds standard shipping as a stand alone product to certain transactions.
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
+
+add_filter('woocommerce_login_redirect', 'wcs_login_redirect');
+function wcs_login_redirect( $redirect ) {
+     $redirect = 'http://google.com/';
+     return $redirect;
+}
