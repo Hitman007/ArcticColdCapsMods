@@ -69,7 +69,6 @@ class FormController{
 		$data = $this->formSubmissionVariables;
 		$email = $_POST['crg_login_email'];
 		$user = get_user_by( 'email', $email );
-		var_dump($user);
 		$content = serialize($data);
 		$my_post = array('post_title'    => $email,
 				'post_content'  => $content,
