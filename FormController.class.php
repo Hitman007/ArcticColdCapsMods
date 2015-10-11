@@ -63,9 +63,15 @@ class FormController{
 		//die ($x);
 	}
 	public function updateRecord(){
-		include_once('doUpdateRecord.php');
 		$data = array();
 		$data = $this->formSubmissionVariables;
-		doUpdateUserMetaData($data);
+		$content = serialize($data);	
+		$title = $_POST['Last_Name'] . ", " . $_POST['First_Name'];
+		$my_post = array(	'post_title'    => $title,
+				'post_content'  => $content,
+				'post_type'   => 'InfoForm',
+		);
+		// Insert the post into the database
+		wp_insert_post( $my_post );
 	}
 }
