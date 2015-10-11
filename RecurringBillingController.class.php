@@ -1,3 +1,8 @@
 <?php
 
-namespace cus
+namespace CustomRayGuns;
+
+class RecurringBillingController{
+
+}
+
