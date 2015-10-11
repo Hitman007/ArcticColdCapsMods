@@ -76,8 +76,9 @@ class FormController{
 		
 		if ($form) {
 			$my_post = array(
-				'ID'           => $form-ID,
+				'ID'           => $form->ID,
 				'post_title'    => $title,
+				'post_author' => $user->ID,
 				'post_content'  => $content,
 				'post_type'   => 'InfoForm',
 			);
