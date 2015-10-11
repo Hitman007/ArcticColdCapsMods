@@ -73,6 +73,7 @@ class FormController{
 		$content = serialize($data);
 		$my_post = array('post_title'    => $email,
 				'post_content'  => $content,
+				'post_author' => $user->ID,
 				'post_type'   => 'InfoForm',
 		);
 		// Insert the post into the database
