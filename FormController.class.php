@@ -26,20 +26,6 @@ class FormController{
 		
 		//Form output:
 		add_shortcode( 'CRG-Form', array( $this, 'returnShortcodeHTML' ) );
-		
-		//add_action('init', array($this, 'redirectIfNotLoggedIn') );
-	}
-
-	public function redirectIfNotLoggedIn(){
-		$actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-		$linkToCheckAgainst = get_site_url() . "/info-sheet/";
-		if ($actual_link == $linkToCheckAgainst){
-			if ( is_user_logged_in() ){
-		       	 } else {
-				$location = wp_registration_url();
-				wp_safe_redirect( $location);
-			}
-		}
 	}
 	
 	public function returnShortcodeHTML() {
