@@ -50,5 +50,6 @@ function doUpdateRecord($data){
 			$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
 			
 			wp_mail( $admin_email, $subject, $body, $headers );
+			die($admin_email);
 		}
 }
