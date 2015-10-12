@@ -10,8 +10,8 @@ Author URI: http://customrayguns.com/
 
 namespace CustomRayGuns;
 
-//include_once('arcticColdCapsRoles.php');
-//arcticColdCapsRoles();
+include_once('arcticColdCapsRoles.php');
+arcticColdCapsRoles();
 
 //The main plugin:
 include_once('FormController.class.php');
