@@ -6,6 +6,14 @@ function doUpdateRecord($data){
 		$content = $_POST['notes'];
 		$title = $email;
 		
+		$userdata = array(
+			'ID' => $user->ID,
+			'first_name' => $_POST['First_Name'],
+			'last_name' => $_POST['Last_Name'],
+			);
+		
+		$returnValue = wp_update_user( $userdata );
+		
 		$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
 		
 		if ($form) {
