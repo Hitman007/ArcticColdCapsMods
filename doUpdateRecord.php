@@ -4,7 +4,7 @@ function doUpdateRecord($data){
 		$email = $_POST['crg_login_email'];
 		$user = get_user_by( 'email', $email );
 		$content = $_POST['notes'];
-		$title = $email;
+		$title = $_POST['Last_Name'] . ", " . $_POST['First_Name'];
 		
 		$userdata = array(
 			'ID' => $user->ID,
