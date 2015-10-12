@@ -70,8 +70,7 @@ class FormController{
 		 }else{
 			$listOfPostFieldNames['UserID'] = $user->ID;
 		 }
-	$this->formSubmissionVariables = $listOfFieldNames;
-
+		$this->formSubmissionVariables = $listOfFieldNames;
 	}
 	
 	public function updateRecord(){
