@@ -7,9 +7,9 @@ jQuery('document').ready(function() {
       var user_id = jQuery('#' + meta + ' textarea#' + meta + '-value').html();
       
     
-      var pathname = jQuery.url.attr('protocol');
-      var url      = jQuery.url.attr('path');
-      alert(pathname + " & " + url);
+      var protocol = window.location.protocol;
+      var url      = window.location.hostname;
+      alert(protocol + "//" + url + "/?user=" + user_id);
     }
     //jQuery('body.post-type-infoform span#view-post-btn a').html("View Info");
   
