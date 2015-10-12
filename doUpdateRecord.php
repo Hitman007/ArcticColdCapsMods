@@ -47,8 +47,8 @@ function doUpdateRecord($data){
 			$admin_email = get_bloginfo( 'admin_email' );
 			$subject = 'New Registration';
 			$body = get_site_url().$link;
-			//$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
+			$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
 			
-			$sent_message = wp_mail( $admin_email, $subject, $body );
+			$sent_message = wp_mail( $admin_email, $subject, $body, $headers );
 		}
 }
