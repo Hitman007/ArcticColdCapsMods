@@ -15,27 +15,8 @@ function loadFieldValuesIntoForm(){
   }
   
   $user = get_userdata( $user_id );
-  //$title = $user->first_name . ", " . $user->last_name;
-  //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
-  $email = $user->user_email;
-  $args = array(
-    'post_type' => 'InfoForm',
-    'meta_query' => array(
-      array(
-        'key' => 'crg_login_email',
-        'value' => $email,
-        'compare' => '='
-      )
-    )
-  );
-  $form = new WP_query($args);
-  $form_ID = "1";
-  if ( $form->have_posts() ) :
-    while ( $form->have_posts() ) : $form->the_post();
-      $form_ID = $post->ID;
-    endwhile;
-  endif;
-  wp_reset_postdata();
+  $title = $user->first_name . "&#44; " . $user->last_name;
+  $form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
   
   var_dump($form);
   $data = get_post_meta($form->ID, '', true);
