@@ -9,7 +9,7 @@ jQuery('document').ready(function() {
     
       var protocol = window.location.protocol;
       var hostname = window.location.hostname;
-      var url = protocol + "//" + hostname + "/?user=" + user_id;
+      var url = protocol + "//" + hostname + "/info-sheet/?user=" + user_id;
       jQuery('span#sample-permalink').html(url);
       jQuery('span#view-post-btn a').attr('href', url);
       jQuery('span#edit-slug-buttons').hide();
