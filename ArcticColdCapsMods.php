@@ -28,7 +28,7 @@ function wcs_login_redirect( $redirect ) {
      return $redirect;
 }
 
-function arcticColdCapsScripts() {
+function arcticColdCapsScripts(){
 	wp_enqueue_script( 'crg-footer-mods',  plugin_dir_url( __FILE__ ) . 'footerMods.js' );
 }
 
