@@ -37,7 +37,7 @@ function loadFieldValuesIntoForm(){
   endif;
   wp_reset_postdata();
   
-  var_dump($email);
+  var_dump($form);
   $data = get_post_meta($form->ID, '', true);
   
   if ($data) {
