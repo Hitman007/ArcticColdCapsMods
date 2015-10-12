@@ -26,7 +26,7 @@ function loadFieldValuesIntoForm(){
     echo "<input type='hidden' name='empty' value='empty'>";
   }
   
-  //var_dump($data);
+  var_dump($data);
   /*
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
