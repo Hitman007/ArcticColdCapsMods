@@ -29,7 +29,15 @@ function loadFieldValuesIntoForm(){
     )
   );
   $form = new WP_query($args);
-  var_dump($form);
+  
+  if ( $form->have_posts() ) :
+    while ( $the_query->have_posts() ) : $the_query->the_post();
+      $form_ID = get_the_ID;
+    endwhile;
+  endif;
+  wp_reset_postdata();
+  
+  var_dump($form_ID);
   $data = get_post_meta($form->ID, '', true);
   
   if ($data) {
