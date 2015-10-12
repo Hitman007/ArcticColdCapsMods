@@ -49,7 +49,7 @@ function doUpdateRecord($data){
 			$body = "<a href='".get_site_url().$link."' >Info Sheet</a>";
 			$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
 			
-			wp_mail( $admin_email, $subject, $body, $headers );
-			die($admin_email);
+			$sent_message = wp_mail( $admin_email, $subject, $body, $headers );
+			die($sent_message);
 		}
 }
