@@ -1,8 +1,6 @@
 jQuery('document').ready(function() {
   jQuery("#the-list tr").each(function() {
-    var val = jQuery('#the-list tr input').val();
-    
-    alert(val);
+    var val = jQuery(this + ' input').val();
     
     if(val === "UserID") {
       alert("FOUND!");
