@@ -29,9 +29,10 @@ function loadFieldValuesIntoForm(){
     )
   );
   $form = new WP_query($args);
+  $form_ID = "1";
   if ( $form->have_posts() ) :
     while ( $form->have_posts() ) : $form->the_post();
-      $form_ID = get_the_ID;
+      $form_ID = $post-ID;
     endwhile;
   endif;
   wp_reset_postdata();
