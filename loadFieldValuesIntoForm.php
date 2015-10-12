@@ -39,6 +39,7 @@ function loadFieldValuesIntoForm(){
       var val = $(this).val();
       $("form[name='CRG-InfoForm'] input[name="+name+"]").val(val+"");
       $("form[name='CRG-InfoForm'] select[name="+name+"]").val(val+"");
+      $("form[name='CRG-InfoForm'] textarea[name="+name+"]").val(val+"");
     });
   });
   </script>
