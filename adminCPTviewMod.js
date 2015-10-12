@@ -1,6 +1,6 @@
 jQuery('document').ready(function() {
   jQuery("#the-list tr").each(function() {
-    var val = jQuery(this + ' input').val();
+    var val = jQuery('#' + jQuery(this).attr("id") + ' input').val();
     
     alert(val);
     if(val === "UserID") {
