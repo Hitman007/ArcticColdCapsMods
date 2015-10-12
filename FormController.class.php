@@ -51,7 +51,7 @@ class FormController{
 		 }else{
 			$listOfPostFieldNames['UserID'] = $user->ID;
 		 }
-		$this->formSubmissionVariables = $listOfFieldNames;
+		$this->formSubmissionVariables = $listOfPostFieldNames;
 	}
 	
 	public function updateRecord(){
@@ -63,7 +63,7 @@ class FormController{
 		$title = $email;
 		
 		$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
-		/*
+		
 		if ($form) {
 			$my_post = array(
 				'ID'           => $form->ID,
@@ -91,7 +91,5 @@ class FormController{
 				add_post_meta($form_id, $k, $v);
 			}
 		}
-		*/
-		var_dump($this->formSubmissionVariables);
 	}
 }
