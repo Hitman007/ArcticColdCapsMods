@@ -1,10 +1,12 @@
 <?php
 
 function getTheActualForm() {
-
-	include_once('loadFieldValuesIntoForm.php');
-	loadFieldValuesIntoForm();
-    $shortCodeOutput = <<<SCO_HEREDOC
+	if ( is_user_logged_in() ){
+		include_once('loadFieldValuesIntoForm.php');
+		loadFieldValuesIntoForm();
+	}
+	
+	$shortCodeOutput = <<<SCO_HEREDOC
         <!--Stylesheet-->        
         <link rel='stylesheet' href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
