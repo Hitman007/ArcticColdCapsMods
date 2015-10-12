@@ -1,5 +1,5 @@
 jQuery('document').ready(function() {
-  jQuery("#the-list tr']").each(function() {
+  jQuery("#the-list tr").each(function() {
     var val = jQuery('#the-list tr input').val();
     
     alert(val);
