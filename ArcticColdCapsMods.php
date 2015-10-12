@@ -8,7 +8,7 @@ Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
 
-namespace CustomRayGuns;
+//namespace CustomRayGuns;
 
 //adds the role "Nurse" alias for shop-manager
 include_once('arcticColdCapsRoles.php');
