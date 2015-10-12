@@ -25,7 +25,7 @@ function loadFieldValuesIntoForm(){
   } else {
     echo "<input type='hidden' name='empty' value='empty'>";
   }
-
+/*
   $output = <<<direct_output
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>
@@ -34,12 +34,11 @@ function loadFieldValuesIntoForm(){
       var name = $(this).attr('name');
       var val = $(this).val();
       $("form[name='CRG-InfoForm'] input[name="+name+"]").val(val+"");
-      //alert(name + " : " + val);
     });
   });
   </script>
   direct_output;
 
-  echo $output;
+  echo $output;*/
   //die('loadFieldValuesIntoForm line 13');
 }
