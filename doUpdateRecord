@@ -1,0 +1,7 @@
+<?php
+
+//the method to create of update the CPTs
+function doUpdateRecord($data){
+
+
+}
