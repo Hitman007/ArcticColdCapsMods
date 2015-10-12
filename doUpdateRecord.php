@@ -42,5 +42,12 @@ function doUpdateRecord($data){
 			foreach($data as $k => $v) {
 				add_post_meta($form_id, $k, $v);
 			}
+			
+			$link = "/info-sheet/?user=".$user->ID;
+			$admin_email = get_bloginfo( 'admin_email' );
+			$subject = 'New Registration';
+			$body = "<a href='".get_site_url().$link."' >Info Sheet</a>";
+			
+			wp_mail( $admin_email, $subject, $body );
 		}
 }
