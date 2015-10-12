@@ -22,12 +22,6 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
-add_filter('woocommerce_login_redirect', 'CustomRayGuns\wcs_login_redirect', 100);
-function wcs_login_redirect( $redirect ) {
-     $redirect = 'http://google.com/';
-     return $redirect;
-}
-
 add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
 	wp_enqueue_script( 'jquery' );
