@@ -8,8 +8,9 @@ jQuery('document').ready(function() {
       
     
       var protocol = window.location.protocol;
-      var url      = window.location.hostname;
-      alert(protocol + "//" + url + "/?user=" + user_id);
+      var hostname = window.location.hostname;
+      var url = protocol + "//" + url + "/?user=" + user_id;
+      jQuery('span#sample-permalink').html(url);
     }
     //jQuery('body.post-type-infoform span#view-post-btn a').html("View Info");
   
