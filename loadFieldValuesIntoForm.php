@@ -16,7 +16,7 @@ function loadFieldValuesIntoForm(){
   
   $user = get_userdata( $user_id );
   $form = get_page_by_title( $user->user_email, 'OBJECT', 'InfoForm' );
-  $data = get_post_meta($form->ID);
+  $data = get_post_meta($form->ID, '', true);
   
   if ($data) {
     foreach ($data as $n => $v) {
