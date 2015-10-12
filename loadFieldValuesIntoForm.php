@@ -17,18 +17,16 @@ function loadFieldValuesIntoForm(){
   $user = get_userdata( $user_id );
   $form = get_page_by_title( $user->user_email, 'OBJECT', 'InfoForm' );
   $data = get_post_meta($form->ID);
-  /*
-  $unserial = unserialize($data[0]);
-  if ($unserial) {
-    $data = unserialize($data[0]);
+  
+  if ($data) {
     foreach ($data as $n => $v) {
       echo "<input type='hidden' name='".$n."' value='".$v."'>";
     }
   } else {
     echo "<input type='hidden' name='empty' value='empty'>";
   }
-  */
-  var_dump($data);
+  
+  //var_dump($data);
   /*
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
