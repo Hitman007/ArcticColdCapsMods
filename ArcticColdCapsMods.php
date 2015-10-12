@@ -10,6 +10,9 @@ Author URI: http://customrayguns.com/
 
 namespace CustomRayGuns;
 
+//include_once('arcticColdCapsRoles.php');
+//arcticColdCapsRoles();
+
 //The main plugin:
 include_once('FormController.class.php');
 $FormController = new FormController;
@@ -23,3 +26,5 @@ function wcs_login_redirect( $redirect ) {
      $redirect = 'http://google.com/';
      return $redirect;
 }
+
+
