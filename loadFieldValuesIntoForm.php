@@ -24,7 +24,7 @@ function loadFieldValuesIntoForm(){
       array(
         'key' => 'crg_login_email',
         'value' => $email,
-        'compare' => '=='
+        'compare' => '='
       )
     )
   );
