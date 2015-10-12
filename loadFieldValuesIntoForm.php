@@ -20,7 +20,11 @@ function loadFieldValuesIntoForm(){
   
   if ($data) {
     foreach ($data as $n => $v) {
-      echo "<input type='hidden' name='".$n."' value='".$v[0]."'>";
+        if($n === 'notes') {
+          echo "<input type='hidden' name='".$n."' value='".$form->post_content."'>";
+        } else {
+          echo "<input type='hidden' name='".$n."' value='".$v[0]."'>";
+        }
     }
   } else {
     echo "<input type='hidden' name='empty' value='empty'>";
