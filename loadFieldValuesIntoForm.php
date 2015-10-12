@@ -13,7 +13,10 @@ function loadFieldValuesIntoForm(){
   } else {
     $user_id = get_current_user_id();
   }
-  $data = get_user_meta ($user_id, 'CRG-FormInfo');
+  $user = get_userdata( $userid );
+  $form = get_page_by_title( $user->user_email, 'OBJECT', 'InfoForm' );
+  $data = get_post_meta($form->ID);
+  /*
   $unserial = unserialize($data[0]);
   if ($unserial) {
     $data = unserialize($data[0]);
@@ -23,8 +26,9 @@ function loadFieldValuesIntoForm(){
   } else {
     echo "<input type='hidden' name='empty' value='empty'>";
   }
-  //var_dump($data);
-  
+  */
+  var_dump($data);
+  /*
   $output = <<<direct_output
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
@@ -39,6 +43,6 @@ jQuery( document ).ready(function($) {
 </script>
 direct_output;
 
-  echo $output;
+  echo $output;*/
   //die('loadFieldValuesIntoForm line 13');
 }
