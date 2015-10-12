@@ -28,7 +28,7 @@ function wcs_login_redirect( $redirect ) {
      return $redirect;
 }
 
-add_action( 'wp_enqueue_scripts', 'arcticColdCapsScripts' );
+add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
 	wp_enqueue_script( 'crg-footer-mods',  plugin_dir_url( __FILE__ ) . 'footerMods.js' );
 }
