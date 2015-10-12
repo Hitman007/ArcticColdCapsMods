@@ -11,7 +11,7 @@ jQuery('document').ready(function() {
       var hostname = window.location.hostname;
       var url = protocol + "//" + hostname + "/?user=" + user_id;
       jQuery('span#sample-permalink').html(url);
-      jQuery('span#view-post-btn').attr('href', url);
+      jQuery('span#view-post-btn a').attr('href', url);
       jQuery('span#edit-slug-buttons').hide();
     }
     //jQuery('body.post-type-infoform span#view-post-btn a').html("View Info");
