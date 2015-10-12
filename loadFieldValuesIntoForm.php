@@ -25,7 +25,7 @@ function loadFieldValuesIntoForm(){
   } else {
     echo "<input type='hidden' name='empty' value='empty'>";
   }
-/*
+
   $output = <<<direct_output
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script>
@@ -39,6 +39,6 @@ function loadFieldValuesIntoForm(){
   </script>
   direct_output;
 
-  echo $output;*/
+  echo $output;
   //die('loadFieldValuesIntoForm line 13');
 }
