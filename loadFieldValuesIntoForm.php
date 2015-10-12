@@ -32,7 +32,7 @@ function loadFieldValuesIntoForm(){
   
   if ( $form->have_posts() ) :
     while ( $the_query->have_posts() ) : $the_query->the_post();
-      $form_ID = get_the_ID;
+      $form_ID = $post->ID;
     endwhile;
   endif;
   wp_reset_postdata();
