@@ -65,12 +65,12 @@ class FormController{
 		//checks to see if the submitted email is in the database and creates one if not
 		$user = get_user_by( 'email', $email );
 		if ($user === FALSE){
-			$password = "BigFuckingSecret";
+			$password = "BigSecretLOL";
 	        	$listOfPostFieldNames['UserID'] = wp_create_user( $email, $password, $email );
 		 }else{
 			$listOfPostFieldNames['UserID'] = $user->ID;
 		 }
-        $this->formSubmissionVariables = $listOfFieldNames;
+	$this->formSubmissionVariables = $listOfFieldNames;
 
 	}
 	
