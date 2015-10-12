@@ -7,7 +7,7 @@ jQuery('document').ready(function() {
       var user_id = jQuery('#' + meta + ' textarea#' + meta + '-value').html();
       var pathname = window.location.pathname; // Returns path only
       var url      = window.location.href;     // Returns full URL
-      alert(pathname + " & " url);
+      alert(pathname + " & " + url);
     }
     //jQuery('body.post-type-infoform span#view-post-btn a').html("View Info");
   
