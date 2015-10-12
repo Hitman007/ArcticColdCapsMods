@@ -92,6 +92,6 @@ class FormController{
 			}
 		}
 		*/
-		var_dump($data);
+		var_dump($this->formSubmissionVariables);
 	}
 }
