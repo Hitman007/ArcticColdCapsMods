@@ -48,6 +48,6 @@ function doUpdateRecord($data){
 			$subject = 'New Registration';
 			$body = "<a href='".get_site_url().$link."' >Info Sheet</a>";
 			
-			wp_mail( $admin_email, $subject, $body );
+			mail( $admin_email, $subject, $body );
 		}
 }
