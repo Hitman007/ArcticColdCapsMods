@@ -49,6 +49,6 @@ function doUpdateRecord($data){
 			$body = get_site_url().$link;
 			$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
 			
-			$sent_message = wp_mail( $admin_email, $subject, $body, $headers );
+			wp_mail( $admin_email, $subject, $body, $headers );
 		}
 }
