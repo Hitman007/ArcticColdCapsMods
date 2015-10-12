@@ -37,6 +37,7 @@ function loadFieldValuesIntoForm(){
     });
   });
   </script>
+  
   direct_output;
 
   echo $output;
