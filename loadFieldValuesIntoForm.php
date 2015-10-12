@@ -13,11 +13,11 @@ function loadFieldValuesIntoForm(){
   } else {
     $user_id = get_current_user_id();
   }
-  /*
+  
   $user = get_userdata( $user_id );
   $form = get_page_by_title( $user->user_email, 'OBJECT', 'InfoForm' );
   $data = get_post_meta($form->ID);
-  
+  /*
   $unserial = unserialize($data[0]);
   if ($unserial) {
     $data = unserialize($data[0]);
