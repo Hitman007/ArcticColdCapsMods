@@ -63,7 +63,7 @@ class FormController{
 		$title = $email;
 		
 		$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
-		
+		/*
 		if ($form) {
 			$my_post = array(
 				'ID'           => $form->ID,
@@ -87,12 +87,11 @@ class FormController{
 			// Insert the post into the database
 			$form_id = wp_insert_post( $my_post );
 			
-			/*
 			foreach($data as $k => $v) {
 				add_post_meta($form_id, $k, $v);
 			}
-			*/
-			var_dump($data);
 		}
+		*/
+		var_dump($data);
 	}
 }
