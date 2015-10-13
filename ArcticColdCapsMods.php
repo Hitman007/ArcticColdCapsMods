@@ -25,7 +25,7 @@ WooAutomaticallyAddShipping();
 add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'crg-footer-mods',  plugin_dir_url( __FILE__ ) . 'footerMods.js' );
+	//wp_enqueue_script( 'crg-footer-mods',  plugin_dir_url( __FILE__ ) . 'footerMods.js' );
 	wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
 	
 }
@@ -34,6 +34,11 @@ add_action('admin_enqueue_scripts', 'CustomRayGuns\crgCustomAdminScripts');
 function crgCustomAdminScripts( ) {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
+}
+
+add_action('footer', 'CustomRayGuns\loadFooterMods');
+function loadFooterMods(){
+    include_once('doFooterMods.php');
 }
 
 
