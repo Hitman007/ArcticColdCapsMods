@@ -1,9 +1,9 @@
 <?php
-
+$text = 'jQuery is working!';
 $output = <<<scriptOutput
 <script>
     jQuery('document').ready(function(){
-        //alert('jQuery is working');
+        alert('$text');
     });
 </script>
 scriptOutput;
