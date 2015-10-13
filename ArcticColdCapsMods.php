@@ -36,7 +36,7 @@ function crgCustomAdminScripts( ) {
 	wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
 }
 
-add_action('footer', 'CustomRayGuns\loadFooterMods');
+add_action('wp-footer', 'CustomRayGuns\loadFooterMods');
 function loadFooterMods(){
     include_once('doFooterMods.php');
 }
