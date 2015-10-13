@@ -38,7 +38,6 @@ function crgCustomAdminScripts( ) {
 
 add_action('wp_footer', 'CustomRayGuns\loadFooterMods');
 function loadFooterMods(){
-die('hello');
     include_once('doFooterMods.php');
 }
 
