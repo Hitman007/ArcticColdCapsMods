@@ -47,5 +47,8 @@ function keep_me_logged_in_for_1_year( $expirein ) {
 }
 
 
-
+function thereShouldBeModifiedNewInfoformLinks(){
+    require_once 'doModifyNewInfoformLinks';
+    doModifyNewInfoformLinks();
+}
 
