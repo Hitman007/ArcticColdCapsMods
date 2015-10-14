@@ -46,9 +46,6 @@ function keep_me_logged_in_for_1_year( $expirein ) {
     return 31556926; // 1 year in seconds
 }
 
-
-function thereShouldBeModifiedNewInfoformLinks(){
-    require_once 'doModifyNewInfoformLinks';
-    doModifyNewInfoformLinks();
-}
+require_once 'doModifyNewInfoformLinks';
+doModifyNewInfoformLinks();
 
