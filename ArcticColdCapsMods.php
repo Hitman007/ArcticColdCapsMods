@@ -54,7 +54,7 @@ function shouldModifyInfoformLinks(){
 
 add_action('admin_init','CustomRayGuns\shouldModifyAdminWigets');
 function shouldModifyAdminWigets(){
-    require_once 'shouldModifyAdminWigets.php';
+    require_once 'doModifyAdminWigets.php';
     doModifyAdminWigets();
 }
 
