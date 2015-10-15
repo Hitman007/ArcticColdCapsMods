@@ -1,5 +1,5 @@
 <?php
 
 function doModifyAdminWigets(){
-    die('doModifyAdminWigets.php');
+    //die('doModifyAdminWigets.php');
 }
