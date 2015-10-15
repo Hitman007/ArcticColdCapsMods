@@ -1,5 +1,5 @@
 <?php
 
 function doModifyNewInfoformLinks(){
-    //die('doModifyNewInfoformLinks');
+    die('doModifyNewInfoformLinks');
 }
