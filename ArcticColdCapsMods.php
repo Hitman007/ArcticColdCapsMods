@@ -36,7 +36,7 @@ function crgCustomAdminScripts( ) {
 	wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
 }
 
-//add_action('wp_footer', 'CustomRayGuns\loadFooterMods');
+add_action('wp_footer', 'CustomRayGuns\loadFooterMods');
 function loadFooterMods(){
     include_once('doFooterMods.php');
 }
@@ -46,7 +46,7 @@ function keep_me_logged_in_for_1_year( $expirein ) {
     return 31556926; // 1 year in seconds
 }
 
-//add_action('admin_init','CustomRayGuns\shouldModifyInfoformLinks');
+add_action('admin_init','CustomRayGuns\shouldModifyInfoformLinks');
 function shouldModifyInfoformLinks(){
     require_once 'doModifyNewInfoformLinks.php';
     doModifyNewInfoformLinks();
