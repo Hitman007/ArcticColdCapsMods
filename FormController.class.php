@@ -43,7 +43,11 @@ class FormController{
 		$listOfPostFieldNames = array();
 		$listOfPostFieldNames = $this->formSubmissionVariables;
 		$email = $listOfPostFieldNames['crg_login_email'];
-		if ($email == ""){die('empty email');}
+		if ($email == ""){
+			$email = $listOfPostFieldNames['First_Name'];
+			$email = $email .  $listOfPostFieldNames['Last_Name'];
+			$email = $email . "@artcticcoldcaps.com";
+		}
 		//checks to see if the submitted email is in the database and creates one if not
 		$user = get_user_by( 'email', $email );
 		if ($user === FALSE){
