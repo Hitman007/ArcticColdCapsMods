@@ -1,3 +1,5 @@
+<?php
+
 function doRemoveScreenOptions($display_boolean, $wp_screen_object){
 	$blacklist = array('index.php');
 	if (in_array($GLOBALS['pagenow'], $blacklist)) {
