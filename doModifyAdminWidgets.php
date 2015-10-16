@@ -10,7 +10,8 @@ function doModifyAdminWidgets(){
         remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );	//Not sure
         remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );	//Removes Comments Widget?
         remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );	//Removes At a Glance
-        //remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');		//Removes Activity
+        remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');		//Removes Activity
+        remove_meta_box( 'woocommerce_dashboard_recent_reviews', 'dashboard', 'normal' );
         
         //Side Widgets (Right Side)
         remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );		//Remove WordPress News
