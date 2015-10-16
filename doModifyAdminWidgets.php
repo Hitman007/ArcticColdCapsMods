@@ -3,9 +3,9 @@
 function doModifyAdminWidgets(){
 	
 	//Normal Widgets (Left Side)
-	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' ); 	//Not sure
-        remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );		//Plugins?
-        remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );	//Not sure
+	//remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' ); 	//Not sure
+        //remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );		//Plugins?
+        //remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );	//Not sure
         remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');//since 3.8
@@ -23,7 +23,7 @@ function doModifyAdminWidgets(){
 	}
 	
 	// Remove Screen Options
-	add_filter('screen_options_show_screen', 'remove_screen_options', 10, 2);
+	//add_filter('screen_options_show_screen', 'remove_screen_options', 10, 2);
 	function remove_screen_options($display_boolean, $wp_screen_object){
 		$blacklist = array('index.php');
 		if (in_array($GLOBALS['pagenow'], $blacklist)) {
