@@ -61,6 +61,20 @@ function shouldModifyAdminWidgets(){
 add_action( 'wp_dashboard_setup', 'CustomRayGuns\customDashboardMetaBox' );
 function customDashboardMetaBox() {
 	require_once 'addDashboardMetaBox.php';
-    addDashboardMetaBox();
+	addDashboardMetaBox();
+}
+
+// Remove help menu
+add_filter( 'contextual_help', 'remove_contextual_help', 999, 3 );
+function remove_contextual_help($old_help, $screen_id, $screen){
+	$screen->remove_help_tabs();
+	return $old_help;
+}
+
+// Remove Screen Options
+add_filter('screen_options_show_screen', 'CustomRayGuns\shouldRemoveSreenOptions', 10, 2);
+function shouldRemoveSreenOptions($display_boolean, $wp_screen_object){
+	require_once 'doRemoveScreenOptions.php';
+	doRemoveScreenOptions($display_boolean, $wp_screen_object);
 }
 
