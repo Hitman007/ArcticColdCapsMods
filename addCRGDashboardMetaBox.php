@@ -3,7 +3,7 @@
 function addCRGDashboardMetaBox() {
 	add_meta_box(
 		'crg_dashboard_widget',		// ID
-		'Help',		// Title
+		'Help [This feature coming soon!]',		// Title
 		'crgDashboardWidgetFunction',	// Callback
 		'dashboard',			// Screen
 		'side',				// Context
