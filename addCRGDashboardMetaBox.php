@@ -3,7 +3,7 @@
 function addCRGDashboardMetaBox() {
 	add_meta_box(
 		'crg_dashboard_widget',		// ID
-		'Custom Ray Guns',		// Title
+		'Help',		// Title
 		'crgDashboardWidgetFunction',	// Callback
 		'dashboard',			// Screen
 		'side',				// Context
