@@ -1,7 +1,16 @@
 <?php
 
 function doModifyAdminWidgets(){
+	
 	remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
+	
+	// Remove help menu
+	add_filter( 'contextual_help', 'remove_contextual_help', 999, 3 );
+	function remove_contextual_help($old_help, $screen_id, $screen){
+	             $screen->remove_help_tabs();
+	             return $old_help;
+	}
+	
 	include_once('doReturnAdminWidgetOutput.php');
 	$adminWidgetOutput = doReturnAdminWidgetOutput();
 	//die('hello wlrld');
