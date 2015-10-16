@@ -60,8 +60,8 @@ function shouldModifyAdminWidgets(){
 
 add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
 function customDashboardMetaBox() {
-	require_once 'addDashboardMetaBox.php';
-	addDashboardMetaBox();
+	require_once 'addCRGDashboardMetaBox.php';
+	addCRGDashboardMetaBox();
 }
 
 // Remove help menu
