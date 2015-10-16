@@ -37,6 +37,10 @@ function doModifyAdminWidgets(){
 		}
 	}
 	
+	add_action( 'widgets_init', 'remove_woo_widgets' );
+	function remove_woo_widgets() {
+		unregister_widget( 'WC_Widget_Recent_Reviews' );
+	}
 	
 	include_once('doReturnAdminWidgetOutput.php');
 	$adminWidgetOutput = doReturnAdminWidgetOutput();
