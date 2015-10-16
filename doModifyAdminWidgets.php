@@ -10,6 +10,7 @@ function doModifyAdminWidgets(){
 		$screen->remove_help_tabs();
 		return $old_help;
 	}
+	
 	// Remove Screen Options
 	add_filter( 'screen_options_show_screen', 'myplugin_disable_screen_options' );
 	function myplugin_disable_screen_options( $show_screen ) {
