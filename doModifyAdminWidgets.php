@@ -40,7 +40,7 @@ function doModifyAdminWidgets(){
 	
 	include_once('doReturnAdminWidgetOutput.php');
 	$adminWidgetOutput = doReturnAdminWidgetOutput();
-	wp_add_dashboard_widget( 'crg-dashboard-widget', 'Custom Ray Guns', $adminWidgetOutput);
+	wp_add_dashboard_widget( 'crg-dashboard-widget', 'Custom Ray Guns', 'doReturnAdminWidgetOutput');
 	//die('hello wlrld');
         //die($adminWidgetOutput);
 }
