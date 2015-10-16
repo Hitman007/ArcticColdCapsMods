@@ -43,7 +43,7 @@ function doModifyAdminWidgets(){
 		wp_add_dashboard_widget(
 	                 'crg_dashboard_widget',         // Widget slug.
 	                 'Custom Ray Guns',         // Title.
-	                 'crgDashboardWidgetFunctio' // Display function.
+	                 'crgDashboardWidgetFunction' // Display function.
 	        );
 	}
 
