@@ -58,6 +58,13 @@ function shouldModifyAdminWidgets(){
     doModifyAdminWidgets();
 }
 
+add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
+function customDashboardMetaBox() {
+	require_once 'addCRGDashboardMetaBox.php';
+	addCRGDashboardMetaBox();
+}
+
+
 // Remove help menu
 add_filter('contextual_help', 'CustomRayGuns\remove_contextual_help', 999, 3 );
 function remove_contextual_help($old_help, $screen_id, $screen){
