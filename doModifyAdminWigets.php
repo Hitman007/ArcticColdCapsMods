@@ -2,6 +2,6 @@
 
 function doModifyAdminWigets(){
 	include_once('doReturnAdminWidgetOutput.php');
-	$adminWidgetOutput = doReturnAdminWidgetOutput();
-	die($adminWidgetOutput);
+	//$adminWidgetOutput = doReturnAdminWidgetOutput();
+	//die($adminWidgetOutput);
 }
