@@ -58,3 +58,9 @@ function shouldModifyAdminWidgets(){
     doModifyAdminWidgets();
 }
 
+add_action('widget_init','CustomRayGuns\shouldModifyWooAdminWidgets');
+function shouldModifyWooAdminWidgets(){
+    require_once 'doRemoveWooCommerceAdminWidgets.php';
+    doRemoveWooCommerceAdminWidgets();
+}
+
