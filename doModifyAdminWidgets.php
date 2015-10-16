@@ -3,13 +3,14 @@
 function doModifyAdminWidgets(){
 	
 	remove_action( 'welcome_panel', 'wp_welcome_panel' );
-	
+	/*
 	add_action('wp_dashboard_setup', 'list_active_dashboard_widgets');
 	function list_active_dashboard_widgets() {
 		global $wp_meta_boxes;
 		print_r($wp_meta_boxes);
-	}
+	}*/
 
+	remove_meta_box( 'woocommerce_endpoints_nav_link', 'nav-menus', 'side' );
 	
 	//Normal Widgets (Left Side)
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' ); 	//Not sure
