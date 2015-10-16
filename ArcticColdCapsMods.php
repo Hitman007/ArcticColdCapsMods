@@ -58,14 +58,14 @@ function shouldModifyAdminWidgets(){
     doModifyAdminWidgets();
 }
 
-add_action( 'wp_dashboard_setup', 'CustomRayGuns\customDashboardMetaBox' );
+add_action('wp_dashboard_setup', 'CustomRayGuns\customDashboardMetaBox');
 function customDashboardMetaBox() {
 	require_once 'addDashboardMetaBox.php';
 	addDashboardMetaBox();
 }
 
 // Remove help menu
-add_filter( 'contextual_help', 'remove_contextual_help', 999, 3 );
+add_filter('contextual_help', 'CustomRayGuns\remove_contextual_help', 999, 3 );
 function remove_contextual_help($old_help, $screen_id, $screen){
 	$screen->remove_help_tabs();
 	return $old_help;
