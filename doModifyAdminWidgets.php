@@ -40,7 +40,16 @@ function doModifyAdminWidgets(){
 	
 	include_once('doReturnAdminWidgetOutput.php');
 	$adminWidgetOutput = doReturnAdminWidgetOutput();
-	wp_add_dashboard_widget( 'crg-dashboard-widget', 'Custom Ray Guns', 'doReturnAdminWidgetOutput');
 	//die('hello wlrld');
         //die($adminWidgetOutput);
+        
+        add_action( 'wp_dashboard_setup', 'example_add_dashboard_widgets' );
+        function example_add_dashboard_widgets() {
+		wp_add_dashboard_widget(
+	                 'crg_dashboard_widget',         // Widget slug.
+	                 'Custom Ray Guns',         // Title.
+	                 'doReturnAdminWidgetOutput' // Display function.
+	        );
+	}
+	
 }
