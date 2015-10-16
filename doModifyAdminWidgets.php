@@ -4,6 +4,15 @@ function doModifyAdminWidgets(){
 	
 	remove_action( 'welcome_panel', 'wp_welcome_panel' );
 	
+	add_action('wp_dashboard_setup', 'list_active_dashboard_widgets');
+	function list_active_dashboard_widgets() {
+		global $wp_meta_boxes;
+		foreach (array_keys($wp_meta_boxes['dashboard']['normal']['core']) as $name) {
+			echo '<div>' . $name . '</div>';
+		}
+	}
+
+	
 	//Normal Widgets (Left Side)
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' ); 	//Not sure
         remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );		//Removes Plugins Widget?
@@ -35,11 +44,6 @@ function doModifyAdminWidgets(){
 		} else {
 			return true;
 		}
-	}
-	
-	add_action( 'widgets_init', 'remove_woo_widgets' );
-	function remove_woo_widgets() {
-		unregister_widget( 'WC_Widget_Recent_Reviews' );
 	}
 	
 	include_once('doReturnAdminWidgetOutput.php');
