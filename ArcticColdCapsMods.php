@@ -58,7 +58,3 @@ function shouldModifyAdminWigets(){
     doModifyAdminWigets();
 }
 
-include_once('doReturnAdminWidgetOutput.php');
-$x = doReturnAdminWidgetOutput();
-die ($x);
-

@@ -2,7 +2,7 @@
 
 function doReturnAdminWidgetOutput(){
   $widgetOutput = <<<WIDGETOUTPUT
-hello
+hello poop
 WIDGETOUTPUT;
 
   return $widgetOutput;

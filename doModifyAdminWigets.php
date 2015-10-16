@@ -1,5 +1,6 @@
 <?php
 
 function doModifyAdminWigets(){
-    //die('doModifyAdminWigets.php');
+	include_once('doReturnAdminWidgetOutput.php');
+	$x = doReturnAdminWidgetOutput();
 }
