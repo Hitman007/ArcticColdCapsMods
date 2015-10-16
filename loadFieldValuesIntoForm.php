@@ -19,7 +19,11 @@ function loadFieldValuesIntoForm(){
   $form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
   
   //var_dump($form);
-  $data = get_post_meta($form->ID, '', true);
+  if (is_object($form)){
+  	$data = get_post_meta($form->ID, '', true);
+   }else{
+    $data = FALSE;
+  }
   
   if ($data) {
     foreach ($data as $n => $v) {

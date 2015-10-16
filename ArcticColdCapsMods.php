@@ -57,3 +57,5 @@ function shouldModifyAdminWigets(){
     require_once 'doModifyAdminWigets.php';
     doModifyAdminWigets();
 }
+
+die('asshole');
