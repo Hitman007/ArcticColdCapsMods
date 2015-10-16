@@ -7,9 +7,7 @@ function doModifyAdminWidgets(){
 	add_action('wp_dashboard_setup', 'list_active_dashboard_widgets');
 	function list_active_dashboard_widgets() {
 		global $wp_meta_boxes;
-		foreach (array_keys($wp_meta_boxes['dashboard']['normal']['core']) as $name) {
-			echo '<div>' . $name . '</div>';
-		}
+		print_r($wp_meta_boxes);
 	}
 
 	
