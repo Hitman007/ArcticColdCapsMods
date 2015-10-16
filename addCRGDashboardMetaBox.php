@@ -1,4 +1,4 @@
-function addDashboardMetaBox() {
+function addCRGDashboardMetaBox() {
 
 	add_action('wp_dashboard_setup', 'crgAddMetaBox');
 	function crgAddMetaBox() {
