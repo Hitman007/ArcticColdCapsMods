@@ -58,4 +58,3 @@ function shouldModifyAdminWigets(){
     doModifyAdminWigets();
 }
 
-die('asshole');
