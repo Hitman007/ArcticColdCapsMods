@@ -3,10 +3,23 @@
 function doReturnAdminWidgetOutput(){
  
   $widgetOutput = <<<WIDGETOUTPUT
-How to add a new info-form <br/>
-How to edit an info-form <br/>
-How to change a person's email <br/>
-Get support from Custom Ray Guns   
+  <div id = "crg-help-widget-image-div">
+  </div>
+  <div class = "crg-help-widget-item">
+	How to add a new info-form
+  </div>
+  <div class = "crg-help-widget-item">
+	How to edit an info-form
+  </div>
+  <div class = "crg-help-widget-item">
+  	How to change a person's email
+  </div>
+  <div class = "crg-help-widget-item">
+  	How to turn recurring billing on and off
+  </div>
+  <div class = "crg-help-widget-item">
+  	Ask Custom Ray Guns a quetion
+  </div>
 WIDGETOUTPUT;
 
   return $widgetOutput;
