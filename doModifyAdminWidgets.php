@@ -3,14 +3,6 @@
 function doModifyAdminWidgets(){
 	
 	remove_action( 'welcome_panel', 'wp_welcome_panel' );
-	/*
-	add_action('wp_dashboard_setup', 'list_active_dashboard_widgets');
-	function list_active_dashboard_widgets() {
-		global $wp_meta_boxes;
-		print_r($wp_meta_boxes);
-	}*/
-
-	remove_meta_box( 'woocommerce_endpoints_nav_link', 'nav-menus', 'side' );
 	
 	//Normal Widgets (Left Side)
 	remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' ); 	//Not sure
@@ -18,7 +10,7 @@ function doModifyAdminWidgets(){
         remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );	//Not sure
         remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );	//Removes Comments Widget?
         remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );	//Removes At a Glance
-        remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');		//Removes Activity
+        //remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');		//Removes Activity
         
         //Side Widgets (Right Side)
         remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );		//Remove WordPress News
