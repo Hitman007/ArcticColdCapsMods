@@ -2,7 +2,7 @@
 
 function doModifyAdminWidgets(){
 	
-        remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+        //remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
         remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
