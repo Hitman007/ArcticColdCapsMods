@@ -51,5 +51,5 @@ function doModifyAdminWidgets(){
 	                 'doReturnAdminWidgetOutput' // Display function.
 	        );
 	}
-	
+
 }
