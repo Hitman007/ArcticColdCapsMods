@@ -58,3 +58,9 @@ function shouldModifyAdminWidgets(){
     doModifyAdminWidgets();
 }
 
+add_action( 'wp_dashboard_setup', 'CustomRayGuns\customDashboardMetaBox' );
+function customDashboardMetaBox() {
+	require_once 'addDashboardMetaBox.php';
+    addDashboardMetaBox();
+}
+
