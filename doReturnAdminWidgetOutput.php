@@ -21,7 +21,10 @@ function doReturnAdminWidgetOutput(){
   	Ask Custom Ray Guns a quetion
   </div>
 <script>
-jQuery('document').ready(function(){}):
+jQuery('document').ready(function(){
+   alert('yo');
+});
+</script>
 WIDGETOUTPUT;
 
   return $widgetOutput;
