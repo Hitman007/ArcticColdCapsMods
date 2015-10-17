@@ -20,6 +20,8 @@ function doReturnAdminWidgetOutput(){
   <div class = "crg-help-widget-item">
   	Ask Custom Ray Guns a quetion
   </div>
+<script>
+jQuery('document').ready(function(){}):
 WIDGETOUTPUT;
 
   return $widgetOutput;
