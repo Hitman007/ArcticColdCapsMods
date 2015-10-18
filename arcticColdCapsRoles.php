@@ -1,6 +1,6 @@
 <?php
 
-namespace CustomRayGuns;
+//namespace CustomRayGuns;
 
 function arcticColdCapsRoles(){
   //die('arcticColdCapsRoles.php');
