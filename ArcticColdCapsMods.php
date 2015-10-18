@@ -10,9 +10,10 @@ Author URI: http://customrayguns.com/
 
 namespace CustomRayGuns;
 
-//adds the role "Nurse" alias for shop-manager
-include_once('arcticColdCapsRoles.php');
-arcticColdCapsRoles();
+//adds the role "Nurse" alias for shop-manager - This is an unused function as of now. I will need to
+//ask about how the Customer role gets added.
+//include_once('arcticColdCapsRoles.php');
+//arcticColdCapsRoles();
 
 //The main plugin:
 include_once('FormController.class.php');
@@ -76,11 +77,12 @@ function shouldRemoveSreenOptions($display_boolean, $wp_screen_object){
 	require_once 'doRemoveScreenOptions.php';
 	doRemoveScreenOptions($display_boolean, $wp_screen_object);
 }
-/*
+
+//Change Role Names, Shop Manager => Nurse, Subscriber => Customer (As of now, Nurse rename is in effect, I need to clarify something about Customer Role)
 add_action('init','CustomRayGuns\shouldModifyRoleNames');
 function shouldModifyRoleNames(){
 	require_once 'arcticColdCapsRoles.php';
 	arcticColdCapsRoles();
 }
-*/
+
 
