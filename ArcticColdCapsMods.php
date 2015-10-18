@@ -78,7 +78,7 @@ function shouldRemoveSreenOptions($display_boolean, $wp_screen_object){
 }
 
 add_action('init','CustomRayGuns\shouldModifyRoleNames');
-function shouldModifyInfoformLinks(){
+function shouldModifyRoleNames(){
 	require_once 'arcticColdCapsRoles.php';
 	arcticColdCapsRoles();
 }
