@@ -6,9 +6,9 @@ function arcticColdCapsRoles(){
   //die('arcticColdCapsRoles.php');
   
   global $wp_roles;
-  
-  if ( ! isset( $wp_roles ) )
-    die($wp_roles);
+  die($wp_roles);
+  //if ( ! isset( $wp_roles ) )
+    
     //$wp_roles = new WP_Roles();
   
   //$role = get_role('shop_manager');
