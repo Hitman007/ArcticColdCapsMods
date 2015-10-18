@@ -6,6 +6,6 @@ function arcticColdCapsRoles(){
   //die('arcticColdCapsRoles.php');
   
   $role = get_role('shop_manager');
-  
-  add_role( 'nurse', 'Nurse', $role->capabilities );
+  var_dump($role);
+  //add_role( 'nurse', 'Nurse', $role->capabilities );
 }
