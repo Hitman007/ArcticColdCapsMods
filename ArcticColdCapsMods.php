@@ -11,8 +11,8 @@ Author URI: http://customrayguns.com/
 namespace CustomRayGuns;
 
 //adds the role "Nurse" alias for shop-manager
-include_once('arcticColdCapsRoles.php');
-arcticColdCapsRoles();
+//include_once('arcticColdCapsRoles.php');
+//arcticColdCapsRoles();
 
 //The main plugin:
 include_once('FormController.class.php');
@@ -76,4 +76,11 @@ function shouldRemoveSreenOptions($display_boolean, $wp_screen_object){
 	require_once 'doRemoveScreenOptions.php';
 	doRemoveScreenOptions($display_boolean, $wp_screen_object);
 }
+
+add_action('init','CustomRayGuns\shouldModifyRoleNames');
+function shouldModifyInfoformLinks(){
+	require_once 'arcticColdCapsRoles.php';
+	arcticColdCapsRoles();
+}
+
 
