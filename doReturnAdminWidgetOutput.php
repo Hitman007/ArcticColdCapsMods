@@ -22,7 +22,7 @@ function doReturnAdminWidgetOutput(){
   </div>
 <script>
 jQuery('document').ready(function(){
-   alert('yo');
+   //alert('yo');
 });
 </script>
 WIDGETOUTPUT;
