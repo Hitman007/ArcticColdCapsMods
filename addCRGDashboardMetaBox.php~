@@ -16,5 +16,3 @@ function crgDashboardWidgetFunction() {
 	$adminWidgetOutput = doReturnAdminWidgetOutput();
 	echo $adminWidgetOutput;
 }
-
-function removeme(){}
