@@ -5,7 +5,6 @@ function doUpdateRecord($data){
 	$user = get_user_by( 'email', $email );
 	$content = $_POST['notes'];
 	$title = $_POST['Last_Name'] . ", " . $_POST['First_Name'];
-	
 	$userdata = array(
 		'ID' => $user->ID,
 		'first_name' => $_POST['First_Name'],

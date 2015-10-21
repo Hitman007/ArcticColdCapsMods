@@ -13,7 +13,7 @@ jQuery('document').ready(function() {
       jQuery('span#sample-permalink').html(url);
       jQuery('span#view-post-btn a').attr('href', url);
       jQuery('div#message.updated.notice-success a').attr('href', url);
-      jQuery('span#edit-slug-buttons').hide();
+      jQuery('span#edit-slug-buttons').hide(); 
     }
     //jQuery('body.post-type-infoform span#view-post-btn a').html("View Info");
   

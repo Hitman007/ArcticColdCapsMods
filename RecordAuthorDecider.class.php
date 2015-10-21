@@ -4,6 +4,6 @@ namespace CustomRayGuns;
 
 class RecordAuthorDecider{
 
-  public __construct(){die('decider');}
+  public function __construct(){die('decider');}
 
 }
