@@ -85,9 +85,9 @@ function shouldModifyRoleNames(){
 	arcticColdCapsRoles();
 }
 
-add_action('woocommerce_payment_complete', 'CustomRayGuns\shouldDetectProductPurchase', 10, 1);
-function shouldDetectProductPurchase($productID) {
-	require_once 'detectWhenBasicProductIsPurchased.php';
-	detectWhenBasicProductIsPurchased($productID);
+add_action('woocommerce_payment_complete', 'CustomRayGuns\shouldDetectProductPayment', 10, 1);
+function shouldDetectProductPayment($order_id) {
+	require_once 'detectProductPayment.php';
+	detectProductPayment($order_id);
 }
 
