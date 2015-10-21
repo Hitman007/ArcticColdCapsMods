@@ -87,7 +87,7 @@ function shouldModifyRoleNames(){
 
 add_action('woocommerce_payment_complete', 'CustomRayGuns\shouldDetectProductPurchase', 10, 1);
 function shouldDetectProductPurchase($productID) {
-	require_one 'detectWhenBasicProductIsPurchased.php';
+	require_once 'detectWhenBasicProductIsPurchased.php';
 	detectWhenBasicProductIsPurchased($productID);
 }
 
