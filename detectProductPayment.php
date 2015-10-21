@@ -1,5 +1,5 @@
 <?php
 
-function detectProductPayment($order_id) {
+function detectProductPayment() {
 	die('yea! Product purchased');
 }
