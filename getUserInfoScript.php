@@ -1,6 +1,7 @@
 <?php
 
-function getUserInfoScript() {die('calling');
+function getUserInfoScript() {
+    //die('calling');
     $output = <<<OUTPUT
         <script>
         jQuery('document').ready(function() {
