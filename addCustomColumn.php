@@ -45,14 +45,6 @@ function add_bill_info( $val, $column_name, $user_id ) {
     <div id='bill_info_form' class='bill-info-$user_id' style='display: none;'>
     <textarea></textarea>
     </div>
-    <script>
-    jQuery('document').ready(function() {
-        //alert('loaded');
-        jQuery('input.bill-info-$user_id').click(function() {
-        	jQuery('div.bill-info-$user_id').toggle();
-        });
-    });
-</script>
 OUTPUT;
     /*
     if($form) {
