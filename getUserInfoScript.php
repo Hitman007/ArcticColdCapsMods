@@ -12,5 +12,5 @@ function getUserInfoScript() {
         </script>
 OUTPUT;
     
-    echo $output;
+    return $output;
 }
