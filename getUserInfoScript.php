@@ -10,7 +10,7 @@ function getUserInfoScript() {
             //});
         });
         </script>
-    OUTPUT;
+OUTPUT;
     
     echo $output;
 }
