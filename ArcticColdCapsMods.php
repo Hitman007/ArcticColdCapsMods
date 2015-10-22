@@ -3,7 +3,7 @@
 Plugin Name: Custom Ray Guns Arctic Cold Caps Mods
 Plugin URI: http://customrayguns.com/
 Description: 
-Version: 1.0
+Version: 1.1
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
