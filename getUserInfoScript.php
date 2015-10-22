@@ -5,7 +5,7 @@ function getUserInfoScript() {
         <script>
         jQuery('document').ready(function() {
             jQuery('#bill_info').click(function() {
-            	jQuery(this).next("#bill_info_form").toggle();
+            	alert(jQuery(this).attr('class'));
             });
         });
         </script>
