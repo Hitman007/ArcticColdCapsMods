@@ -49,7 +49,7 @@ function add_bill_info( $val, $column_name, $user_id ) {
     jQuery('document').ready(function() {
         //alert('loaded');
         jQuery('input.bill-info-$user_id').click(function() {
-        	jQuery('div.bill-info-$user_id').show();
+        	jQuery('div.bill-info-$user_id').toggle();
         });
     });
 </script>
