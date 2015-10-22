@@ -40,11 +40,13 @@ function add_bill_info( $val, $column_name, $user_id ) {
     //$title = $user->last_name . ", " . $user->first_name;
     //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
     
-    $bill_info = "<input type='checkbox' name='bill_info' id='bill_info' class='bill-info-".$user_id."' />";
-    $bill_info .= "<div class='bill-info-".$user_id."' style='display: none;'>";
-    $bill_info .= "<form id='bill_info_".$user_id.">";
-    $bill_info .= "<textarea></textarea>";
-    $bill_info .= "</form></div>";
+    $bill_info = <<<OUTPUT
+    <input type='checkbox' name='bill_info' id='bill_info' class='bill-info-$user_id />
+    <div class='bill-info-$user_id' style='display: none;'>
+    <form id='bill_info_$user_id>
+    <textarea></textarea>
+    </form></div>
+OUTPUT;
     /*
     if($form) {
         $link = "/info-sheet/?user=".$user_id;
