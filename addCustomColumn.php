@@ -42,7 +42,7 @@ function add_bill_info( $val, $column_name, $user_id ) {
     
     $bill_info = <<<OUTPUT
     <input type='checkbox' name='bill_info' id='bill_info' class='bill-info-$user_id' />
-    <div class='bill-info-$user_id' style='display: none;'>
+    <div id='bill_info_form' class='bill-info-$user_id' style='display: none;'>
     <textarea></textarea>
     </div>
 OUTPUT;
