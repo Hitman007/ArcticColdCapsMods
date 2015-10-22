@@ -33,3 +33,27 @@ function add_bill_info_column( $column ) {
     $column['billinfo'] = 'Bill Info';
     return $column;
 }
+
+add_filter( 'manage_users_custom_column', 'add_bill_info', 10, 3 );
+function add_bill_info( $val, $column_name, $user_id ) {
+    //$user = get_userdata( $user_id );
+    //$title = $user->last_name . ", " . $user->first_name;
+    //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
+    
+    $bill_info = "<input type='checkbox' name='bill_info' id='bill_info' />";
+    /*
+    if($form) {
+        $link = "/info-sheet/?user=".$user_id;
+        $user_link = "<a href='".get_site_url().$link."' >Info Sheet</a>";
+    } else {
+        $bill_info = "";
+    }
+    */
+    switch ($column_name) {
+        case 'billinfo' :
+            return $bill_info;
+            break;
+        default:
+    }
+    return $return;
+}
