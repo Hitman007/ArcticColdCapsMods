@@ -2,7 +2,7 @@
 
 function getUserInfoScript() {
     $output = <<<OUTPUT
-        <link rel='stylesheet' href='//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css'>
+     <script src='//code.jquery.com/ui/1.11.4/jquery-ui.js'></script>
         <script>
         jQuery('document').ready(function() {
             jQuery('input.bill_info').click(function() {
