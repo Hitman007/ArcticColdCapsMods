@@ -5,7 +5,8 @@ function getUserInfoScript() {
         <script>
         jQuery('document').ready(function() {
             jQuery('#bill_info').click(function() {
-            	alert(jQuery(this).attr('class'));
+                var div = jQuery(this).attr('class')
+            	jQuery('div.' + div).toggle();
             });
         });
         </script>
