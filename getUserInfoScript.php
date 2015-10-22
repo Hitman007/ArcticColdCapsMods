@@ -6,6 +6,7 @@ function getUserInfoScript() {
         jQuery('document').ready(function() {
             jQuery('#bill_info').click(function() {
                 var div = jQuery(this).attr('class');
+                alert(div);
             	jQuery('div.' + div).toggle();
             });
         });
