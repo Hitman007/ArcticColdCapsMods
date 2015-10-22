@@ -47,10 +47,10 @@ function add_bill_info( $val, $column_name, $user_id ) {
     </div>
     <script>
     jQuery('document').ready(function() {
-        alert('loaded');
-        //jQuery('#bill_info').click(function() {
-        //	$(this).next("#bill_info_form").toggle();
-        //});
+        //alert('loaded');
+        jQuery('#bill_info').click(function() {
+        	$(this).next("#bill_info_form").toggle();
+        });
     });
 </script>
 OUTPUT;
