@@ -23,6 +23,9 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
+include_once('getUserInfoScript.php');
+getUserInfoScript();
+
 add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
 	wp_enqueue_script( 'jquery' );
