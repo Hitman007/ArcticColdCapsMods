@@ -23,9 +23,6 @@ $FormController = new FormController;
 include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
-include_once('getUserInfoScript.php');
-add_action('init' , 'getUserInfoScript');
-
 add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
 	wp_enqueue_script( 'jquery' );
@@ -94,3 +91,5 @@ function shouldDetectProductPayment() {
 	detectProductPayment();
 }
 
+add_action('admin_footer' , 'getUserInfoScript');
+include_once('getUserInfoScript.php');
