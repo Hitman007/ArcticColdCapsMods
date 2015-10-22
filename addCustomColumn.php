@@ -48,8 +48,8 @@ function add_bill_info( $val, $column_name, $user_id ) {
     <script>
     jQuery('document').ready(function() {
         //alert('loaded');
-        jQuery('.bill-info-$user_id').click(function() {
-        	jQuery('this').next("#bill_info_form").show();
+        jQuery('input.bill-info-$user_id').click(function() {
+        	jQuery('div.bill-info-$user_id').show();
         });
     });
 </script>
