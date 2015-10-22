@@ -44,7 +44,7 @@ function add_bill_info( $val, $column_name, $user_id ) {
     $bill_info .= "<div class='bill-info-".$user_id."' style='display: none;'>";
     $bill_info .= "<form id='bill_info_".$user_id.">";
     $bill_info .= "<textarea></textarea>";
-    $bill_info .= "</form>";
+    $bill_info .= "</form></div>";
     /*
     if($form) {
         $link = "/info-sheet/?user=".$user_id;
