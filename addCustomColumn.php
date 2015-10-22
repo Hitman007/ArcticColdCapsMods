@@ -36,13 +36,13 @@ function add_bill_info_column( $column ) {
 
 add_filter( 'manage_users_custom_column', 'add_bill_info', 10, 3 );
 function add_bill_info( $val, $column_name, $user_id ) {
-    //$user = get_userdata( $user_id );
+    $user = get_userdata( $user_id );
     //$title = $user->last_name . ", " . $user->first_name;
     //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
     
-    $bill_info = <<<OUTPUT
-    <input type="checkbox" name="bill_info" id="bill_info" />
-OUTPUT;
+    $bill_info = "
+    <input type='checkbox' name='bill_info' id="bill_info_".$user." />
+";
     /*
     if($form) {
         $link = "/info-sheet/?user=".$user_id;
