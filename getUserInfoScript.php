@@ -1,5 +1,6 @@
 <?php
 
+
 $output = <<<SCRIPTOUTPUT
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
@@ -9,4 +10,4 @@ $output = <<<SCRIPTOUTPUT
 </script>
 SCRIPTOUTPUT;
 
-echo $output;
+return $output;
