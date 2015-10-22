@@ -40,7 +40,9 @@ function add_bill_info( $val, $column_name, $user_id ) {
     //$title = $user->last_name . ", " . $user->first_name;
     //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
     
-    $bill_info = "<input type='checkbox' name='bill_info' id='bill_info' />";
+    $bill_info = <<<OUTPUT
+    <input type="checkbox" name="bill_info" id="bill_info" />
+OUTPUT;
     /*
     if($form) {
         $link = "/info-sheet/?user=".$user_id;
