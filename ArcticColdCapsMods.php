@@ -24,7 +24,7 @@ include_once('WooAutomaticallyAddShipping.php');
 WooAutomaticallyAddShipping();
 
 include_once('getUserInfoScript.php');
-getUserInfoScript();
+add_action('init' , 'getUserInfoScript');
 
 add_action( 'wp_enqueue_scripts', 'CustomRayGuns\arcticColdCapsScripts' );
 function arcticColdCapsScripts(){
