@@ -9,7 +9,7 @@ function doReturnAdminWidgetOutput(){
 	How to add a new info-form
   </div>
   <div class = "crg-help-widget-item">
-	How to edit an info-form
+	<a href = "https://www.youtube.com/watch?v=rxpaLeKrL2E&feature=youtu.be" target = "_blank">How to edit an info-form</a>
   </div>
   <div class = "crg-help-widget-item">
   	How to change a person's email
