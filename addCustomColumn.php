@@ -41,7 +41,7 @@ function add_bill_info( $val, $column_name, $user_id ) {
     //$form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
     
     $bill_info = "
-    <input type='checkbox' name='bill_info' id="bill_info_".$user." />
+    <input type='checkbox' name='bill_info' id='bill_info_".$user."' />
 ";
     /*
     if($form) {
