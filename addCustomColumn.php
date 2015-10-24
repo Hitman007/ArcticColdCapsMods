@@ -28,13 +28,13 @@ function new_modify_user_table_row( $val, $column_name, $user_id ) {
     return $return;
 }
 
-add_filter( 'manage_users_columns', 'add_bill_info_column' );
+//add_filter( 'manage_users_columns', 'add_bill_info_column' );
 function add_bill_info_column( $column ) {
     $column['billinfo'] = 'Bill Info';
     return $column;
 }
 
-add_filter( 'manage_users_custom_column', 'add_bill_info', 10, 3 );
+//add_filter( 'manage_users_custom_column', 'add_bill_info', 10, 3 );
 function add_bill_info( $val, $column_name, $user_id ) {
     $user = get_userdata( $user_id );
     //$title = $user->last_name . ", " . $user->first_name;
