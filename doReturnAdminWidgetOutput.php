@@ -15,7 +15,7 @@ function doReturnAdminWidgetOutput(){
   	<a href = "https://www.youtube.com/watch?v=HXPoQ3-cSGI&feature=youtu.be">How to change a person's email</a>
   </div>
   <div class = "crg-help-widget-item">
-  	How to turn recurring billing on and off
+  	<a href = "https://youtu.be/KrsdUgxPw20" target = "_BLANK">Recurring billing, adding or modifying orders to existing customers</a>
   </div>
   <div class = "crg-help-widget-item">
   	<a href = "http://customrayguns.com/contact/" target = "_blank">Ask Custom Ray Guns a question</a>
