@@ -91,5 +91,5 @@ function shouldDetectProductPayment() {
 	detectProductPayment();
 }
 
-add_action('admin_footer' , 'getUserInfoScript');
-include_once('getUserInfoScript.php');
+//add_action('admin_footer' , 'getUserInfoScript');
+//include_once('getUserInfoScript.php');
