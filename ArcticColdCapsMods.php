@@ -58,7 +58,7 @@ function shouldModifyAdminWidgets(){
 	doModifyAdminWidgets();
 }
 
-//add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
+add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
 function customDashboardMetaBox() {
 	require_once 'addCRGDashboardMetaBox.php';
 	addCRGDashboardMetaBox();
