@@ -12,6 +12,10 @@ settings:
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
+    config:
+        Codeception\Extension\Recorder:
+            delete_successful: false
+
 modules:
     config:
         Db:

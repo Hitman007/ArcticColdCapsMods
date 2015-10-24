@@ -1,2 +1,2 @@
 #!/bin/bash
-php codecept.phar run --steps
+php codecept.phar run --no-ansi
