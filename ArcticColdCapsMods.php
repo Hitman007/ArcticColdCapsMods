@@ -7,7 +7,7 @@ Version: 1.2
 Author: Jim Maguire
 Author URI: http://customrayguns.com/
 */
-die('asdf');
+
 namespace CustomRayGuns;
 
 //adds the role "Nurse" alias for shop-manager - This is an unused function as of now. I will need to
