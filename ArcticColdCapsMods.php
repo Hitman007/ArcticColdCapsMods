@@ -46,7 +46,7 @@ function keep_me_logged_in_for_1_year( $expirein ) {
 	return 31556926; // 1 year in seconds
 }
 
-add_action('admin_init','CustomRayGuns\shouldModifyInfoformLinks');
+//add_action('admin_init','CustomRayGuns\shouldModifyInfoformLinks');
 function shouldModifyInfoformLinks(){
 	require_once 'doModifyNewInfoformLinks.php';
 	doModifyNewInfoformLinks();
