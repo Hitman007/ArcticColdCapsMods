@@ -1,4 +1,4 @@
 #!/bin/bash
 
 clear
-php codecept.phar run --steps --html
+php codecept.phar run --html

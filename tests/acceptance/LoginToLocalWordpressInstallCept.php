@@ -2,8 +2,8 @@
 
 include 'WordpressAcceptanceTester.class.php';
 $I = new CustomRayGuns\WordpressAcceptanceTester($scenario);
-$I->wantTo('LoginToLocalWordpressInstall');
+$I->wantTo('Login to Wordpress on \localhost as an admin');
 $I->loginWordpressAs('admin');
-$I->see('Logoreno');
+//$I->see('Log In');
 
 ?> 
