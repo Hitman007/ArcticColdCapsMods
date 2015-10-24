@@ -52,7 +52,7 @@ function shouldModifyInfoformLinks(){
 	doModifyNewInfoformLinks();
 }
 
-add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
+//add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
 function shouldModifyAdminWidgets(){
 	require_once 'doModifyAdminWidgets.php';
 	doModifyAdminWidgets();
