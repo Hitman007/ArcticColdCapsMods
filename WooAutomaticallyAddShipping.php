@@ -7,6 +7,8 @@ function WooAutomaticallyAddShipping(){
        if( 485 == $product_id ) {
       	global $woocommerce;
         	$woocommerce->cart->add_to_cart(683);
+        	//adds deposit:
+        	$woocommerce->cart->add_to_cart(675);
       }
     }
 }
