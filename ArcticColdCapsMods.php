@@ -52,13 +52,13 @@ function shouldModifyInfoformLinks(){
 	doModifyNewInfoformLinks();
 }
 
-//add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
+add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
 function shouldModifyAdminWidgets(){
 	require_once 'doModifyAdminWidgets.php';
 	doModifyAdminWidgets();
 }
 
-add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
+//add_action('admin_init', 'CustomRayGuns\customDashboardMetaBox');
 function customDashboardMetaBox() {
 	require_once 'addCRGDashboardMetaBox.php';
 	addCRGDashboardMetaBox();
