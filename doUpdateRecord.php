@@ -44,7 +44,7 @@ function doUpdateRecord($data){
 		
 		$link = "/info-sheet/?user=".$user->ID;
 		$admin_email = get_bloginfo( 'admin_email' );
-		$subject = 'New Registration';
+		$subject = 'New Info Form';
 		$body = get_site_url().$link;
 		$headers = 'From: '.$title.' <'.$email.'>' . "\r\n";
 		

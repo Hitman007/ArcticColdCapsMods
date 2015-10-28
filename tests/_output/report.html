@@ -194,13 +194,13 @@
  <body>
    <ul id="toolbar-filter">
      <li> <a href="#" title="Show all" onClick="showAllScenarios()">◯</a></li>
-     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 0</a></li>
-     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 1</a></li>
+     <li> <a href="#" title="Successful" onClick="toggleScenarios('scenarioSuccess', this.parentElement)"><strong>✔</strong> 1</a></li>
+     <li> <a href="#" title="Failed" onClick="toggleScenarios('scenarioFailed', this.parentElement)"><strong>✗</strong> 0</a></li>
      <li> <a href="#" title="Skipped" onClick="toggleScenarios('scenarioSkipped', this.parentElement)"><strong>S</strong> 0</a></li>
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: #e74c3c">FAILED</span> (2s)</small></h1>
+ <h1>Codeception Results <small><span style="color: green">OK</span> (0.9s)</small></h1>
 
 
 
@@ -209,14 +209,14 @@
  <td>
      <h3>Acceptance Tests</h3>
  </td>
-</tr>   <tr class="scenarioRow scenarioFailed">
+</tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioFailed" onclick="showHide('1', this)">[+] Logintolocalwordpressinstall (LoginToLocalWordpressInstallCept) <span style="color: #34495e; font-size: 70%;">1.98s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('1', this)">[+] Login to wordpress on \localhost as an admin (LoginToLocalWordpressInstallCept) <span style="color: #34495e; font-size: 70%;">0.86s</span></p>
     </td>
    </tr>
-   <tr class="scenarioRow scenarioFailed">
+   <tr class="scenarioRow scenarioSuccess">
     <td>
-     <table border="0" width="100%" class="scenarioFailed scenarioStepsTable" id="stepContainer1">
+     <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer1">
 
 
       <tr>
@@ -244,32 +244,11 @@
       </tr>
 
       <tr>
-       <td class="stepName ">I see <span style="color: #732E81">"Howdy"</span></td>
-      </tr>
-
-      <tr>
-       <td class="stepName failedStep">I see <span style="color: #732E81">"Logoreno"</span></td>
+       <td class="stepName ">I see <span style="color: #732E81">"Howdy, Hitman007"</span></td>
       </tr>
 
 
-         <tr >
-    <td class="error">
-        Failed asserting that   <bold>/wp-admin/</bold><br />
---> <info><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-Dashboard ‹ Hitman007 — WordPress<br />
-<br />
-addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};<br />
-var ajaxurl = '/wp-admin/admin-ajax.php',</info><br />
-<debug>[Content too long to display. See complete response in '_output' directory]</debug><br />
---> contains "logoreno".
-    </td>
-</tr>
+         
 
      </table>
     </td>
@@ -284,11 +263,11 @@ var ajaxurl = '/wp-admin/admin-ajax.php',</info><br />
       <table border="0">
        <tr>
         <td width="250" class="scenarioSuccess">Successful scenarios:</td>
-        <td class="scenarioSuccessValue"><strong>0</strong></td>
+        <td class="scenarioSuccessValue"><strong>1</strong></td>
        </tr>
        <tr>
         <td class="scenarioFailed">Failed scenarios:</td>
-        <td class="scenarioFailedValue"><strong>1</strong></td>
+        <td class="scenarioFailedValue"><strong>0</strong></td>
        </tr>
        <tr>
         <td class="scenarioSkipped">Skipped scenarios:</td>
