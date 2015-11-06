@@ -96,3 +96,8 @@ if (isset($_POST['crg_quick_phone'])){
 	require_once 'quickForm.php';
 	add_action('init', 'CustomRayGuns\quickForm');
 }
+
+add_shortcode('start-here', 'CustomRayGuns\loadStartHereShortcode');
+function loadStartHereShortcode(){
+	die('joy');
+}
