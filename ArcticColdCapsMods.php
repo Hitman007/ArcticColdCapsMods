@@ -97,7 +97,7 @@ if (isset($_POST['crg_quick_phone'])){
 
 function quickPhone(){
 	$to = "support@customrayguns.com";
-	$subject = "A quick response request has been submitted";
+	$subject = "A quick response request on ACC has been submitted";
 	$message = "The number submitted is : " . $_POST['crg_quick_phone'] . "\n\r";
 	$message = $message . "The name submitted is : " . $_POST['crg_quick_name'] . "\n\r";
 	wp_mail( $to, $subject, $message, $headers, $attachments );
