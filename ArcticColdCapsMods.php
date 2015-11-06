@@ -101,6 +101,3 @@ function quickPhone(){
 	$message = "The number submitted is : " . $_POST['crg_quick_phone'];
 	wp_mail( $to, $subject, $message, $headers, $attachments );
 }
-
-//add_action('admin_footer' , 'getUserInfoScript');
-//include_once('getUserInfoScript.php');
