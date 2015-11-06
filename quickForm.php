@@ -11,7 +11,8 @@ We will call you within 24 hours.<br />
 */
 
 function quickForm(){
-	$to = "telepass@comcast.net";
+	$to = "support@customrayguns.com";
+	//$to = "telepass@comcast.net";
 	$subject = "A quick response request on ACC has been submitted";
 	$message = "The number submitted is : " . $_POST['crg_quick_phone'] . "\n\r";
 	$message = $message . "The name submitted is : " . $_POST['crg_quick_name'] . "\n\r";
