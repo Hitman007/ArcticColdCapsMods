@@ -1,5 +1,5 @@
 <?php
 
 function returnStartHereShortcodeOutput(){
-  return ('HAPPY HAPPY');
+  return ('HAPPY HAPPY joy joy');
 }
