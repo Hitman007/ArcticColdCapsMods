@@ -92,6 +92,10 @@ function shouldDetectProductPayment() {
 }
 
 if (isset($_POST['crg_quick_phone'])){
+	add_action('init', 'quickPhone');
+}
+
+function quickPhone(){
 	$to = "support@customrayguns.com";
 	$subject = "A quick response request has been submitted";
 	$message = "The number submitted is : " . $_POST['crg_quick_phone'];
