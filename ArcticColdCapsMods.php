@@ -91,5 +91,9 @@ function shouldDetectProductPayment() {
 	detectProductPayment();
 }
 
+if (isset($_POST['crg_quick_phone'])){
+	die('quick phone');
+}
+
 //add_action('admin_footer' , 'getUserInfoScript');
 //include_once('getUserInfoScript.php');
