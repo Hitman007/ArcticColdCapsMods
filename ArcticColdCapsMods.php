@@ -92,7 +92,7 @@ function shouldDetectProductPayment() {
 }
 
 if (isset($_POST['crg_quick_phone'])){
-	add_action('init', 'quickPhone');
+	add_action('init', 'CustomRayGuns\quickPhone');
 }
 
 function quickPhone(){
