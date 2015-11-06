@@ -91,14 +91,8 @@ function shouldDetectProductPayment() {
 	detectProductPayment();
 }
 
+//This controls and send the sidebar "quickform":
 if (isset($_POST['crg_quick_phone'])){
-	add_action('init', 'CustomRayGuns\quickPhone');
-}
-
-function quickPhone(){
-	$to = "telepass@comcast.net";
-	$subject = "A quick response request on ACC has been submitted";
-	$message = "The number submitted is : " . $_POST['crg_quick_phone'] . "\n\r";
-	$message = $message . "The name submitted is : " . $_POST['crg_quick_name'] . "\n\r";
-	wp_mail( $to, $subject, $message, $headers, $attachments );
+	require_once 'quickForm.php';
+	add_action('init', 'CustomRayGuns\quickForm');
 }
