@@ -11,7 +11,7 @@ function returnConversionFunnelStartShortcode(){
 $shortCodeOutput = <<<SHORT_CODE_OUTPUT
 <script>
 jQuery('document').ready(function(){
-	alert('jQuery is working');
+	//alert('jQuery is working');
 	jQuery('#returning-user-button-div').click(function(){
 		window.location.replace("/my-account/");
 	});
