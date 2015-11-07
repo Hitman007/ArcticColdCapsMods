@@ -1,6 +1,6 @@
 <?php
 
-function returnStartHereShortcodeOutput(){
+function returnCustomerAreaShortcode(){
   
 $shortcodeOutput = <<<shortcodeOutput
 <h2>Customer Area</h2>
