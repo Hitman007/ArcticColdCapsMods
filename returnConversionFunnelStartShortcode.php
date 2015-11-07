@@ -18,6 +18,7 @@ jQuery('document').ready(function(){
 	jQuery('#new-user-button-div').click(function(){
 		jQuery('#returning-user-button-div').hide();
 		jQuery('#new-user-button-div').hide();
+		jQuery('#new-user-form-div').slideDown('slow');
 	});
 });
 </script>
@@ -26,6 +27,14 @@ jQuery('document').ready(function(){
 </div>
 <div id = "new-user-button-div">
 	<input type = "button" value = "New User" />
+</div>
+<div id = "new-user-form-div" style = "display:none;">
+	<form method = "post">
+		<table>
+			<tr><td>First Name</td><td><input type = "text" name = "crg_fn" /></td></tr>
+			<tr><td></td><td></td></tr>
+		</table>
+	</form>
 </div>
 SHORT_CODE_OUTPUT;
 
