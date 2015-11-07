@@ -16,8 +16,8 @@ jQuery('document').ready(function(){
 		window.location.replace("/my-account/");
 	});
 	jQuery('#new-user-button-div').click(function(){
-		jQuery('#returning-user-button-div').fadeOut();
-		jQuery('#new-user-button-div').fadeOut();
+		jQuery('#returning-user-button-div').hide();
+		jQuery('#new-user-button-div').hide();
 	});
 });
 </script>
