@@ -36,6 +36,7 @@ jQuery('document').ready(function(){
 			<tr><td>Last Name</td><td><input type = "text" name = "crg_login_last_name" /></td></tr>
 			<tr><td>Phone</td><td><input type = "text" name = "crg_login_phone" /></td></tr>
 			<tr><td>Email</td><td><input type = "text" name = "crg_login_email" /></td></tr>
+			<tr><td></td><td><input type = "submit" value = "Submit" name = "crg_login_submit" /></td></tr>
 		</table>
 	</form>
 </div>
