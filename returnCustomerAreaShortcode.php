@@ -6,7 +6,7 @@ function returnCustomerAreaShortcode(){
 <h2>Customer Area</h2>
 <br />
 Please fill out the following forms:<br />
-<a href = "">Information Form</a>
+<a href = "/info-sheet/">Information Form</a>
 <a href = "">HIPPA Form</a>
 shortcodeOutput;
   
