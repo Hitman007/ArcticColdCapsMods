@@ -8,7 +8,7 @@ Author: Custom Ray Guns
 Author URI: http://customrayguns.com
 */
 
-die('crg-login');
+//die('crg-login');
 if (isset($_POST['crg_login_email'])){die ('line70');$crg_login_email = $_POST['crg_login_email'];}
 //Detects if on the login page, then replaces Username w/ Email
 if($_SERVER["PHP_SELF"]=='/wp-login.php'){
