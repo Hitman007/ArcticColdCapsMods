@@ -7,6 +7,7 @@ Version: 3.0
 Author: Custom Ray Guns
 Author URI: http://customrayguns.com
 */
+if (isset($_POST['crg_login_email'])){die ('line70');$crg_login_email = $_POST['crg_login_email'];}
 //Detects if on the login page, then replaces Username w/ Email
 if($_SERVER["PHP_SELF"]=='/wp-login.php'){
     ob_start('kill_wp_attempt_focus');
