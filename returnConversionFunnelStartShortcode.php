@@ -37,6 +37,11 @@ jQuery('document').ready(function(){
 			Email<input type = "text" name = "crg_login_email" />
 			<input type = "submit" value = "Submit" name = "crg_login_submit" />
 	</form>
+	<form method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="crg_login_email"><br>
+<input type="submit">
+</form>
 </div>
 SHORT_CODE_OUTPUT;
 
