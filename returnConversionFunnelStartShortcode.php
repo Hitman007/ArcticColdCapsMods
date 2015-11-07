@@ -28,16 +28,14 @@ jQuery('document').ready(function(){
 <div id = "new-user-button-div">
 	<input type = "button" value = "New User" />
 </div>
-<div id = "new-user-form-div" style = "display:none;">
+<div id = "new-user-form-div">
 <br />
-	<form name = "crg_login_name" method = "post">
-		<table>
-			<tr><td>First Name</td><td><input type = "text" name = "crg_login_first_name" /></td></tr>
-			<tr><td>Last Name</td><td><input type = "text" name = "crg_login_last_name" /></td></tr>
-			<tr><td>Phone</td><td><input type = "text" name = "crg_login_phone" /></td></tr>
-			<tr><td>Email</td><td><input type = "text" name = "crg_login_email" /></td></tr>
-			<tr><td></td><td><input type = "submit" value = "Submit" name = "crg_login_submit" /></td></tr>
-		</table>
+	<form method = "post">
+			First Name<input type = "text" name = "crg_login_first_name" />
+			Last Name<input type = "text" name = "crg_login_last_name" />
+			Phone<input type = "text" name = "crg_login_phone" />
+			Email<input type = "text" name = "crg_login_email" />
+			<input type = "submit" value = "Submit" name = "crg_login_submit" />
 	</form>
 </div>
 SHORT_CODE_OUTPUT;
