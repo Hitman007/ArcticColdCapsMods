@@ -32,7 +32,7 @@ jQuery('document').ready(function(){
 	<form method = "post">
 		<table>
 			<tr><td>First Name</td><td><input type = "text" name = "crg_fn" /></td></tr>
-			<tr><td></td><td></td></tr>
+			<tr><td>Lane Name:</td><td><input type = "text" name = "crg_ln" /></td></tr>
 		</table>
 	</form>
 </div>
