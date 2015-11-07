@@ -1,8 +1,8 @@
 <?php
 
 function returnCustomerAreaShortcode(){
-  
-  $shortcodeOutput = <<<shortcodeOutput
+    if ( is_user_logged_in() ) {
+        $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
 <ul>
 <li>
@@ -11,10 +11,12 @@ function returnCustomerAreaShortcode(){
 <a href = "/hipaa">HIPAA Form</a>
 </li><li>
 <a href = "/tac">Terms and Conditions</a>
-</li><li>
-<a href = "/hipaa">Artic Cold Caps HIPAA Authorization Form</a></li>
+</li>
+</ul>
 shortcodeOutput;
-  
-  return $shortcodeOutput;
-
+        return $shortcodeOutput;
+     }else{
+       //User is not logged in:
+       return ".";
+     }
 }
