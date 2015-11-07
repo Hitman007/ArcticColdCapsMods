@@ -11,13 +11,14 @@ function returnConversionFunnelStartShortcode(){
 $shortCodeOutput = <<<SHORT_CODE_OUTPUT
 <script>
 jQuery('document').ready(function(){
-	alert('jQuery is working');
+	//alert('jQuery is working');
+	jQuery('#returning-user-button-div').click(function(){
+		alert('click');	
+	}):
 });
 </script>
-<div>
-	<form action = "/my-account">
-		<input type = "submit" value = "Returning User" />
-	</form>
+<div id = "returning-user-button-div">
+	<input type = "button" value = "Returning User" />
 </div>
 <div>
 New User
