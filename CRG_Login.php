@@ -25,7 +25,7 @@ function kill_wp_attempt_focus($in){
     return preg_replace('/function wp_attempt_focus/','function wp_attempt_focus(){} function wp_attempt_focus_killed',$in);
 }
 
-session_start();
+//session_start();
 
 if ((isset($_SESSION['crg_login_redirect_url'])) and (isset($_SESSION['crg_login_email'])) ) {
 	if($pagenow==='wp-login.php'){	
