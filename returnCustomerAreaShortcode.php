@@ -15,8 +15,7 @@ function returnCustomerAreaShortcode(){
 </ul>
 shortcodeOutput;
         return $shortcodeOutput;
-     }else{
-       //User is not logged in:
-       return ".";
+     }else{ //User is not logged in:
+       return;
      }
 }
