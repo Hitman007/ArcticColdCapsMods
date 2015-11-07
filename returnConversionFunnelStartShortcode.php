@@ -14,7 +14,7 @@ jQuery('document').ready(function(){
 	alert('jQuery is working');
 	jQuery('#returning-user-button-div').click(function(){
 		alert('click');	
-	}):
+	});
 });
 </script>
 <div id = "returning-user-button-div">
