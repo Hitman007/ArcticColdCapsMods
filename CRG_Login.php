@@ -7,6 +7,7 @@ Version: 0.1
 Author: Custom Ray Guns
 Author URI: http://customrayguns.com
 */
+die('error line 10');
 
 //Detects if on the login page, then replaces Username with Email
 if(($_SERVER["PHP_SELF"]=='/wp-login.php') or (($_SERVER["PHP_SELF"]=='/crg/'))){
