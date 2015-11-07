@@ -29,10 +29,13 @@ jQuery('document').ready(function(){
 	<input type = "button" value = "New User" />
 </div>
 <div id = "new-user-form-div" style = "display:none;">
+<br />
 	<form method = "post">
 		<table>
-			<tr><td>First Name</td><td><input type = "text" name = "crg_fn" /></td></tr>
-			<tr><td>Lane Name:</td><td><input type = "text" name = "crg_ln" /></td></tr>
+			<tr><td>First Name</td><td><input type = "text" name = "crg_login_first_name" /></td></tr>
+			<tr><td>Last Name</td><td><input type = "text" name = "crg_login_last_name" /></td></tr>
+			<tr><td>Phone</td><td><input type = "text" name = "crg_login_phone" /></td></tr>
+			<tr><td>Email</td><td><input type = "text" name = "crg_login_email" /></td></tr>
 		</table>
 	</form>
 </div>
