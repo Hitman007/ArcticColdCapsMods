@@ -10,7 +10,9 @@ function returnConversionFunnelStartShortcode(){
   
 $shortCodeOutput = <<<SHORT_CODE_OUTPUT
 <script>
-	alert('jQuery');
+jQuery('document').ready(function(){
+	alert('jQuery is working');
+});
 </script>
 <div>
 	<form action = "/my-account">
