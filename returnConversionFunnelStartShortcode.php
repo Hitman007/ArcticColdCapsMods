@@ -13,7 +13,7 @@ $shortCodeOutput = <<<SHORT_CODE_OUTPUT
 jQuery('document').ready(function(){
 	alert('jQuery is working');
 	jQuery('#returning-user-button-div').click(function(){
-		alert('click');	
+		window.location.replace("/my-account/");
 	});
 });
 </script>
