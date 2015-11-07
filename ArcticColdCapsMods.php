@@ -46,7 +46,7 @@ function keep_me_logged_in_for_1_year( $expirein ) {
 	return 31556926; // 1 year in seconds
 }
 
-//add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
+add_action('admin_init','CustomRayGuns\shouldModifyAdminWidgets');
 function shouldModifyAdminWidgets(){
 	require_once 'doModifyAdminWidgets.php';
 	doModifyAdminWidgets();
@@ -85,7 +85,7 @@ function shouldDetectProductPayment() {
 	detectProductPayment();
 }
 
-//This controls and send the sidebar "quickform":
+//This controls and sends the sidebar "quickform":
 if (isset($_POST['crg_quick_phone'])){
 	require_once 'quickForm.php';
 	add_action('init', 'CustomRayGuns\quickForm');
