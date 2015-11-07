@@ -3,12 +3,16 @@
 function returnCustomerAreaShortcode(){
   
   $shortcodeOutput = <<<shortcodeOutput
-<h2>Please fill out the following forms:</h2>
-<a href = "/info-sheet/">Information Form</a><br />
-<a href = "/hipaa">HIPAA Form</a><br />
-<a href = "/tac">Terms and Conditions</a><br />
-<a href = "/hipaa">Artic Cold Caps HIPAA Authorization Form</a><br />
-<a href = ""></a><br />
+<h2>Please review the following:</h2>
+<ul>
+<li>
+<a href = "/info-sheet/">Information Form</a>
+</li><li>
+<a href = "/hipaa">HIPAA Form</a>
+</li><li>
+<a href = "/tac">Terms and Conditions</a>
+</li><li>
+<a href = "/hipaa">Artic Cold Caps HIPAA Authorization Form</a></li>
 shortcodeOutput;
   
   return $shortcodeOutput;
