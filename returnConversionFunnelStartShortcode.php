@@ -9,11 +9,17 @@ function returnConversionFunnelStartShortcode(){
   ');}
   
 $shortCodeOutput = <<<SHORT_CODE_OUTPUT
-<form action = "/my-account">
-<input type = "submit" value = "Returning User" />
-</form>
+<script>
+	alert('jQuery');
+</script>
+<div>
+	<form action = "/my-account">
+		<input type = "submit" value = "Returning User" />
+	</form>
+</div>
+<div>
 New User
-
+</div>
 SHORT_CODE_OUTPUT;
 
   return $shortCodeOutput;
