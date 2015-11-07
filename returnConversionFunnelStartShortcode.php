@@ -1,3 +1,7 @@
 <?php
 
-function returnConversionFunnelStartShortcode(){}
+function returnConversionFunnelStartShortcode(){
+
+  return ('hithere');
+  
+}
