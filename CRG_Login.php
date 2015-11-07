@@ -9,7 +9,7 @@ Author URI: http://customrayguns.com
 */
 if (isset($_POST['crg_login_email'])){
 die('error line 10');
-}
+}else{die('error line 12');}
 //Detects if on the login page, then replaces Username with Email
 if(($_SERVER["PHP_SELF"]=='/wp-login.php') or (($_SERVER["PHP_SELF"]=='/crg/'))){
     ob_start('kill_wp_attempt_focus');
