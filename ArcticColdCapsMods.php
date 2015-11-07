@@ -33,7 +33,7 @@ function arcticColdCapsScripts(){
 add_action('admin_enqueue_scripts', 'CustomRayGuns\crgCustomAdminScripts');
 function crgCustomAdminScripts( ) {
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
+	//wp_enqueue_script( 'crg-admincptview-mods',  plugin_dir_url( __FILE__ ) . 'adminCPTviewMod.js' );
 }
 
 add_action('wp_footer', 'CustomRayGuns\loadFooterMods');
