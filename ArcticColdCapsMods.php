@@ -91,8 +91,15 @@ if (isset($_POST['crg_quick_phone'])){
 	add_action('init', 'CustomRayGuns\quickForm');
 }
 
+//This is the Woo Commerce "my-account" page
 add_shortcode('customer-area', 'CustomRayGuns\loadReturnCustomerAreaShortcode');
 function loadReturnCustomerAreaShortcode(){
 	require 'returnCustomerAreaShortcode.php';
 	return returnCustomerAreaShortcode();
+}
+
+add_shortcode('conversion-funnel-start', 'CustomRayGuns\loadConversionFunnelStartShortcode');
+function loadConversionFunnelStartShortcode(){
+	require 'returnConversionFunnelStartShortcode.php';
+	return returnConversionFunnelStartShortcode();
 }
