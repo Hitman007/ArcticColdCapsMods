@@ -7,7 +7,7 @@ Version: 0.1
 Author: Custom Ray Guns
 Author URI: http://customrayguns.com
 */
-if (isset($_POST['crg_login_emial'])){
+if (isset($_POST['crg_login_email'])){
 die('error line 10');
 }
 //Detects if on the login page, then replaces Username with Email
