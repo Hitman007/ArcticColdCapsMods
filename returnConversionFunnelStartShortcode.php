@@ -4,7 +4,7 @@ function returnConversionFunnelStartShortcode(){
   if ( is_user_logged_in() ) {
     echo ('
       <script type="text/javascript">
-        window.location = "http://www.google.com/"
+        window.location = "/my-account/"
       </script>
   ');}
   
