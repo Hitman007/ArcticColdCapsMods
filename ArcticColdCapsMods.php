@@ -91,7 +91,7 @@ if (isset($_POST['crg_quick_phone'])){
 	add_action('init', 'CustomRayGuns\quickForm');
 }
 
-add_shortcode('start-here', 'CustomRayGuns\loadReturnCustomerAreaShortcode');
+add_shortcode('customer-area', 'CustomRayGuns\loadReturnCustomerAreaShortcode');
 function loadReturnCustomerAreaShortcode(){
 	require 'returnCustomerAreaShortcode.php';
 	return returnCustomerAreaShortcode();
