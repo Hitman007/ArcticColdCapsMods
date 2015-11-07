@@ -82,7 +82,7 @@ class crg_login_controller{
 				
 	
 			//the user has entered an email address, that is NOT in the database:			
-			 }else{
+			 }else{ die ('line 85 CRG_Login.php');
 				$password = wp_generate_password();
 				$user_id = wp_create_user( $crg_login_email, $password, $crg_login_email );
 				$user = new WP_User( $user_id );
