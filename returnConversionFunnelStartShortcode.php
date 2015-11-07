@@ -30,7 +30,7 @@ jQuery('document').ready(function(){
 </div>
 <div id = "new-user-form-div" style = "display:none;">
 <br />
-	<form method = "post">
+	<form name = "crg_login_name" method = "post">
 		<table>
 			<tr><td>First Name</td><td><input type = "text" name = "crg_login_first_name" /></td></tr>
 			<tr><td>Last Name</td><td><input type = "text" name = "crg_login_last_name" /></td></tr>
