@@ -11,7 +11,7 @@ class FormController{
 	public function __construct() {
 		
 		//This loads the script that adds a link to the admin area
-		include_once('addCustomColumn.php');
+		//include_once('addCustomColumn.php');
 
 		//create the CPT 'info-form'
 		include_once('InfoFormCPT.class.php');
