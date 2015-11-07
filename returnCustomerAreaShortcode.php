@@ -3,9 +3,7 @@
 function returnCustomerAreaShortcode(){
   
   $shortcodeOutput = <<<shortcodeOutput
-<h2>Customer Area</h2>
-<br />
-Please fill out the following forms:<br />
+<h2>Please fill out the following forms:</h2>
 <a href = "/info-sheet/">Information Form</a><br />
 <a href = "/hipaa">HIPAA Form</a><br />
 <a href = "/tac">Terms and Conditions</a><br />
