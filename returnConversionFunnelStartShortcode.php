@@ -15,13 +15,17 @@ jQuery('document').ready(function(){
 	jQuery('#returning-user-button-div').click(function(){
 		window.location.replace("/my-account/");
 	});
+	jQuery('#new-user-button-div').click(function(){
+		jQuery('#returning-user-button-div').fadeOut();
+		jQuery('#new-user-button-div').fadeOut();
+	});
 });
 </script>
 <div id = "returning-user-button-div">
 	<input type = "button" value = "Returning User" />
 </div>
-<div>
-New User
+<div id = "new-user-button-div">
+	<input type = "button" value = "New User" />
 </div>
 SHORT_CODE_OUTPUT;
 
