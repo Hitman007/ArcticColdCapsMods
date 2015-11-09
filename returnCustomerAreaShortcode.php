@@ -5,7 +5,7 @@ function returnCustomerAreaShortcode(){
         $user_id = get_current_user_id();
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
         if( isset($_POST['user_accept_terms_true_or_false']) ){
-            $terms_post = "true";
+            $terms_post = isset($_POST['user_accept_terms_true_or_false']);
             if(!empty($terms)) {
                 update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
             } else {
@@ -13,7 +13,8 @@ function returnCustomerAreaShortcode(){
             }
             echo $terms_post;
         }else{
-            update_user_meta($user_id, "user_accept_terms_true_or_false", "false");
+            $terms_post = isset($_POST['user_accept_terms_true_or_false']);
+            update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
         }
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
         echo $terms[0]."1";
