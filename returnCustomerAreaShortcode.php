@@ -16,7 +16,7 @@ function returnCustomerAreaShortcode(){
             update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
         }
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
-        echo "<input type='hidden' name='user_accept_terms_true_or_false' value='".$terms[0]."'>";
+        echo "<input type='hidden' id='tac_meta' name='user_accept_terms_true_or_false' value='".$terms[0]."'>";
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
 <ul>
@@ -36,8 +36,8 @@ jQuery(document).ready(function(){
     jQuery("#terms_and_conds").on("change", "input:checkbox", function(){
         jQuery("#terms_and_conds").submit();
         var val = jQuery("#tac_check").val();
-        alert(val);
     });
+    jQuery("#tac_check").val(jQuery("input#tac_meta").val());
 });
 </script>
 shortcodeOutput;
