@@ -5,7 +5,8 @@ function returnCustomerAreaShortcode(){
         $user_id = get_current_user_id();
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
         if(!empty($terms)) {
-            echo "<input type='hidden' name='user_accept_terms_true_or_false' value='".$terms."'>";
+            print_r($terms);
+            //echo "<input type='hidden' name='user_accept_terms_true_or_false' value='".$terms."'>";
         } else {
             add_user_meta( $user_id, 'user_accept_terms_true_or_false', false);
         }
