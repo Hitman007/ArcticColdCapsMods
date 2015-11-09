@@ -37,7 +37,12 @@ jQuery(document).ready(function(){
         jQuery("#terms_and_conds").submit();
         var val = jQuery("#tac_check").val();
     });
-    jQuery("#tac_check").val(jQuery("input#tac_meta").val());
+    var meta = jQuery("input#tac_meta").val();
+    if (meta == 1) {
+        jQuery("#tac_check").prop('checked', true);
+    } else {
+        jQuery("#tac_check").prop('checked', false);
+    }
 });
 </script>
 shortcodeOutput;
