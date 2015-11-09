@@ -14,6 +14,7 @@ function returnCustomerAreaShortcode(){
         }else{
             update_user_meta($user_id, "user_accept_terms_true_or_false", false);
         }
+        $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
         echo "<input type='hidden' id='tac_meta' name='user_accept_terms_true_or_false_meta' value='".$terms[0]."'>";
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
