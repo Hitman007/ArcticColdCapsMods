@@ -10,9 +10,21 @@ function returnCustomerAreaShortcode(){
 </li><li>
 <a href = "/hipaa">HIPAA Form</a>
 </li><li>
-<a href = "/tac">Terms and Conditions</a><br /><input type = "checkbox" name = "user_accept_terms_true_or_false" /> I accept the Term and Conditions
+<a href = "/tac">Terms and Conditions</a><br />
+<form id="terms_and_conds" action="" method="post">
+<input id="tac_check" type = "checkbox" name = "user_accept_terms_true_or_false" /> I accept the Term and Conditions
+</form>
 </li>
 </ul>
+<script>
+jQuery(document).ready(function(){
+    jQuery("#terms_and_conds").on("change", "input:checkbox", function(){
+        jQuery("#terms_and_conds").submit();
+        var val = jQuery("#tac_check").val();
+        alert(val);
+    });
+});
+</script>
 shortcodeOutput;
         return $shortcodeOutput;
      }else{ //User is not logged in:
