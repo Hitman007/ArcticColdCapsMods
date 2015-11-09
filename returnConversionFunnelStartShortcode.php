@@ -23,10 +23,10 @@ jQuery('document').ready(function(){
 });
 </script>
 <div id = "returning-user-button-div" style="text-align: center; margin-bottom: 20px;">
-	<input style=" max-width: 150px; width: 100%;" type = "button" value = "Returning User" />
+	<input style=" max-width: 200px; width: 100%; font-size: 16px;" type = "button" value = "Returning User" />
 </div>
 <div id = "new-user-button-div" style="text-align: center; margin-bottom: 20px;">
-	<input style=" max-width: 150px; width: 100%;" type = "button" value = "New User" />
+	<input style=" max-width: 200px; width: 100%; font-size: 16px;" type = "button" value = "New User" />
 </div>
 <div id = "new-user-form-div" style = "display:none;">
 <br />
