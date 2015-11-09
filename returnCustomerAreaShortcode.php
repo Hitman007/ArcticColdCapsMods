@@ -10,7 +10,7 @@ function returnCustomerAreaShortcode(){
             add_user_meta( $user_id, "user_accept_terms_true_or_false", $terms_post);
         }
         
-        if(isset($_POST['user_accept_terms_true_or_false'])) {
+        if($_SERVER['REQUEST_METHOD'] == 'POST') {
             $terms_post = $_POST['user_accept_terms_true_or_false'];
             update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
         } else {
