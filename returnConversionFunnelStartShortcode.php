@@ -16,7 +16,6 @@ jQuery('document').ready(function(){
 		window.location.replace("/my-account/");
 	});
 	jQuery('#new-user-button-div').click(function(){
-		alert('19');
 		jQuery('#returning-user-button-div').hide();
 		jQuery('#new-user-button-div').hide();
 		jQuery('#new-user-form-div').slideDown('slow');
@@ -29,7 +28,7 @@ jQuery('document').ready(function(){
 <div id = "new-user-button-div">
 	<input type = "button" value = "New User" />
 </div>
-<div id = "new-user-form-div">
+<div id = "new-user-form-div" style = "display:none;">
 <br />
 	<form method = "post">
 			First Name<input type = "text" name = "crg_login_first_name" />
