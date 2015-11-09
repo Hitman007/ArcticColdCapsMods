@@ -38,7 +38,6 @@ function loadFieldValuesIntoForm(){
     echo "<input type='hidden' name='Last_Name' value='".$user->last_name."'>";
     echo "<input type='hidden' name='crg_login_email' value='".$user->user_email."'>";
     echo "<input type='hidden' name='Mobile' value='".$phone."'>";
-    //print_r($user);
   }
 
   $output = <<<direct_output
