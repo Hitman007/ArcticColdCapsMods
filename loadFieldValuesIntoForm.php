@@ -33,11 +33,12 @@ function loadFieldValuesIntoForm(){
         }
     }
   } else {
-    //echo "<input type='hidden' name='First_Name' value='empty'>";
-    //echo "<input type='hidden' name='Last_Name' value='empty'>";
-    //echo "<input type='hidden' name='crg_login_email' value='empty'>";
-    //echo "<input type='hidden' name='Mobile' value='empty'>";
-    print_r($user);
+    $phone = get_user_meta( $user_id, 'billing_phone', true );
+    echo "<input type='hidden' name='First_Name' value='."$user->first_name".'>";
+    echo "<input type='hidden' name='Last_Name' value='."$user->last_name".'>";
+    echo "<input type='hidden' name='crg_login_email' value='."$user->user_email".'>";
+    echo "<input type='hidden' name='Mobile' value='".$phone."'>";
+    //print_r($user);
   }
 
   $output = <<<direct_output
