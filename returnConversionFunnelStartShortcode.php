@@ -31,11 +31,11 @@ jQuery('document').ready(function(){
 <div id = "new-user-form-div" style = "display:none;">
 <br />
 	<form method = "post">
-			First Name<input type = "text" name = "crg_login_first_name" />
-			Last Name<input type = "text" name = "crg_login_last_name" />
-			Phone<input type = "text" name = "crg_login_phone" />
-			Email<input type = "text" name = "crg_login_email" />
-			<input type = "submit" value = "Submit" name = "crg_login_submit" />
+			<label for="crg_login_first_name">First Name</label><input type="text" name="crg_login_first_name" />
+			<label for="crg_login_last_name">Last Name</label><input type="text" name="crg_login_last_name" />
+			<label for="crg_login_phone">Phone</label><input type ="text"name="crg_login_phone" />
+			<label for="crg_login_email">Email</label><input type ="text" name="crg_login_email" />
+			<input type="submit" value="Submit" name="crg_login_submit" />
 	</form>
 </div>
 SHORT_CODE_OUTPUT;
