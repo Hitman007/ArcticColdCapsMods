@@ -4,15 +4,19 @@ function returnCustomerAreaShortcode(){
     if ( is_user_logged_in() ) {
         $user_id = get_current_user_id();
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
+        /*
         if(!empty($terms)) {
             die("Get meta value");
         } else {
             die("Create user meta");
         }
+        */
         if( isset($_POST['user_accept_terms_true_or_false']) ){
-            update_post_meta($user_id, "user_accept_terms_true_or_false", true );
+            //update_post_meta($user_id, "user_accept_terms_true_or_false", true );
+            die("set");
         }else{
-            update_post_meta($user_id, "user_accept_terms_true_or_false", false );
+            //update_post_meta($user_id, "user_accept_terms_true_or_false", false );
+            die("not set");
         }
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
