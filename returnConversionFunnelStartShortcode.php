@@ -32,16 +32,20 @@ jQuery('document').ready(function(){
 <br />
 	<form method = "post">
 		<div>
-			<label for="crg_login_first_name">First Name</label><input type="text" name="crg_login_first_name" />
+			<label for="crg_login_first_name"><span>First Name</span></label>
+			<input type="text" name="crg_login_first_name" />
 		</div>
 		<div>
-			<label for="crg_login_last_name">Last Name</label><input type="text" name="crg_login_last_name" />
+			<label for="crg_login_last_name"><span>Last Name</span></label>
+			<input type="text" name="crg_login_last_name" />
 		</div>
 		<div>
-			<label for="crg_login_phone">Phone</label><input type ="text"name="crg_login_phone" />
+			<label for="crg_login_phone"><span>Phone</span></label>
+			<input type ="text"name="crg_login_phone" />
 		</div>
 		<div>
-			<label for="crg_login_email">Email</label><input type ="text" name="crg_login_email" />
+			<label for="crg_login_email"><span>Email</span></label>
+			<input type ="text" name="crg_login_email" />
 		</div>
 		<input type="submit" value="Submit" name="crg_login_submit" />
 	</form>
