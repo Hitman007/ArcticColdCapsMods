@@ -16,6 +16,7 @@ jQuery('document').ready(function(){
 		window.location.replace("/my-account/");
 	});
 	jQuery('#new-user-button-div').click(function(){
+		alert('19');
 		jQuery('#returning-user-button-div').hide();
 		jQuery('#new-user-button-div').hide();
 		jQuery('#new-user-form-div').slideDown('slow');
