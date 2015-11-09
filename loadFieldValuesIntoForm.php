@@ -19,10 +19,10 @@ function loadFieldValuesIntoForm(){
   $form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
   
   if (is_object($form)){
-  	//$data = get_post_meta($form->ID, '', true);
-  	die('No form');
+  	$data = get_post_meta($form->ID, '', true);
    }else{
     $data = FALSE;
+    die('No form');
   }
   
   if ($data) {
