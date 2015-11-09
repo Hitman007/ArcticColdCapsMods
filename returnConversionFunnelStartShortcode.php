@@ -31,22 +31,22 @@ jQuery('document').ready(function(){
 <div id = "new-user-form-div" style = "display:none;">
 <br />
 	<form method = "post">
-		<div>
-			<label for="crg_login_first_name"><span>First Name</span></label>
+		<label for="crg_login_first_name">
+			<span>First Name</span>
 			<input type="text" name="crg_login_first_name" />
-		</div>
-		<div>
-			<label for="crg_login_last_name"><span>Last Name</span></label>
+		</label>
+		<label for="crg_login_last_name">
+			<span>Last Name</span>
 			<input type="text" name="crg_login_last_name" />
-		</div>
-		<div>
-			<label for="crg_login_phone"><span>Phone</span></label>
+		</label>
+		<label for="crg_login_phone">
+			<span>Phone</span>
 			<input type ="text"name="crg_login_phone" />
-		</div>
-		<div>
-			<label for="crg_login_email"><span>Email</span></label>
+		</label>
+		<label for="crg_login_email">
+			<span>Email</span>
 			<input type ="text" name="crg_login_email" />
-		</div>
+		</label>
 		<input type="submit" value="Submit" name="crg_login_submit" />
 	</form>
 </div>
