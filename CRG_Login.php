@@ -93,6 +93,9 @@ class crg_login_controller{
 				wp_set_auth_cookie( $user->ID, TRUE );
 				//either 'administrator', 'subscriber', 'editor', 'author', 'contributor':
 				$user->set_role( 'subscriber' ); 
+				$first_name = $_POST['crg_login_first_name'];
+				$last_name = $_POST['crg_login_last_name'];
+				$user_id = wp_update_user( array( 'ID' => $user_id, 'first_name' => $first_name, 'last_name' => $last_name ) );
 				$creds = array();
 				$creds['user_login'] = $crg_login_email;
 				$creds['user_password'] = $password;
