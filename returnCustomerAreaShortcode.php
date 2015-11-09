@@ -36,7 +36,7 @@ jQuery(document).ready(function(){
         var val = jQuery("#tac_check").val();
     });
     var meta = jQuery("input#tac_meta").val();
-    if (meta == 1) {
+    if (meta == 'on') {
         jQuery("#tac_check").prop('checked', true);
     } else {
         jQuery("#tac_check").prop('checked', false);
