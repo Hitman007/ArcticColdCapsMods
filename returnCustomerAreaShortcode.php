@@ -4,7 +4,7 @@ function returnCustomerAreaShortcode(){
     if ( is_user_logged_in() ) {
         $user_id = get_current_user_id();
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
-        die($terms);
+        var_dump($terms);
         if( isset($_POST['user_accept_terms_true_or_false']) ){
             update_post_meta($user_id, "user_accept_terms_true_or_false", true );
         }else{
