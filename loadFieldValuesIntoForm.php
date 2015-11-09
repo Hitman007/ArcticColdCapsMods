@@ -5,7 +5,7 @@ function loadFieldValuesIntoForm(){
   //die('line 5 loadFieldValuesIntoForm.');
   
   if(isset($_GET['user'])) {
-    if (current_user_can('administrator')||current_user_can('nurse')) {
+  	if (current_user_can('administrator')||current_user_can('nurse')) {
       $user_id = $_GET['user'];
     } else {
       die('Not admin.');
@@ -18,9 +18,9 @@ function loadFieldValuesIntoForm(){
   $title = $user->last_name . ", " . $user->first_name;
   $form = get_page_by_title( $title, 'OBJECT', 'InfoForm' );
   
-  //var_dump($form);
   if (is_object($form)){
-  	$data = get_post_meta($form->ID, '', true);
+  	//$data = get_post_meta($form->ID, '', true);
+  	die('No form');
    }else{
     $data = FALSE;
   }
