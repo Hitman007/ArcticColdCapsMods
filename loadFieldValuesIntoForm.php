@@ -22,7 +22,6 @@ function loadFieldValuesIntoForm(){
   	$data = get_post_meta($form->ID, '', true);
    }else{
     $data = FALSE;
-    die('No form');
   }
   
   if ($data) {
@@ -34,7 +33,11 @@ function loadFieldValuesIntoForm(){
         }
     }
   } else {
-    echo "<input type='hidden' name='empty' value='empty'>";
+    //echo "<input type='hidden' name='First_Name' value='empty'>";
+    //echo "<input type='hidden' name='Last_Name' value='empty'>";
+    //echo "<input type='hidden' name='crg_login_email' value='empty'>";
+    //echo "<input type='hidden' name='Mobile' value='empty'>";
+    print_r($user);
   }
 
   $output = <<<direct_output
