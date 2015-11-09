@@ -31,23 +31,23 @@ jQuery('document').ready(function(){
 <div id = "new-user-form-div" style = "display:none;">
 <br />
 	<form method = "post">
-		<label for="crg_login_first_name">
-			<span>First Name</span>
+		<label for="crg_login_first_name" style="display: block; margin: 0 0 15px 0;">
+			<span style="width: 100px; float: left; padding-top: 2px;">First Name</span>
 			<input type="text" name="crg_login_first_name" />
 		</label>
-		<label for="crg_login_last_name">
-			<span>Last Name</span>
+		<label for="crg_login_last_name" style="display: block; margin: 0 0 15px 0;">
+			<span style="width: 100px; float: left; padding-top: 2px;">Last Name</span>
 			<input type="text" name="crg_login_last_name" />
 		</label>
-		<label for="crg_login_phone">
-			<span>Phone</span>
+		<label for="crg_login_phone" style="display: block; margin: 0 0 15px 0;">
+			<span style="width: 100px; float: left; padding-top: 2px;">Phone</span>
 			<input type ="text"name="crg_login_phone" />
 		</label>
-		<label for="crg_login_email">
-			<span>Email</span>
+		<label for="crg_login_email" style="display: block; margin: 0 0 15px 0;">
+			<span style="width: 100px; float: left; padding-top: 2px;">Email</span>
 			<input type ="text" name="crg_login_email" />
 		</label>
-		<input type="submit" value="Submit" name="crg_login_submit" />
+		<input style="margin-left: 100px;" type="submit" value="Submit" name="crg_login_submit" />
 	</form>
 </div>
 SHORT_CODE_OUTPUT;
