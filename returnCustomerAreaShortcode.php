@@ -10,9 +10,9 @@ function returnCustomerAreaShortcode(){
             add_user_meta( $user_id, 'user_accept_terms_true_or_false', false);
         }
         if( isset($_POST['user_accept_terms_true_or_false']) ){
-            //update_post_meta($user_id, "user_accept_terms_true_or_false", true );
+            update_post_meta($user_id, "user_accept_terms_true_or_false", true );
         }else{
-            //update_post_meta($user_id, "user_accept_terms_true_or_false", false );
+            update_post_meta($user_id, "user_accept_terms_true_or_false", false );
         }
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
