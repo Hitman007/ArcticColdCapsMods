@@ -4,18 +4,16 @@ function returnCustomerAreaShortcode(){
     if ( is_user_logged_in() ) {
         $user_id = get_current_user_id();
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
+        $terms_post = $_POST['user_accept_terms_true_or_false'];
         if( isset($_POST['user_accept_terms_true_or_false']) ){
-            $terms_post = isset($_POST['user_accept_terms_true_or_false']);
             if(!empty($terms)) {
                 update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
             } else {
                 add_user_meta( $user_id, "user_accept_terms_true_or_false", $terms_post);
             }
         }else{
-            $terms_post = isset($_POST['user_accept_terms_true_or_false']);
             update_user_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
         }
-        $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
         echo "<input type='hidden' id='tac_meta' name='user_accept_terms_true_or_false' value='".$terms[0]."'>";
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
