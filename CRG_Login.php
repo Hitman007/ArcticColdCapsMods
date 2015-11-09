@@ -71,7 +71,7 @@ add_action( 'widgets_init', function(){register_widget( 'crg_login_widget' );});
 class crg_login_controller{
 	function __construct(){
 		global $wpdb;
-		if (isset($_POST['crg_login_email'])){die ('line70');$crg_login_email = $_POST['crg_login_email'];}
+		if (isset($_POST['crg_login_email'])){$crg_login_email = $_POST['crg_login_email'];}
 		
 		//the user has entered an email address, but no password is entered:
 		if( ((isset($_POST['crg_login_email'])) && (!( isset($_POST['crg_login_password']) ) ) )){			
