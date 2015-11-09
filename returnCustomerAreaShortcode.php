@@ -16,7 +16,7 @@ function returnCustomerAreaShortcode(){
             update_post_meta($user_id, "user_accept_terms_true_or_false", $terms_post);
         }
         $terms = get_user_meta($user_id, "user_accept_terms_true_or_false");
-        echo $terms[0];
+        echo $terms[0]."1";
         echo "<input type='hidden' name='user_accept_terms_true_or_false' value='".$terms[0]."'>";
         $shortcodeOutput = <<<shortcodeOutput
 <h2>Please review the following:</h2>
