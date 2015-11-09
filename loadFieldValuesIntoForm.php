@@ -2,7 +2,7 @@
 
 //the user WILL be logged in at this point. This script should directly echo a jQuery script
 function loadFieldValuesIntoForm(){
-  //die('line 5 loadFieldValuesIntoForm.');
+  die('line 5 loadFieldValuesIntoForm.');
   
   if(isset($_GET['user'])) {
   	if (current_user_can('administrator')||current_user_can('nurse')) {
