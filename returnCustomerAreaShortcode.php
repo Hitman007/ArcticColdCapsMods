@@ -7,7 +7,6 @@ function returnCustomerAreaShortcode(){
         if(!empty($terms)) {
             die("Get meta value");
         } else {
-            die("Create user meta");
             add_user_meta( $user_id, 'user_accept_terms_true_or_false', false);
         }
         if( isset($_POST['user_accept_terms_true_or_false']) ){
