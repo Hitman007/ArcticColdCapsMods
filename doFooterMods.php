@@ -12,7 +12,7 @@ $output = <<<scriptOutput
 scriptOutput;
 $url = home_url();
 echo $url;
-if ($x === "Arctic Cold Cap Therapy | Chemotherapy Hair Loss Prevention"){
+if ($x === "https://arcticcoldcaps.com"){
     die("yup");
 }
 
