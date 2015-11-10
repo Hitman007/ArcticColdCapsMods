@@ -10,9 +10,7 @@ $output = <<<scriptOutput
     });
 </script>
 scriptOutput;
-$url = home_url();
-echo $url;
-if ($x === "https://arcticcoldcaps.com"){
+if ($x == "https://arcticcoldcaps.com"){
     die("yup");
 }
 
