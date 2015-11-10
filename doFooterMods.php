@@ -10,6 +10,7 @@ $output = <<<scriptOutput
     });
 </script>
 scriptOutput;
+$x = homeurl();
 if ($x == "https://arcticcoldcaps.com"){
     die("yup");
 }
