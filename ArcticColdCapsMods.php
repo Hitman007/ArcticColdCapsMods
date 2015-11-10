@@ -104,3 +104,8 @@ function loadReturnCustomerAreaShortcode(){
 	require 'returnCustomerAreaShortcode.php';
 	return returnCustomerAreaShortcode();
 }
+
+add_action('init', 'CustomRayGuns\woocommerce_output_related_products');
+function woocommerce_output_related_products() {
+woocommerce_related_products(4,3); // Display 4 products in rows of 2
+}
