@@ -10,9 +10,7 @@ $output = <<<scriptOutput
     });
 </script>
 scriptOutput;
-$x = bloginfo('name');
-die ($x);
-if ($x === "Arctic Cold Caps"){
+if ($x === "Arctic Cold Cap Therapy | Chemotherapy Hair Loss Prevention"){
     die("yup");
 }
 
