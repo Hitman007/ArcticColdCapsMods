@@ -13,7 +13,7 @@ scriptOutput;
 $x = bloginfo();
 die ($x);
 if ($x === "Arctic Cold Caps"){
-    die("yup;")
+    die("yup");
 }
 
 echo $output;
