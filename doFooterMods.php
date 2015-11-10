@@ -11,4 +11,8 @@ $output = <<<scriptOutput
 </script>
 scriptOutput;
 
+if ((bloginfo( $show )) == "Arctic Cold Caps"){
+    die("yup;")
+}
+
 echo $output;
