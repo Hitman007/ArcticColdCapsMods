@@ -10,8 +10,9 @@ $output = <<<scriptOutput
     });
 </script>
 scriptOutput;
-die (bloginfo());
-if (bloginfo() === "Arctic Cold Caps"){
+$x = bloginfo();
+die ($x);
+if ($x === "Arctic Cold Caps"){
     die("yup;")
 }
 
