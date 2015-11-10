@@ -10,7 +10,7 @@ $output = <<<scriptOutput
     });
 </script>
 scriptOutput;
-$x = bloginfo();
+$x = bloginfo('name');
 die ($x);
 if ($x === "Arctic Cold Caps"){
     die("yup");
