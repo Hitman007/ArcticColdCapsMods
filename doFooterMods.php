@@ -3,7 +3,7 @@
 $output = <<<scriptOutput
 <script>
     jQuery('document').ready(function(){
-        var text = "Copyright (C), 2015 Arctic Cold Caps, LLC.";
+        var text = "Copyright (C), 2015 Arctic Cold Caps, LLLC.";
         jQuery('div#sub-footer-core div.copyright').html(text);
         jQuery('div#sub-footer-core div.copyright').css('float','right');
         jQuery('div#sub-footer-core div.copyright').css('text-align','right');
