@@ -13,9 +13,7 @@ namespace CustomRayGuns;
 $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $urlParse = parse_url($url);
 $path = $urlParse["path"];
-if ($path == "/checkout-2/"){
-	//exit();
-}
+if (!($path == "/checkout-2/")){
 
 //adds the role "Nurse" alias for shop-manager - This is an unused function as of now. I will need to
 //ask about how the Customer role gets added.
@@ -115,4 +113,6 @@ function loadReturnCustomerAreaShortcode(){
 add_action('init', 'CustomRayGuns\woocommerce_output_related_products');
 function woocommerce_output_related_products() {
 woocommerce_related_products(4,3); // Display 4 products in rows of 2
+}
+
 }
