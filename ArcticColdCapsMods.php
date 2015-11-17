@@ -14,7 +14,7 @@ $url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $urlParse = parse_url($url);
 $path = $urlParse["path"];
 if ($path == "/checkout-2/"){
-	exit();
+	//exit();
 }
 
 //adds the role "Nurse" alias for shop-manager - This is an unused function as of now. I will need to
