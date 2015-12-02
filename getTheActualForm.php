@@ -227,6 +227,14 @@ function getTheActualForm() {
                     <h4 class="text-center">Cancer Details</h4>
                     <fieldset class="col-sm-6">
                         <div class='form-group'>
+                        
+                            <div class='form-group col-sm-12'>
+                            <label class='control-label'>Diagnosis:</label>
+                            <textarea name = "diagnosis"></textarea>
+                        </div>
+                        
+                        
+                        
                             <div class="col-sm-8 text-right" style="padding-right:5px;">
                                 <label class='control-label'>Regimen:</label>
                             </div>
@@ -432,6 +440,21 @@ function getTheActualForm() {
                                 <input  placeholder='Zip' name='Treatment_Zip' type='text' class='form-control'>
                             </div>
                         </div>
+                        
+                        <div class='form-group'>
+                            <label class='control-label'>Nurse Navigator:</label>
+                            <div class='input-group'>
+                                <span class='input-group-addon'><i class='glyphicon glyphicon-map-marker'></i></span>
+                                <input  placeholder='Name' name='nurse_navigator_name' type='text' class='form-control'/>
+                                 <input  placeholder='Telephone Number' name='nurse_navigator_phone' type='text' class='form-control'/>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
                     </fieldset>
                 </div><!--Column-->
                 <div class="divider">&nbsp;</div>
