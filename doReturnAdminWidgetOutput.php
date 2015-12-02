@@ -9,9 +9,6 @@ function doReturnAdminWidgetOutput(){
 	<a href = "https://www.youtube.com/watch?v=xgwuu17z4iE" targer = "_blank">How to add a new info-form</a>
   </div>
   <div class = "crg-help-widget-item">
-	<a href = "https://www.youtube.com/watch?v=rxpaLeKrL2E&feature=youtu.be" target = "_blank">How to edit an info-form</a>
-  </div>
-  <div class = "crg-help-widget-item">
   	<a href = "https://www.youtube.com/watch?v=HXPoQ3-cSGI&feature=youtu.be">How to change a person's email</a>
   </div>
   <div class = "crg-help-widget-item">
