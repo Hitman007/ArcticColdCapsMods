@@ -1,4 +1,4 @@
-This is a Wordpress plugin to make a form.
+JIMBO This is a Wordpress plugin to make a form.
 
 Use:
   activate the plugin
