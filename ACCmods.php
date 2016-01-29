@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Custom Ray Guns Arctic Cold Caps Mods
+Plugin Name: Custom Ray Guns ACC Mods
 Plugin URI: http://customrayguns.com/
 Description: 
 Version: 1.2
