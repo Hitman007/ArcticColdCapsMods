@@ -12,7 +12,7 @@ function doReturnAdminWidgetOutput(){
   	<a href = "https://youtu.be/TWYSobESEVg" target = "_blank">How to give a discount coupoun</a>
   </div>
   <div class = "crg-help-widget-item">
-  	<a href = "https://www.youtube.com/watch?v=HXPoQ3-cSGI&feature=youtu.be">How to change a person's email</a>
+  	<a href = "https://www.youtube.com/watch?v=HXPoQ3-cSGI&feature=youtu.be" target = "_blank" >How to change a person's email</a>
   </div>
   <div class = "crg-help-widget-item">
   	<a href = "http://customrayguns.com/contact/" target = "_blank">Ask Custom Ray Guns a question</a>
