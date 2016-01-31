@@ -5,6 +5,9 @@ function doReturnAdminWidgetOutput(){
   $widgetOutput = <<<WIDGETOUTPUT
   <div id = "crg-help-widget-image-div">
   </div>
+     <div class = "crg-help-widget-item">
+  	<a href = "https://youtu.be/RcBILoByKlA" target = "_blank">How to change a user's save credit card or process a new order for that user</a>
+  </div>
    <div class = "crg-help-widget-item">
   	<a href = "https://youtu.be/cS5j_UcIVaA" target = "_blank">How to process a refund</a>
   </div>
