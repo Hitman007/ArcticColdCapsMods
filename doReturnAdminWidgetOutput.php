@@ -9,7 +9,7 @@ function doReturnAdminWidgetOutput(){
   	<a href = "https://youtu.be/Y-2veBzIu2o" target = "_blank">How to add an order with no Credit Card [or any order!]</a>
   </div>
      <div class = "crg-help-widget-item">
-  	<a href = "https://youtu.be/CvIMjdxRikA" target = "_blank">How to change a user's save credit card or process a new order for that user</a>
+  	<a href = "https://youtu.be/CvIMjdxRikA" target = "_blank">How to change a user's saved credit card or process a new order for that user</a>
   </div>
    <div class = "crg-help-widget-item">
   	<a href = "https://youtu.be/cS5j_UcIVaA" target = "_blank">How to process a refund</a>
