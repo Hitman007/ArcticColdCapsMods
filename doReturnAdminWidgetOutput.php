@@ -2,7 +2,7 @@
 
 function doReturnAdminWidgetOutput(){
  
-  $widgetOutput = <<<WIDGETOUTPUT 
+  $widgetOutput = <<<WIDGETOUTPUT
   <div id = "crg-help-widget-image-div">
   </div>
        <div class = "crg-help-widget-item">
