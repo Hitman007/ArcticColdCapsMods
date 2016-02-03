@@ -2,8 +2,11 @@
 
 function doReturnAdminWidgetOutput(){
  
-  $widgetOutput = <<<WIDGETOUTPUT
+  $widgetOutput = <<<WIDGETOUTPUT 
   <div id = "crg-help-widget-image-div">
+  </div>
+       <div class = "crg-help-widget-item">
+  	<a href = "https://youtu.be/Y-2veBzIu2o" target = "_blank">How to add an order with no Credit Card [or any order!]</a>
   </div>
      <div class = "crg-help-widget-item">
   	<a href = "https://youtu.be/CvIMjdxRikA" target = "_blank">How to change a user's save credit card or process a new order for that user</a>
