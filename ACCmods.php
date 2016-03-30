@@ -115,4 +115,5 @@ function woocommerce_output_related_products() {
 woocommerce_related_products(4,3); // Display 4 products in rows of 2
 }
 
+
 }
